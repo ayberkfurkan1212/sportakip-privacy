@@ -2,6 +2,8 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SporTakip — WhatsApp'tan kalori ve antrenman takibi</title>
 <meta name="description" content="WhatsApp'tan yazarak kalori, makro, su, antrenman ve kardiyo takibi. Yemeğin fotoğrafını at, gerisini SporTakip halletsin. Uygulama indirmeden.">
@@ -792,18 +794,6 @@ Sohbeti başlat</a>
 </footer>
 
 </div>
-<script>
-(function(){
-  var plans={ay:['₺129','/ ay','3 aylık ve yıllık planda daha ucuz'],uc:['₺329','/ 3 ay','Ayda ₺110'],yil:['₺999','/ yıl','Ayda ₺83, en avantajlısı']};
-  var btns=document.querySelectorAll('[data-period]');
-  btns.forEach(function(b){b.addEventListener('click',function(){
-    var p=plans[b.dataset.period];
-    document.getElementById('fiyat-tutar').textContent=p[0];
-    document.getElementById('fiyat-donem').textContent=p[1];
-    document.getElementById('fiyat-not').textContent=p[2];
-    btns.forEach(function(x){var on=x===b;x.setAttribute('aria-pressed',on);x.style.background=on?'#C8F04A':'transparent';x.style.color=on?'#0C0E0D':'#C9D0CB';});
-  });});
-})();
-</script>
+<script src="/site.js" defer></script>
 </body>
 </html>
