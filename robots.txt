@@ -1,3 +1,10 @@
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
 User-agent: *
 Allow: /
+
 Sitemap: https://sportakip.tr/sitemap.xml
