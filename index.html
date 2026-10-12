@@ -42,21 +42,25 @@ details summary{cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
 details[open] .plus{transform:rotate(45deg)}
 details[open]{border-color:#3A423E}
-.wa-screen{background-color:#EFE7DD;background-image:radial-gradient(rgba(84,101,111,0.09) 1px,transparent 1.4px);background-size:15px 15px;display:flex;flex-direction:column}
-.wa-head{position:relative;background:#FFFFFF;color:#111B21;display:flex;align-items:center;gap:8px;padding:28px 12px 9px 10px;box-shadow:0 1px 0 rgba(11,20,26,0.08)}
-.wa-msgs{flex:1;min-height:0;justify-content:flex-end;padding:10px 14px;display:flex;flex-direction:column;gap:5px;font-size:12.5px;line-height:1.38;color:#111B21;overflow:hidden;font-family:'Instrument Sans',system-ui,sans-serif}
+.wa-msgs{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 28px);mask-image:linear-gradient(to bottom,transparent 0,#000 28px);flex:1;min-height:0;justify-content:flex-end;padding:10px 14px;display:flex;flex-direction:column;gap:5px;font-size:12.5px;line-height:1.38;color:#111B21;overflow:hidden;font-family:'Instrument Sans',system-ui,sans-serif}
 .wa-day{align-self:center;background:#FFFFFF;color:#54656F;font-size:11px;padding:4px 10px;border-radius:7px;margin-bottom:4px;box-shadow:0 1px 0.5px rgba(11,20,26,0.13)}
-.wa-out,.wa-in{position:relative;padding:6px 8px 5px 9px;max-width:86%;box-sizing:border-box;box-shadow:0 1px 0.5px rgba(11,20,26,0.13)}
-.wa-out{align-self:flex-end;background:#D9FDD3;border-radius:8px 0 8px 8px;display:flex;flex-wrap:wrap;align-items:flex-end;column-gap:8px}
-.wa-in{align-self:flex-start;background:#FFFFFF;border-radius:0 8px 8px 8px;display:flex;flex-direction:column;gap:1px}
-.wa-out::after{content:"";position:absolute;top:0;right:-7px;border-top:9px solid #D9FDD3;border-right:8px solid transparent}
-.wa-in::after{content:"";position:absolute;top:0;left:-7px;border-top:9px solid #FFFFFF;border-left:8px solid transparent}
 .wa-meta{margin-left:auto;align-self:flex-end;display:inline-flex;align-items:center;gap:3px;font-size:10px;color:#667781;line-height:1;padding-top:2px}
-.wa-act{border-top:1px solid #E9EDEF;color:#027EB5;font-weight:600;padding:8px;display:flex;align-items:center;justify-content:center;gap:6px;margin:4px -8px -5px -9px}
-.wa-bar{display:flex;align-items:center;gap:6px;padding:6px 8px 12px}
-.wa-field{flex:1;min-width:0;background:#FFFFFF;border-radius:999px;padding:9px 12px;color:#667781;font-size:12.5px;box-shadow:0 1px 0.5px rgba(11,20,26,0.13);font-family:'Instrument Sans',system-ui,sans-serif}
-.wa-mic{width:36px;height:36px;border-radius:50%;background:#00A884;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
 .phone{background:#050605;border-radius:42px;padding:9px;box-shadow:0 40px 80px -30px rgba(0,0,0,0.9),0 0 0 1px #2A302D}
+.wa-screen{position:relative;background-color:#EFEAE2;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22132%22%20height%3D%22132%22%20viewBox%3D%220%200%20132%20132%22%20fill%3D%22none%22%20stroke%3D%22%23E5DED2%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2220%22%20r%3D%228%22%2F%3E%3Cpath%20d%3D%22M14%2019h8M18%2015v8%22%2F%3E%3Cpath%20d%3D%22M52%2010l3%206%206%201-4.5%204%201%206-5.5-3-5.5%203%201-6L43%2017l6-1z%22%2F%3E%3Cpath%20d%3D%22M96%2014c-4-5-11-1-8%205l8%208%208-8c3-6-4-10-8-5z%22%2F%3E%3Crect%20x%3D%2210%22%20y%3D%2252%22%20width%3D%2218%22%20height%3D%2213%22%20rx%3D%223%22%2F%3E%3Ccircle%20cx%3D%2219%22%20cy%3D%2258.5%22%20r%3D%223.5%22%2F%3E%3Cpath%20d%3D%22M50%2050h14l-2%2016h-10z%22%2F%3E%3Cpath%20d%3D%22M64%2054h3a3%203%200%200%201%200%206h-3%22%2F%3E%3Cpath%20d%3D%22M92%2050c6%200%2010%204%2010%209s-4%209-10%209-10-4-10-9%22%2F%3E%3Cpath%20d%3D%22M86%2046l3%204M98%2046l-3%204%22%2F%3E%3Cpath%20d%3D%22M14%2096c0-6%204-10%209-10M23%2086c5%200%209%204%209%2010%22%2F%3E%3Cpath%20d%3D%22M12%20100h22%22%2F%3E%3Ccircle%20cx%3D%2258%22%20cy%3D%2296%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M54%2094h.01M62%2094h.01M54%2099c2%202%206%202%208%200%22%2F%3E%3Cpath%20d%3D%22M90%2088l12%2012M102%2088l-12%2012%22%2F%3E%3Ccircle%20cx%3D%2296%22%20cy%3D%2294%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M40%20122h10M45%20117v10%22%2F%3E%3Cpath%20d%3D%22M114%20118c3%200%205%202%205%205s-2%205-5%205%22%2F%3E%3Cpath%20d%3D%22M118%2070l6-6M120%2064h4v4%22%2F%3E%3C%2Fsvg%3E");background-size:132px 132px;display:flex;flex-direction:column}
+.wa-head{position:relative;background:transparent;color:#111B21;display:flex;align-items:center;gap:9px;padding:30px 12px 8px 10px;box-shadow:none}
+.wa-status{position:absolute;top:8px;left:26px;right:20px;display:flex;justify-content:space-between;align-items:center;font-family:-apple-system,'SF Pro Text','Instrument Sans',system-ui,sans-serif;font-size:12px;font-weight:600;color:#111B21;pointer-events:none}
+.wa-sys{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700}
+.wa-back{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.92);box-shadow:0 1px 3px rgba(11,20,26,0.12);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.wa-name{flex:1;min-width:0;font-family:-apple-system,'SF Pro Text','Instrument Sans',system-ui,sans-serif;font-size:14.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wa-out,.wa-in{position:relative;padding:6px 9px 5px 10px;max-width:86%;box-sizing:border-box;box-shadow:0 1px 0.5px rgba(11,20,26,0.10)}
+.wa-out{align-self:flex-end;background:#DCF8C6;border-radius:15px 15px 4px 15px;display:flex;flex-wrap:wrap;align-items:flex-end;column-gap:8px}
+.wa-in{align-self:flex-start;background:#FFFFFF;border-radius:15px 15px 15px 4px;display:flex;flex-direction:column;gap:1px}
+.wa-act{border-top:1px solid #E9EDEF;color:#1F8F4E;font-weight:500;padding:8px;display:flex;align-items:center;justify-content:center;gap:6px;margin:5px -9px -5px -10px}
+.wa-bar{display:flex;align-items:center;gap:9px;padding:6px 10px 14px;background:rgba(246,245,243,0.96)}
+.wa-plus{flex:0 0 auto;display:inline-flex}
+.wa-field{flex:1;min-width:0;height:30px;background:#FFFFFF;border:1px solid #E3E1DD;border-radius:999px;padding:0 6px 0 12px;display:flex;align-items:center;justify-content:flex-end;box-sizing:border-box;box-shadow:none;color:transparent;font-size:0}
+.wa-mic{width:32px;height:32px;border-radius:50%;background:#25B35A;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.wa-tick{display:inline-block;vertical-align:-1px}
 .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:76px;height:9px;border-radius:999px;background:#050605}
 .chip{display:inline-flex;align-items:center;gap:8px;background:#151917;border:1px solid #2A302D;color:#E6EBE7;padding:10px 16px;border-radius:999px;font-size:15px;white-space:nowrap}
 </style>
@@ -106,15 +110,10 @@ Hazır antrenman programları ve otomatik ilerleme
 <div style="position: relative; width: 100%; max-width: 360px">
 <div class="phone">
 <div class="wa-screen" style="border-radius: 34px; overflow: hidden; height: 640px">
-<div class="wa-head" style="padding-top: 32px">
-<span class="notch" aria-hidden="true"></span>
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#54656F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
-<img src="/logo.png" alt="" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex: 0 0 auto">
-<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.25; font-family: 'Instrument Sans', system-ui, sans-serif"><strong style="font-size: 15px">SporTakip</strong><span style="font-size: 11.5px; color: #667781">işletme hesabı</span></span>
-</div>
+<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>12:30</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
 <div class="wa-msgs" style="font-size: 13.5px; gap: 6px">
 <span class="wa-day">Bugün</span>
-<div class="wa-out"><span>kahvaltıda 2 haşlanmış yumurta ve 1 dilim tam buğday ekmek yedim</span><span class="wa-meta">08:42</span></div>
+<div class="wa-out"><span>kahvaltıda 2 haşlanmış yumurta ve 1 dilim tam buğday ekmek yedim</span><span class="wa-meta">08:42<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="gap: 2px; padding: 8px 10px 6px">
 <span>🍳 <strong>Kahvaltı kaydedildi</strong></span>
 <span style="margin-top: 4px">• Haşlanmış yumurta (2 adet) — 155 Kcal · 13 g protein</span>
@@ -124,20 +123,20 @@ Hazır antrenman programları ve otomatik ilerleme
 <span>🎯 Kalan: <strong>2171 Kcal</strong> · <strong>153.1 g protein</strong></span>
 <span class="wa-meta">08:42</span>
 </div>
-<div class="wa-out"><span>500 ml su içtim</span><span class="wa-meta">10:15</span></div>
+<div class="wa-out"><span>500 ml su içtim</span><span class="wa-meta">10:15<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="padding: 8px 10px 6px">
 <span>💧 <strong>Su kaydedildi:</strong> 500 ml</span>
 <span>📊 Bugün: 500 / 3000 ml (17%)</span>
 <span class="wa-meta">10:15</span>
 </div>
-<div class="wa-out"><span>selam naber</span><span class="wa-meta">12:30</span></div>
+<div class="wa-out"><span>selam naber</span><span class="wa-meta">12:30<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="padding: 8px 10px 6px">
 <span>👋 Selam! İyiyim, teşekkürler; sen nasılsın? 🙂</span>
 <span style="margin-top: 4px">Bugün ne yediğini yaz, hemen kaydedeyim.</span>
 <span class="wa-meta">12:30</span>
 </div>
 </div>
-<div class="wa-bar"><span class="wa-field">Mesaj</span><span class="wa-mic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
+<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
 </div>
 </div>
 <div class="float" style="position: absolute; left: -70px; top: 170px; background: #151917; border: 1px solid #2A302D; border-radius: 20px; padding: 16px; width: 176px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8); display: flex; flex-direction: column; gap: 10px">
@@ -183,7 +182,7 @@ Hazır antrenman programları ve otomatik ilerleme
 
 <figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
 <div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover"><strong style="font-size: 13px; font-family: 'Instrument Sans', system-ui, sans-serif">SporTakip</strong></div>
+<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>13:05</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
 <div class="wa-msgs">
 <span class="wa-day">Bugün</span>
 <div class="wa-out" style="width: 72%; padding: 4px; flex-direction: column; align-items: stretch">
@@ -198,17 +197,17 @@ Hazır antrenman programları ve otomatik ilerleme
 <span>• Çoban salata (1 porsiyon)</span>
 <strong style="margin-top: 6px">Bu hangi öğün?</strong>
 <span class="wa-meta">13:05</span>
-<span class="wa-act">Öğün seç</span>
+<span class="wa-act"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1F8F4E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7L4 12l5 5"/><path d="M4 12h10a6 6 0 0 1 6 6"/></svg>Öğün seç</span>
 </div>
 </div>
-<div class="wa-bar"><span class="wa-field">Mesaj</span><span class="wa-mic"></span></div>
+<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
 </div></div>
 <figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">01</span><strong class="disp" style="font-size: 22px; font-weight: 800">Fotoğrafla kayıt</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Tabağını çek; gördüklerini listeler, öğünü sen seçersin.</span></figcaption>
 </figure>
 
 <figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
 <div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover"><strong style="font-size: 13px; font-family: 'Instrument Sans', system-ui, sans-serif">SporTakip</strong></div>
+<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>16:21</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
 <div class="wa-msgs">
 <span class="wa-day">Bugün</span>
 <div class="wa-out" style="width: 70%; padding: 4px; flex-direction: column; align-items: stretch">
@@ -224,24 +223,24 @@ Hazır antrenman programları ve otomatik ilerleme
 <strong style="margin-top: 6px">Ne kadar yedin?</strong>
 <span class="wa-meta">16:20</span>
 </div>
-<div class="wa-out"><span>yarım paket</span><span class="wa-meta">16:21</span></div>
+<div class="wa-out"><span>yarım paket</span><span class="wa-meta">16:21<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="width: 90%">
 <span>🍎 <strong>Atıştırmalık kaydedildi</strong></span>
 <span>• Kakaolu protein bar (22,5 g) — 86 Kcal · 7 g protein</span>
 <span class="wa-meta">16:21</span>
 </div>
 </div>
-<div class="wa-bar"><span class="wa-field">Mesaj</span><span class="wa-mic"></span></div>
+<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
 </div></div>
 <figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">02</span><strong class="disp" style="font-size: 22px; font-weight: 800">Barkod ve etiket</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Barkodu ya da besin tablosunu çek; "yarım paket" yazman yeter.</span></figcaption>
 </figure>
 
 <figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
 <div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover"><strong style="font-size: 13px; font-family: 'Instrument Sans', system-ui, sans-serif">SporTakip</strong></div>
+<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>19:13</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
 <div class="wa-msgs">
 <span class="wa-day">Bugün</span>
-<div class="wa-out"><span>akşama ne yesem?</span><span class="wa-meta">19:12</span></div>
+<div class="wa-out"><span>akşama ne yesem?</span><span class="wa-meta">19:12<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="width: 94%">
 <span>🍽️ <strong>Akşam yemeği için öneriler</strong></span>
 <em style="color: #54656F">Kalan: 1598 Kcal · 107 g protein</em>
@@ -252,26 +251,26 @@ Hazır antrenman programları ve otomatik ilerleme
 <span style="margin-top: 5px">3️⃣ <strong>250 g ızgara köfte + 1 kase mercimek çorbası</strong></span>
 <span style="color: #54656F; padding-left: 20px">≈ 725 Kcal · 61 g protein</span>
 <span class="wa-meta">19:12</span>
-<span class="wa-act">Öneri seç</span>
+<span class="wa-act"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1F8F4E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7L4 12l5 5"/><path d="M4 12h10a6 6 0 0 1 6 6"/></svg>Öneri seç</span>
 </div>
-<div class="wa-out"><span>1</span><span class="wa-meta">19:13</span></div>
+<div class="wa-out"><span>1</span><span class="wa-meta">19:13<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="width: 90%">
 <span>🍽️ <strong>Akşam yemeği kaydedildi</strong></span>
 <span>🔥 <strong>Toplam:</strong> 820 Kcal</span>
 <span class="wa-meta">19:13</span>
 </div>
 </div>
-<div class="wa-bar"><span class="wa-field">Mesaj</span><span class="wa-mic"></span></div>
+<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
 </div></div>
 <figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">03</span><strong class="disp" style="font-size: 22px; font-weight: 800">"Ne yesem?"</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Kalan hedefine göre üç öneri; numarasını yaz, kaydolsun.</span></figcaption>
 </figure>
 
 <figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
 <div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover"><strong style="font-size: 13px; font-family: 'Instrument Sans', system-ui, sans-serif">SporTakip</strong></div>
+<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>18:45</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
 <div class="wa-msgs">
 <span class="wa-day">Bugün</span>
-<div class="wa-out"><span>squat 3x12 60 kg</span><span class="wa-meta">18:40</span></div>
+<div class="wa-out"><span>squat 3x12 60 kg</span><span class="wa-meta">18:40<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="width: 94%">
 <span>🏋️ <strong>Antrenman kaydedildi</strong></span>
 <span>• Squat — 3×12 · 60 kg</span>
@@ -280,7 +279,7 @@ Hazır antrenman programları ve otomatik ilerleme
 <span style="color: #54656F">Tüm setlerde 12 tekrara ulaştın, ağırlık artıyor.</span>
 <span class="wa-meta">18:41</span>
 </div>
-<div class="wa-out"><span>sıradaki antrenman</span><span class="wa-meta">18:45</span></div>
+<div class="wa-out"><span>sıradaki antrenman</span><span class="wa-meta">18:45<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="width: 94%">
 <span>📋 <strong>Tüm Vücut B</strong></span>
 <span>• Leg press — 3×10–15</span>
@@ -290,17 +289,17 @@ Hazır antrenman programları ve otomatik ilerleme
 <span class="wa-meta">18:45</span>
 </div>
 </div>
-<div class="wa-bar"><span class="wa-field">Mesaj</span><span class="wa-mic"></span></div>
+<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
 </div></div>
 <figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">04</span><strong class="disp" style="font-size: 22px; font-weight: 800">Antrenman ve ilerleme</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Setlerini yaz; rekorunu ve bir sonraki hedefini söyler.</span></figcaption>
 </figure>
 
 <figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
 <div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover"><strong style="font-size: 13px; font-family: 'Instrument Sans', system-ui, sans-serif">SporTakip</strong></div>
+<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>20:02</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
 <div class="wa-msgs">
 <span class="wa-day">Pazar</span>
-<div class="wa-out"><span>bu hafta</span><span class="wa-meta">20:02</span></div>
+<div class="wa-out"><span>bu hafta</span><span class="wa-meta">20:02<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
 <div class="wa-in" style="width: 94%">
 <span>📈 <strong>Haftalık Rapor</strong></span>
 <em>4 – 10 Ekim</em>
@@ -315,7 +314,7 @@ Hazır antrenman programları ve otomatik ilerleme
 <span class="wa-meta">20:02</span>
 </div>
 </div>
-<div class="wa-bar"><span class="wa-field">Mesaj</span><span class="wa-mic"></span></div>
+<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
 </div></div>
 <figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">05</span><strong class="disp" style="font-size: 22px; font-weight: 800">Haftalık rapor</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Ortalamalar, hedefe ulaşılan günler ve kilo değişimi bir bakışta.</span></figcaption>
 </figure>
