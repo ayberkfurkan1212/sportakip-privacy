@@ -6,5 +6,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /panel/
 
 Sitemap: https://sportakip.tr/sitemap.xml

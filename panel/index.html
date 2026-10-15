@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://dlipccqhuypwybembzxv.supabase.co; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panelim · SporTakip</title>
+<meta name="theme-color" content="#0C0E0D">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0C0E0D;--card:#141816;--line:#252B28;--ink:#F2F5F3;--mute:#9AA39E;--acc:#C8F04A;--acc2:#5EC8F2;--warn:#F2A65E;--bad:#F26D5E}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Instrument Sans',system-ui,sans-serif;font-size:15px;line-height:1.45}
+a{color:var(--acc)}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 56px}
+.disp{font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:118%;letter-spacing:-0.03em}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+header a{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700}
+header img{width:30px;height:30px;border-radius:8px}
+h1{font-size:clamp(28px,6vw,44px);margin:0 0 4px;font-weight:800}
+.sub{color:var(--mute);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;min-width:0}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c6{grid-column:span 6}.c8{grid-column:span 8}.c12{grid-column:span 12}
+@media (max-width:860px){.c3{grid-column:span 6}.c4,.c6,.c8{grid-column:span 12}}
+@media (max-width:480px){.c3{grid-column:span 12}}
+.k{color:var(--mute);font-size:13px;margin:0 0 6px}
+.v{font-size:30px;font-weight:800;margin:0}
+.v small{font-size:14px;color:var(--mute);font-weight:500;margin-left:4px}
+.bar{height:8px;background:#222826;border-radius:99px;margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc);border-radius:99px}
+h2{font-size:18px;margin:0 0 12px}
+svg{display:block;width:100%;height:auto}
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--mute);font-size:12.5px;margin-top:8px}
+.legend b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.meal{border-top:1px solid var(--line);padding:10px 0}
+.meal:first-child{border-top:0;padding-top:0}
+.meal h3{font-size:14.5px;margin:0 0 4px;display:flex;justify-content:space-between}
+.meal p{margin:0;color:var(--mute);font-size:13.5px}
+.empty{color:var(--mute)}
+.msg{max-width:520px;margin:12vh auto;text-align:center}
+.msg code{background:#1C211F;padding:3px 8px;border-radius:6px;color:var(--acc)}
+footer{color:var(--mute);font-size:12.5px;margin-top:26px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="/"><img src="/logo.png" alt="">SporTakip</a><span id="date" class="sub" style="margin:0"></span></header>
+  <main id="app"><p class="sub">Yükleniyor…</p></main>
+  <footer>Bu sayfa sana özel bağlantıyla açıldı; kimseyle paylaşma. · <a href="/gizlilik/">Gizlilik</a></footer>
+</div>
+<script src="panel.js"></script>
+</body>
+</html>
