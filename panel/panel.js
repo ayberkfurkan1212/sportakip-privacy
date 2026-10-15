@@ -35,24 +35,25 @@
   function s(tag, attrs) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
 
   // Basit SVG grafikleri (dış kütüphane yok)
-  function barChart(points, goal, color) {
+  function barChart(points, goal, color, overColor) {
     var W = 640, H = 200, P = 26, n = points.length || 1;
     var max = Math.max(goal || 0, Math.max.apply(null, points.map(function (p) { return p.v; }).concat([1]))) * 1.1;
     var svg = s("svg", { viewBox: "0 0 " + W + " " + H, role: "img" });
     var bw = (W - P * 2) / n;
     points.forEach(function (p, i) {
       var h = (p.v / max) * (H - P * 2);
-      var r = s("rect", { x: P + i * bw + bw * 0.15, y: H - P - h, width: bw * 0.7, height: Math.max(h, 0), rx: 3, fill: p.v > (goal || Infinity) * 1.1 ? "#F2A65E" : color });
+      var r = s("rect", { x: P + i * bw + bw * 0.15, y: H - P - h, width: bw * 0.7, height: Math.max(h, 0), rx: 3, fill: overColor && p.v > (goal || Infinity) * (overColor === "#F2A65E" ? 1.1 : 1) ? overColor : color });
       var t = s("title", {}); t.textContent = dShort(p.d) + ": " + fmt(p.v); r.appendChild(t); svg.appendChild(r);
-      if (n <= 31 && (i % Math.ceil(n / 8) === 0 || i === n - 1)) {
-        var lab = s("text", { x: P + i * bw + bw / 2, y: H - 8, "text-anchor": "middle", fill: "#9AA39E", "font-size": 11 });
+      var step = Math.ceil(n / 7);
+      if ((i % step === 0 && n - 1 - i >= step / 2) || i === n - 1) {
+        var lab = s("text", { x: P + i * bw + bw / 2, y: H - 8, "text-anchor": "middle", fill: "#9AA39E", "font-size": 13 });
         lab.textContent = dShort(p.d); svg.appendChild(lab);
       }
     });
     if (goal) {
       var y = H - P - (goal / max) * (H - P * 2);
       svg.appendChild(s("line", { x1: P, x2: W - P, y1: y, y2: y, stroke: "#F2F5F3", "stroke-dasharray": "4 5", "stroke-opacity": 0.5 }));
-      var gl = s("text", { x: W - P, y: y - 6, "text-anchor": "end", fill: "#9AA39E", "font-size": 11 }); gl.textContent = "hedef " + fmt(goal); svg.appendChild(gl);
+      var gl = s("text", { x: P, y: y - 6, "text-anchor": "start", fill: "#9AA39E", "font-size": 11 }); gl.textContent = "hedef " + fmt(goal); svg.appendChild(gl);
     }
     return svg;
   }
@@ -114,7 +115,7 @@
       var row = d.days.filter(function (x) { return x.date === dt; })[0];
       series.push({ d: dt, v: row ? row.kcal : 0 });
     }
-    var kc = el("div", { "class": "card c8" }, [el("h2", { text: "Kalori · son 30 gün" }), barChart(series, d.goals.kcal, "#C8F04A")]);
+    var kc = el("div", { "class": "card c8" }, [el("h2", { text: "Kalori · son 30 gün" }), barChart(series, d.goals.kcal, "#C8F04A", "#F2A65E")]);
     kc.appendChild(el("p", { "class": "legend", text: logged.length + " gün kayıt · ortalama " + fmt(avg) + " kcal/gün" }));
     g.appendChild(kc);
 
@@ -153,7 +154,7 @@
 
     // Adım
     var sc = el("div", { "class": "card c6" }, [el("h2", { text: "Adım" })]);
-    if (d.steps.length) sc.appendChild(barChart(d.steps.map(function (x) { return { d: x.date, v: x.steps }; }), d.goals.steps, "#5EC8F2"));
+    if (d.steps.length) sc.appendChild(barChart(d.steps.map(function (x) { return { d: x.date, v: x.steps }; }), d.goals.steps, "#5EC8F2", "#C8F04A"));
     else sc.appendChild(el("p", { "class": "empty", text: "Adım kaydı yok. WhatsApp'ta \"8500 adım\" yaz ya da iPhone için \"apple sağlık bağla\"." }));
     g.appendChild(sc);
 
