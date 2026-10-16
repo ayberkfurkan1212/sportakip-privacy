@@ -6,7 +6,7 @@ SporTakip AI, kullanıcıların WhatsApp üzerinden beslenme, antrenman ve sağl
 
 ## 1. Veri Sorumlusu
 
-Ayberk Furkan Kaya — [ayberkfurkankaya@gmail.com](mailto:ayberkfurkankaya@gmail.com)
+Ayberk Furkan Kaya — [sportakipdestek@gmail.com](mailto:sportakipdestek@gmail.com)
 
 ## 2. Toplanan Veriler
 
@@ -98,7 +98,7 @@ Kişisel verilerinizle ilgili olarak şu haklara sahipsiniz:
 ## 9. Verilerinizi Silme
 
 - **En hızlı yol:** bota WhatsApp'tan `hesabımı sil` yazın. Tüm verileriniz anında ve kalıcı olarak silinir.
-- **Alternatif:** kayıtlı WhatsApp numaranızı belirterek [ayberkfurkankaya@gmail.com](mailto:ayberkfurkankaya@gmail.com) adresine e-posta gönderebilirsiniz. Talebiniz en geç 30 gün içinde sonuçlandırılır.
+- **Alternatif:** kayıtlı WhatsApp numaranızı belirterek [sportakipdestek@gmail.com](mailto:sportakipdestek@gmail.com) adresine e-posta gönderebilirsiniz. Talebiniz en geç 30 gün içinde sonuçlandırılır.
 
 ## 10. Sorumluluk Reddi
 
@@ -110,4 +110,4 @@ Bu metin güncellenebilir. Güncel sürüm her zaman bu sayfada yayımlanır; ö
 
 ## 12. İletişim
 
-Sorularınız ve KVKK talepleriniz için: [ayberkfurkankaya@gmail.com](mailto:ayberkfurkankaya@gmail.com)
+Sorularınız ve KVKK talepleriniz için: [sportakipdestek@gmail.com](mailto:sportakipdestek@gmail.com)
