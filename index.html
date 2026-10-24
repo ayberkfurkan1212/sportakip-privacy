@@ -6,807 +6,477 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SporTakip — WhatsApp'tan kalori ve antrenman takibi</title>
-<meta name="description" content="WhatsApp'tan yazarak kalori, makro, su, antrenman ve kardiyo takibi. Yemeğin fotoğrafını at, gerisini SporTakip halletsin. Uygulama indirmeden.">
+<meta name="description" content="Ne yediğini WhatsApp'a yaz; kalorisi, proteini ve kalan hakkın gelsin. Su, kilo, antrenman ve kardiyo da aynı sohbette. Uygulama indirmeden.">
 <link rel="canonical" href="https://sportakip.tr/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sportakip.tr/">
 <meta property="og:title" content="SporTakip — WhatsApp'tan kalori ve antrenman takibi">
-<meta property="og:description" content="WhatsApp'tan yazarak kalori, makro, su, antrenman ve kardiyo takibi. Yemeğin fotoğrafını at, gerisini SporTakip halletsin. Uygulama indirmeden.">
+<meta property="og:description" content="Ne yediğini WhatsApp'a yaz; kalorisi, proteini ve kalan hakkın gelsin. Su, kilo, antrenman ve kardiyo da aynı sohbette. Uygulama indirmeden.">
 <meta property="og:image" content="https://sportakip.tr/logo-512.png">
-<meta name="theme-color" content="#0C0E0D">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://sportakip.tr/#org", "name": "SporTakip", "url": "https://sportakip.tr/", "logo": "https://sportakip.tr/logo-512.png", "email": "sportakipdestek@gmail.com"}, {"@type": "WebSite", "@id": "https://sportakip.tr/#site", "name": "SporTakip", "alternateName": ["SporTakip AI", "Spor Takip"], "url": "https://sportakip.tr/", "inLanguage": "tr-TR", "publisher": {"@id": "https://sportakip.tr/#org"}}, {"@type": "SoftwareApplication", "name": "SporTakip", "applicationCategory": "HealthApplication", "operatingSystem": "WhatsApp", "url": "https://sportakip.tr/", "inLanguage": "tr-TR", "description": "WhatsApp üzerinden kalori, makro, su, kilo ve antrenman takibi yapan yapay zekâ asistanı. Yemeğin fotoğrafını at veya ne yediğini yaz, gerisini SporTakip halletsin.", "offers": [{"@type": "Offer", "name": "Ücretsiz", "price": "0", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Premium aylık", "price": "249", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Premium yıllık", "price": "1499", "priceCurrency": "TRY"}], "publisher": {"@id": "https://sportakip.tr/#org"}}]}</script>
 <meta property="og:site_name" content="SporTakip">
 <meta property="og:locale" content="tr_TR">
 <meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#CFE4F4">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://sportakip.tr/#org", "name": "SporTakip", "url": "https://sportakip.tr/", "logo": "https://sportakip.tr/logo-512.png", "email": "sportakipdestek@gmail.com"}, {"@type": "WebSite", "@id": "https://sportakip.tr/#site", "name": "SporTakip", "alternateName": ["SporTakip AI", "Spor Takip"], "url": "https://sportakip.tr/", "inLanguage": "tr-TR", "publisher": {"@id": "https://sportakip.tr/#org"}}, {"@type": "SoftwareApplication", "name": "SporTakip", "applicationCategory": "HealthApplication", "operatingSystem": "WhatsApp", "url": "https://sportakip.tr/", "inLanguage": "tr-TR", "description": "WhatsApp üzerinden kalori, makro, su, kilo ve antrenman takibi yapan yapay zekâ asistanı. Yemeğin fotoğrafını at veya ne yediğini yaz, gerisini SporTakip halletsin.", "offers": [{"@type": "Offer", "name": "Ücretsiz", "price": "0", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Premium aylık", "price": "249", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Premium yıllık", "price": "1499", "priceCurrency": "TRY"}], "publisher": {"@id": "https://sportakip.tr/#org"}}]}</script>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/logo-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#0C0E0D}
-a{color:#C8F04A}a:hover{color:#E2FF8C}
-html{scroll-behavior:smooth}
-.disp{font-family:'Archivo','Arial Narrow',sans-serif;font-stretch:118%;letter-spacing:-0.035em}
-.grid-bg{background-image:linear-gradient(rgba(255,255,255,0.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.045) 1px,transparent 1px);background-size:56px 56px}
-.auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
-.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
-.s2{grid-column:span 2}.s3{grid-column:span 3}.s4{grid-column:span 4}
-@media (max-width:960px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}.s2,.s3{grid-column:span 1}.s4{grid-column:span 2}}
-@media (max-width:640px){.bento{grid-template-columns:minmax(0,1fr)}.s2,.s3,.s4{grid-column:auto}.float{display:none}.hide-sm{display:none}}
-.rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 24px 28px;scrollbar-width:thin;scrollbar-color:#2A302D transparent}
-.rail > figure{scroll-snap-align:start}
-.marquee{display:flex;gap:12px;width:max-content;animation:kay 48s linear infinite}
-@keyframes kay{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.marquee{animation:none}html{scroll-behavior:auto}}
-.navlink{text-decoration:none;color:#C9D0CB;padding:10px 14px;border-radius:999px}
-.navlink:hover{color:#FFFFFF;background:#1C211F}
-details summary{cursor:pointer;list-style:none}
-details summary::-webkit-details-marker{display:none}
-details[open] .plus{transform:rotate(45deg)}
-details[open]{border-color:#3A423E}
-.wa-msgs{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 28px);mask-image:linear-gradient(to bottom,transparent 0,#000 28px);flex:1;min-height:0;justify-content:flex-end;padding:10px 14px;display:flex;flex-direction:column;gap:5px;font-size:12.5px;line-height:1.38;color:#111B21;overflow:hidden;font-family:'Instrument Sans',system-ui,sans-serif}
-.wa-day{align-self:center;background:#FFFFFF;color:#54656F;font-size:11px;padding:4px 10px;border-radius:7px;margin-bottom:4px;box-shadow:0 1px 0.5px rgba(11,20,26,0.13)}
-.wa-meta{margin-left:auto;align-self:flex-end;display:inline-flex;align-items:center;gap:3px;font-size:10px;color:#667781;line-height:1;padding-top:2px}
-.phone{background:#050605;border-radius:42px;padding:9px;box-shadow:0 40px 80px -30px rgba(0,0,0,0.9),0 0 0 1px #2A302D}
-.wa-screen{position:relative;background-color:#EFEAE2;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22132%22%20height%3D%22132%22%20viewBox%3D%220%200%20132%20132%22%20fill%3D%22none%22%20stroke%3D%22%23E5DED2%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2220%22%20r%3D%228%22%2F%3E%3Cpath%20d%3D%22M14%2019h8M18%2015v8%22%2F%3E%3Cpath%20d%3D%22M52%2010l3%206%206%201-4.5%204%201%206-5.5-3-5.5%203%201-6L43%2017l6-1z%22%2F%3E%3Cpath%20d%3D%22M96%2014c-4-5-11-1-8%205l8%208%208-8c3-6-4-10-8-5z%22%2F%3E%3Crect%20x%3D%2210%22%20y%3D%2252%22%20width%3D%2218%22%20height%3D%2213%22%20rx%3D%223%22%2F%3E%3Ccircle%20cx%3D%2219%22%20cy%3D%2258.5%22%20r%3D%223.5%22%2F%3E%3Cpath%20d%3D%22M50%2050h14l-2%2016h-10z%22%2F%3E%3Cpath%20d%3D%22M64%2054h3a3%203%200%200%201%200%206h-3%22%2F%3E%3Cpath%20d%3D%22M92%2050c6%200%2010%204%2010%209s-4%209-10%209-10-4-10-9%22%2F%3E%3Cpath%20d%3D%22M86%2046l3%204M98%2046l-3%204%22%2F%3E%3Cpath%20d%3D%22M14%2096c0-6%204-10%209-10M23%2086c5%200%209%204%209%2010%22%2F%3E%3Cpath%20d%3D%22M12%20100h22%22%2F%3E%3Ccircle%20cx%3D%2258%22%20cy%3D%2296%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M54%2094h.01M62%2094h.01M54%2099c2%202%206%202%208%200%22%2F%3E%3Cpath%20d%3D%22M90%2088l12%2012M102%2088l-12%2012%22%2F%3E%3Ccircle%20cx%3D%2296%22%20cy%3D%2294%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M40%20122h10M45%20117v10%22%2F%3E%3Cpath%20d%3D%22M114%20118c3%200%205%202%205%205s-2%205-5%205%22%2F%3E%3Cpath%20d%3D%22M118%2070l6-6M120%2064h4v4%22%2F%3E%3C%2Fsvg%3E");background-size:132px 132px;display:flex;flex-direction:column}
-.wa-head{position:relative;background:transparent;color:#111B21;display:flex;align-items:center;gap:9px;padding:30px 12px 8px 10px;box-shadow:none}
-.wa-status{position:absolute;top:8px;left:26px;right:20px;display:flex;justify-content:space-between;align-items:center;font-family:-apple-system,'SF Pro Text','Instrument Sans',system-ui,sans-serif;font-size:12px;font-weight:600;color:#111B21;pointer-events:none}
-.wa-sys{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700}
-.wa-back{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.92);box-shadow:0 1px 3px rgba(11,20,26,0.12);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
-.wa-name{flex:1;min-width:0;font-family:-apple-system,'SF Pro Text','Instrument Sans',system-ui,sans-serif;font-size:14.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.wa-out,.wa-in{position:relative;padding:6px 9px 5px 10px;max-width:86%;box-sizing:border-box;box-shadow:0 1px 0.5px rgba(11,20,26,0.10)}
-.wa-out{align-self:flex-end;background:#DCF8C6;border-radius:15px 15px 4px 15px;display:flex;flex-wrap:wrap;align-items:flex-end;column-gap:8px}
-.wa-in{align-self:flex-start;background:#FFFFFF;border-radius:15px 15px 15px 4px;display:flex;flex-direction:column;gap:1px}
-.wa-act{border-top:1px solid #E9EDEF;color:#1F8F4E;font-weight:500;padding:8px;display:flex;align-items:center;justify-content:center;gap:6px;margin:5px -9px -5px -10px}
-.wa-bar{display:flex;align-items:center;gap:9px;padding:6px 10px 14px;background:rgba(246,245,243,0.96)}
-.wa-plus{flex:0 0 auto;display:inline-flex}
-.wa-field{flex:1;min-width:0;height:30px;background:#FFFFFF;border:1px solid #E3E1DD;border-radius:999px;padding:0 6px 0 12px;display:flex;align-items:center;justify-content:flex-end;box-sizing:border-box;box-shadow:none;color:transparent;font-size:0}
-.wa-mic{width:32px;height:32px;border-radius:50%;background:#25B35A;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-.wa-tick{display:inline-block;vertical-align:-1px}
-.notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:76px;height:9px;border-radius:999px;background:#050605}
-.say{display:inline-flex;align-items:center;gap:8px;background:rgba(200,240,74,0.08);border:1px solid rgba(200,240,74,0.45);color:#C8F04A;padding:10px 16px;border-radius:999px;font-size:15px;font-weight:600;white-space:nowrap;text-decoration:none;transition:background .15s,color .15s}
-.say:hover,.say:focus-visible{background:#C8F04A;color:#0C0E0D}
-.marquee:hover,.marquee:focus-within{animation-play-state:paused}
-.cmd{display:inline-block;background:#1C211F;border:1px solid #2A302D;color:#E6EBE7;padding:7px 11px;border-radius:10px;font-size:14px;line-height:1.3;text-decoration:none}
-a.cmd:hover,a.cmd:focus-visible{border-color:#C8F04A;color:#C8F04A}
-#komutlar .cmd-card a[style*="border-top"]:hover{background:#232925}
-.cmd-cols{columns:3 320px;column-gap:12px}
-.cmd-cols>.cmd-card{break-inside:avoid;margin-bottom:12px}
-.cmd-card{background:#151917;border:1px solid #2A302D;border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:12px}
-.cmd-card h3{margin:0;font-size:19px;font-weight:800}
-.cmd-list{display:flex;flex-wrap:wrap;gap:8px}
-.cmd-note{margin:0;color:#A3ACA6;font-size:14px;line-height:1.5}
-.chip{display:inline-flex;align-items:center;gap:8px;background:#151917;border:1px solid #2A302D;color:#E6EBE7;padding:10px 16px;border-radius:999px;font-size:15px;white-space:nowrap}
+:root{
+  --lime:#C8F04A;--lime-ink:#14210F;
+  --day-ink:#0E2238;--day-muted:#33495F;
+  --night-ink:#F3F6FB;--night-muted:#C3CEE2;
+  --max:1240px;
+  --font:'Bricolage Grotesque',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:var(--font);font-size:18px;line-height:1.5;color:var(--day-ink);background:#14213D;font-optical-sizing:auto}
+img{display:block}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:1.5px}
+::selection{background:var(--lime);color:var(--lime-ink)}
+:focus-visible{outline:3px solid currentColor;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;background:#fff;color:#0E2238;padding:10px 14px;border-radius:8px;z-index:60}
+.skip:focus{top:12px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 28px}
+
+/* Üst bar: saat, günlük kcal, gün çizgisi */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;color:var(--day-ink);background:rgba(232,242,250,.94);transition:background-color .5s ease-out,color .5s ease-out;border-bottom:1px solid rgba(14,34,56,.08)}
+.top.koyu{color:var(--night-ink);background:rgba(16,26,52,.94);border-bottom-color:rgba(243,246,251,.08)}
+.top-in{display:flex;align-items:center;gap:20px;height:68px}
+.marka{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:21px;letter-spacing:-.02em}
+.marka img{width:36px;height:36px;border-radius:50%}
+.saat-chip{display:flex;align-items:baseline;gap:10px;font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;padding:6px 12px;border-radius:999px;border:1.5px solid currentColor;opacity:.92}
+.saat-chip b{font-size:17px;font-weight:800}
+.nav{display:flex;gap:22px;margin-left:auto;font-size:16px;font-weight:600}
+.nav a{text-decoration:none;padding:10px 2px}
+.nav a:hover{text-decoration:underline}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;background:var(--lime);color:var(--lime-ink);font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 6px 16px rgba(14,34,56,.16);transition:transform .15s cubic-bezier(.16,1,.3,1),box-shadow .15s ease-out}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(14,34,56,.2)}
+.btn svg{width:20px;height:20px}
+.btn-buyuk{min-height:60px;padding:16px 28px;font-size:20px}
+.gunbar{height:3px;background:rgba(14,34,56,.10)}
+.top.koyu .gunbar{background:rgba(243,246,251,.14)}
+.gunbar i{display:block;height:100%;width:6%;background:currentColor;transition:width .6s cubic-bezier(.16,1,.3,1)}
+
+/* Günün anları */
+.m{padding:clamp(96px,12vh,140px) 0 clamp(64px,10vh,120px);background:linear-gradient(180deg,var(--from) 0%,var(--to) 100%);color:var(--ink,var(--day-ink));min-height:88vh;display:flex;align-items:center}
+.m .muted{color:var(--muted,var(--day-muted))}
+.iki{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,88px);align-items:center}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.03em;text-wrap:balance}
+h1{font-size:clamp(44px,6vw,86px);line-height:.95}
+h2{font-size:clamp(32px,4vw,52px);line-height:1.02}
+h3{font-size:22px;letter-spacing:-.015em}
+p{margin:0}
+.lead{font-size:clamp(18px,1.6vw,21px);line-height:1.5;max-width:36ch}
+.kolon{display:flex;flex-direction:column;gap:20px}
+.saat{font-weight:800;font-size:clamp(88px,13vw,184px);line-height:.8;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.not{font-size:15px}
+.ornekler{display:flex;flex-wrap:wrap;gap:8px;font-size:15px}
+.ornekler a{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:999px;border:1.5px solid currentColor;text-decoration:none;font-weight:600}
+.ornekler a:hover{background:var(--ink,var(--day-ink));color:var(--bot,#fff)}
+
+/* Sohbet balonları */
+.sohbet{display:flex;flex-direction:column;gap:12px}
+.b{margin:0;max-width:min(560px,92%);padding:14px 18px 8px;font-size:17px;line-height:1.45;border-radius:22px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.b time{display:block;text-align:right;font-size:12px;opacity:.75;margin-top:2px;font-variant-numeric:tabular-nums}
+.ben{align-self:flex-end;background:var(--lime);color:var(--lime-ink);border-top-right-radius:6px}
+.bot{align-self:flex-start;background:var(--bot,#fff);color:var(--botink,var(--day-ink));border-top-left-radius:6px}
+.bot ul{margin:4px 0;padding-left:18px}
+.barkod{display:flex;flex-direction:column;align-items:center;gap:4px;background:#fff;border-radius:12px;padding:10px 14px}
+.barkod svg{width:180px;height:56px}
+.barkod span{font-size:12px;letter-spacing:.2em;color:#111}
+.ses{display:flex;align-items:center;gap:10px}
+.ses svg{width:150px;height:28px}
+
+/* Gece bölümleri */
+.gece{background:#14213D;color:var(--night-ink)}
+.gece .muted{color:var(--night-muted)}
+.gece .btn{box-shadow:none}
+.blok{padding:clamp(72px,10vh,120px) 0}
+.blok + .blok{padding-top:0}
+.ayrac{border:0;border-top:1px solid rgba(243,246,251,.14);margin:0}
+
+.adimlar{display:flex;flex-direction:column;gap:12px}
+.adimlar .bot{--bot:#1D2B4D;--botink:var(--night-ink)}
+
+.planlar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:28px;margin-top:40px;align-items:start}
+.plan{padding:30px 30px 32px;border-radius:20px;background:#1B2A4C}
+.plan.pre{background:#F3F6FB;color:#0E2238}
+.plan h3{font-size:26px}
+.fiyat{display:flex;align-items:baseline;gap:8px;margin:10px 0 4px;font-variant-numeric:tabular-nums}
+.fiyat b{font-size:48px;letter-spacing:-.03em;line-height:1}
+.liste{list-style:none;margin:22px 0 26px;padding:0;display:flex;flex-direction:column;gap:10px;font-size:16.5px}
+.liste li{display:flex;gap:10px;align-items:flex-start}
+.liste svg{flex:none;width:20px;height:20px;margin-top:3px}
+.donemler{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15.5px;font-variant-numeric:tabular-nums}
+.donemler b{font-size:18px}
+.uyari{margin-top:18px;padding:12px 14px;border-radius:12px;background:#E4EAF5;font-size:15px;color:#22344F}
+
+.uclu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:36px}
+.uclu p{font-size:16.5px}
+.uclu h3{margin-bottom:8px}
+
+.sss{margin-top:32px;display:flex;flex-direction:column}
+.sss details{border-top:1px solid rgba(243,246,251,.16)}
+.sss details:last-child{border-bottom:1px solid rgba(243,246,251,.16)}
+.sss summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-size:19px;font-weight:700;min-height:44px}
+.sss summary::-webkit-details-marker{display:none}
+.sss summary svg{flex:none;width:22px;height:22px;transition:transform .25s cubic-bezier(.16,1,.3,1)}
+.sss details[open] summary svg{transform:rotate(45deg)}
+.sss details p{padding:0 0 22px;max-width:68ch;color:var(--night-muted);font-size:17px}
+.komut-grup{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:26px;padding:4px 0 26px}
+.komut-grup h3{font-size:17px;margin-bottom:8px}
+.komut-grup .ornekler a{border-color:rgba(243,246,251,.4)}
+.komut-grup .ornekler a:hover{background:var(--night-ink);color:#14213D}
+
+.son{background:linear-gradient(180deg,#14213D 0%,#5A4170 18%,#E39A6E 40%,#F6D3B4 62%,#F6D3B4 100%);color:#1B1430;padding:clamp(240px,32vh,320px) 0 clamp(80px,12vh,140px);text-align:center}
+.son .saat{font-size:clamp(72px,10vw,140px);opacity:.95}
+.son h2{margin:18px auto 14px;max-width:18ch}
+.son p{color:#2B2140;margin:0 auto 30px;max-width:44ch}
+.son .not{margin-top:16px;color:#3A2B45}
+
+footer{background:#F6D3B4;color:#2B2140;padding:28px 0 96px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-block;padding:10px 0}
+
+/* Telefonda alt çubuk */
+.altbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none}
+.altbar .btn{width:100%;min-height:56px;box-shadow:0 10px 26px rgba(0,0,0,.25)}
+
+/* Hareket: varsayılan görünür; JS varsa giriş animasyonu */
+.js .m .b{opacity:0;transform:translateY(14px);transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1)}
+.js .m .b:nth-child(2){transition-delay:.18s}
+.js .m .b:nth-child(3){transition-delay:.36s}
+.js .m .b:nth-child(4){transition-delay:.54s}
+.js .m.gorundu .b{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .m .b{opacity:1;transform:none;transition:none}
+  .top,.gunbar i,.btn,.sss summary svg{transition:none}
+}
+
+@media (max-width:900px){
+  .nav{display:none}
+  .saat-chip{margin-left:auto;font-size:14px;padding:5px 10px}
+  .saat-chip .kc{display:none}
+  .top .btn{display:none}
+  .iki{grid-template-columns:minmax(0,1fr)}
+  .m{min-height:auto}
+  .planlar,.uclu{grid-template-columns:minmax(0,1fr)}
+  .altbar.acik{display:block}
+}
+@media (max-width:520px){
+  body{font-size:17px}
+  .wrap{padding:0 18px}
+  .top-in{height:60px;gap:12px}
+  .marka{font-size:19px}
+  .b{font-size:16px;max-width:96%}
+  .plan{padding:24px 20px 26px}
+  .btn-buyuk{width:100%;font-size:18px;padding:14px 18px}
+}
 </style>
 </head>
 <body>
-<div style="font-family: 'Instrument Sans', system-ui, sans-serif; color: #F1F4EF; background: #0C0E0D; min-height: 100vh; overflow-x: hidden">
+<a class="skip" href="#ana">İçeriğe geç</a>
 
-<header style="position: sticky; top: 0; z-index: 20; background: rgba(12, 14, 13, 0.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #1C211F">
-<div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
-<a href="#ust" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F1F4EF">
-<img src="/logo.png" alt="" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover">
-<span class="disp" style="font-weight: 800; font-size: 21px">SporTakip</span>
-</a>
-<nav aria-label="Ana menü" class="hide-sm" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 15px; font-weight: 500">
-<a class="navlink" href="#ekranlar">Ekranlar</a>
-<a class="navlink" href="#antrenman">Antrenman</a>
-<a class="navlink" href="#ozellikler">Özellikler</a>
-<a class="navlink" href="#komutlar">Komutlar</a>
-<a class="navlink" href="#fiyat">Fiyat</a>
-<a class="navlink" href="#sss">SSS</a>
-</nav>
-<a href="https://wa.me/905465537932?text=merhaba" style="text-decoration: none; background: #C8F04A; color: #0C0E0D; padding: 11px 18px; border-radius: 999px; font-weight: 700; font-size: 15px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.3L3 20.5l1.8-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>
-WhatsApp'ta başla</a>
-</div>
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="marka" href="#ust"><img src="/logo.png" alt="" width="36" height="36">SporTakip</a>
+    <p class="saat-chip" aria-live="off"><b id="saat-chip">08:12</b><span class="kc">Bugün <span id="kcal">432</span> / 1550 kcal</span></p>
+    <nav class="nav" aria-label="Bölümler">
+      <a href="#gun">Bir gün</a>
+      <a href="#basla">Nasıl başlarım</a>
+      <a href="#fiyat">Fiyat</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    <a class="btn" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta başla</a>
+  </div>
+  <div class="gunbar" aria-hidden="true"><i id="gunbar"></i></div>
 </header>
 
-<section id="ust" class="grid-bg" style="position: relative; border-bottom: 1px solid #1C211F">
-<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
-<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; border: 1px solid #2A302D; background: #0C0E0D; color: #C9D0CB; font-weight: 500; font-size: 14px; padding: 6px 14px 6px 6px; border-radius: 999px">
-<span style="background: #C8F04A; color: #0C0E0D; font-weight: 700; font-size: 12px; padding: 4px 10px; border-radius: 999px">YENİ</span>
-Hazır antrenman programları ve otomatik ilerleme
-</span>
-<h1 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(46px, 7vw, 96px); line-height: 0.92; text-transform: uppercase">Ne yediğini yaz.<br><span style="color: #C8F04A">Gerisi</span> SporTakip'te.</h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.55; color: #A3ACA6; max-width: 540px; text-wrap: pretty">Kalori, protein, su, kilo ve antrenman takibi, her gün kullandığın WhatsApp sohbetinin içinde. Uygulama indirmek yok, form doldurmak yok.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
-<a href="https://wa.me/905465537932?text=merhaba" style="text-decoration: none; background: #C8F04A; color: #0C0E0D; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px; min-height: 56px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.3L3 20.5l1.8-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>
-Ücretsiz başla</a>
-<a href="#ekranlar" style="text-decoration: none; color: #F1F4EF; padding: 17px 24px; border-radius: 999px; font-weight: 600; font-size: 17px; border: 1px solid #3A423E; min-height: 56px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px">Nasıl görünüyor?
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F1F4EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a>
-</div>
-<p style="margin: 0; font-size: 14px; color: #7E8882">Kaydını bitir, Premium'u 7 gün ücretsiz kullan. Otomatik ücret alınmaz.</p>
-</div>
+<main id="ana">
 
-<div style="flex: 1 1 360px; min-width: 0; display: flex; justify-content: center">
-<div style="position: relative; width: 100%; max-width: 360px">
-<div class="phone">
-<div class="wa-screen" style="border-radius: 34px; overflow: hidden; height: 640px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>12:30</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs" style="font-size: 13.5px; gap: 6px">
-<span class="wa-day">Bugün</span>
-<div class="wa-out"><span>kahvaltıda 2 haşlanmış yumurta ve 1 dilim tam buğday ekmek yedim</span><span class="wa-meta">08:42<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="gap: 2px; padding: 8px 10px 6px">
-<span>🍳 <strong>Kahvaltı kaydedildi</strong></span>
-<span style="margin-top: 4px">• Haşlanmış yumurta (2 adet) — 155 Kcal · 13 g protein</span>
-<span>• Tam buğday ekmek (1 dilim) — 74 Kcal · 3.9 g protein</span>
-<span style="margin-top: 4px">🔥 <strong>Toplam:</strong> 229 Kcal</span>
-<span style="margin-top: 4px">📊 <strong>Bugün:</strong> 229 / 2400 Kcal · 16.9 / 170 g protein</span>
-<span>🎯 Kalan: <strong>2171 Kcal</strong> · <strong>153.1 g protein</strong></span>
-<span class="wa-meta">08:42</span>
-</div>
-<div class="wa-out"><span>500 ml su içtim</span><span class="wa-meta">10:15<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="padding: 8px 10px 6px">
-<span>💧 <strong>Su kaydedildi:</strong> 500 ml</span>
-<span>📊 Bugün: 500 / 3000 ml (17%)</span>
-<span class="wa-meta">10:15</span>
-</div>
-<div class="wa-out"><span>selam naber</span><span class="wa-meta">12:30<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="padding: 8px 10px 6px">
-<span>👋 Selam! İyiyim, teşekkürler; sen nasılsın? 🙂</span>
-<span style="margin-top: 4px">Bugün ne yediğini yaz, hemen kaydedeyim.</span>
-<span class="wa-meta">12:30</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div>
-</div>
-<div class="float" style="position: absolute; left: -70px; top: 170px; background: #151917; border: 1px solid #2A302D; border-radius: 20px; padding: 16px; width: 176px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8); display: flex; flex-direction: column; gap: 10px">
-<span style="font-size: 12px; font-weight: 600; color: #A3ACA6">Bugünkü protein</span>
-<span class="disp" style="font-weight: 800; font-size: 28px; line-height: 1">16.9<span style="font-size: 15px; color: #A3ACA6"> / 170 g</span></span>
-<div style="height: 8px; background: #2A302D; border-radius: 999px; overflow: hidden"><div style="width: 10%; height: 100%; background: #C8F04A"></div></div>
-</div>
-<div class="float" style="position: absolute; right: -58px; bottom: 140px; background: #C8F04A; color: #0C0E0D; border-radius: 20px; padding: 16px; width: 150px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8); display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 12px; font-weight: 700">Kalan bugün</span>
-<span class="disp" style="font-weight: 900; font-size: 32px; line-height: 1">2.171</span>
-<span style="font-size: 13px; font-weight: 600">Kcal</span>
-</div>
-</div>
-</div>
-</div>
-
-<div style="max-width: 1240px; margin: 0 auto; padding: 0 24px 64px">
-<div class="auto" style="gap: 1px; background: #2A302D; border: 1px solid #2A302D; border-radius: 24px; overflow: hidden">
-<div style="background: #0C0E0D; padding: 24px; display: flex; flex-direction: column; gap: 4px"><span class="disp" style="font-weight: 800; font-size: 40px; line-height: 1">2.700+</span><span style="color: #A3ACA6; font-size: 15px">yemek ve paketli ürün</span></div>
-<div style="background: #0C0E0D; padding: 24px; display: flex; flex-direction: column; gap: 4px"><span class="disp" style="font-weight: 800; font-size: 40px; line-height: 1">5</span><span style="color: #A3ACA6; font-size: 15px">zincir restoran ve kafe, resmi değerlerle</span></div>
-<div style="background: #0C0E0D; padding: 24px; display: flex; flex-direction: column; gap: 4px"><span class="disp" style="font-weight: 800; font-size: 40px; line-height: 1">7</span><span style="color: #A3ACA6; font-size: 15px">hazır antrenman ve koşu programı</span></div>
-<div style="background: #0C0E0D; padding: 24px; display: flex; flex-direction: column; gap: 4px"><span class="disp" style="font-weight: 800; font-size: 40px; line-height: 1; color: #C8F04A">0</span><span style="color: #A3ACA6; font-size: 15px">indirilecek uygulama</span></div>
-</div>
-</div>
+<section class="m" id="ust" data-saat="08:12" data-kcal="432" data-pct="6" style="--from:#E8F2FA;--to:#CFE4F4">
+  <div class="wrap iki">
+    <div class="kolon">
+      <h1>Ne yediğini yaz.<br>Gerisi SporTakip'te.</h1>
+      <p class="lead muted">Gün boyu ne yersen WhatsApp'a kendi cümlenle yaz; kalorin, proteinin ve kalan hakkın her mesajda gelsin. Uygulama indirmek yok, form doldurmak yok.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+        <a class="btn btn-buyuk" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta “merhaba” yaz
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <p class="not muted">Kaydını bitir, Premium 7 gün ücretsiz. Deneme bitince otomatik ücret alınmaz.</p>
+    </div>
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">08:12</p>
+      <div class="sohbet" aria-label="Örnek sohbet, sabah">
+        <p class="b ben">kahvaltıda 2 haşlanmış yumurta, 1 simit ve 1 çay<time>08:12</time></p>
+        <div class="b bot"><b>Kahvaltı kaydedildi</b>
+          <ul><li>Haşlanmış yumurta (2 adet): 155 Kcal</li><li>Simit (1 adet): 275 Kcal</li><li>Çay (1 bardak): 2 Kcal</li></ul>
+          <b>Toplam:</b> 432 Kcal · Protein 21.8 g<br>Kalan: <b>1118 Kcal</b><time>08:12</time></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section aria-label="Örnek mesajlar" style="padding: 22px 0 28px; border-bottom: 1px solid #1C211F">
-<div style="max-width: 1240px; margin: 0 auto 16px; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; justify-content: space-between">
-<p style="margin: 0; font-size: 16px; color: #E6EBE7; line-height: 1.5"><strong style="color: #C8F04A">💬 Bota böyle yazıyorsun.</strong> Aşağıdakiler örnek mesajlar: birine dokun, WhatsApp'ta hazır açılsın, sen sadece gönder.</p>
-<a href="#komutlar" style="font-size: 15px; font-weight: 700; text-decoration: none">Tüm komutlar →</a>
-</div>
-<div style="overflow: hidden">
-<div class="marquee">
-<a class="say" href="https://wa.me/905465537932?text=2%20yumurta%20yedim" target="_blank" rel="noopener">2 yumurta yedim</a><a class="say" href="https://wa.me/905465537932?text=ak%C5%9Fam%202%20dilim%20lahmacun%20ve%20ayran" target="_blank" rel="noopener">akşam 2 dilim lahmacun ve ayran</a><a class="say" href="https://wa.me/905465537932?text=500%20ml%20su%20i%C3%A7tim" target="_blank" rel="noopener">500 ml su içtim</a><a class="say" href="https://wa.me/905465537932?text=bench%20press%204x8%2080%20kg" target="_blank" rel="noopener">bench press 4x8 80 kg</a><a class="say" href="https://wa.me/905465537932?text=ne%20yesem%3F" target="_blank" rel="noopener">ne yesem?</a><a class="say" href="https://wa.me/905465537932?text=5%20km%20ko%C5%9Ftum%2028%20dakikada" target="_blank" rel="noopener">5 km koştum 28 dakikada</a><a class="say" href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m" target="_blank" rel="noopener">85 kg tartıldım</a><a class="say" href="https://wa.me/905465537932?text=big%20mac%20men%C3%BC%20yedim" target="_blank" rel="noopener">big mac menü yedim</a><a class="say" href="https://wa.me/905465537932?text=starbucks%20grande%20latte" target="_blank" rel="noopener">starbucks grande latte</a><a class="say" href="https://wa.me/905465537932?text=bu%20hafta" target="_blank" rel="noopener">bu hafta</a><a class="say" href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim" target="_blank" rel="noopener">kreatin içtim</a><a class="say" href="https://wa.me/905465537932?text=yanl%C4%B1%C5%9F%20girdim%2C%203%20yumurta%20yedim" target="_blank" rel="noopener">yanlış girdim, 3 yumurta yedim</a><a class="say" href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat" target="_blank" rel="noopener">16:8 oruç başlat</a><a class="say" href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan" target="_blank" rel="noopener">haftalık plan</a><a class="say" href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1" target="_blank" rel="noopener">30 dk eğimli yürüyüş bandı</a><a class="say" href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla" target="_blank" rel="noopener">koşuya başla</a>
-<a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=2%20yumurta%20yedim" target="_blank" rel="noopener">2 yumurta yedim</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=ak%C5%9Fam%202%20dilim%20lahmacun%20ve%20ayran" target="_blank" rel="noopener">akşam 2 dilim lahmacun ve ayran</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=500%20ml%20su%20i%C3%A7tim" target="_blank" rel="noopener">500 ml su içtim</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=bench%20press%204x8%2080%20kg" target="_blank" rel="noopener">bench press 4x8 80 kg</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=ne%20yesem%3F" target="_blank" rel="noopener">ne yesem?</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=5%20km%20ko%C5%9Ftum%2028%20dakikada" target="_blank" rel="noopener">5 km koştum 28 dakikada</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m" target="_blank" rel="noopener">85 kg tartıldım</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=big%20mac%20men%C3%BC%20yedim" target="_blank" rel="noopener">big mac menü yedim</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=starbucks%20grande%20latte" target="_blank" rel="noopener">starbucks grande latte</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=bu%20hafta" target="_blank" rel="noopener">bu hafta</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim" target="_blank" rel="noopener">kreatin içtim</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=yanl%C4%B1%C5%9F%20girdim%2C%203%20yumurta%20yedim" target="_blank" rel="noopener">yanlış girdim, 3 yumurta yedim</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat" target="_blank" rel="noopener">16:8 oruç başlat</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan" target="_blank" rel="noopener">haftalık plan</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1" target="_blank" rel="noopener">30 dk eğimli yürüyüş bandı</a><a class="say" aria-hidden="true" tabindex="-1" href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla" target="_blank" rel="noopener">koşuya başla</a>
-</div>
-</div>
+<div id="gun">
+<section class="m" data-saat="10:15" data-kcal="432" data-pct="20" style="--from:#CFE4F4;--to:#B6DAF2">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">10:15</p>
+      <h2>Su, kilo, ölçü, takviye. Hepsi aynı sohbette.</h2>
+      <p class="lead muted">Ayrı ekran yok. İçtiğini, tartıldığını, belini ölçtüğünü yaz; hedefine ne kadar kaldığını söylesin.</p>
+      <p class="ornekler"><a href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m">85 kg tartıldım</a><a href="https://wa.me/905465537932?text=belim%2082%20cm">belim 82 cm</a><a href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim">kreatin içtim</a></p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, su">
+      <p class="b ben">500 ml su içtim<time>10:15</time></p>
+      <div class="b bot"><b>Su kaydedildi:</b> 500 ml<br>Bugün: 500 / 2400 ml (21%)<br>Kalan: <b>1900 ml</b><time>10:15</time></div>
+    </div>
+  </div>
 </section>
 
-<section id="ekranlar" style="padding: 104px 0 32px">
-<div style="max-width: 1240px; margin: 0 auto; padding: 0 24px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #C8F04A">Ekranlar</span>
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Telefonunda tam olarak böyle.</h2>
-</div>
-<p style="margin: 0; color: #A3ACA6; font-size: 17px; line-height: 1.55; max-width: 360px">Ayrı bir ekran öğrenmene gerek yok. Kaydırarak bak; her şey alıştığın sohbetin içinde.</p>
-</div>
-<div class="rail" style="max-width: 1288px; margin: 0 auto">
-
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>13:05</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out" style="width: 72%; padding: 4px; flex-direction: column; align-items: stretch">
-<div role="img" aria-label="Tabak fotoğrafı: tavuk şiş, bulgur pilavı ve çoban salata" style="height: 118px; border-radius: 6px; overflow: hidden">
-<svg viewBox="0 0 240 140" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true" style="display: block"><rect width="240" height="140" fill="#8A5A36"></rect><ellipse cx="120" cy="70" rx="84" ry="58" fill="#FBFAF6"></ellipse><ellipse cx="120" cy="70" rx="68" ry="46" fill="#F1EEE7"></ellipse><ellipse cx="96" cy="82" rx="34" ry="21" fill="#D6A65A"></ellipse><ellipse cx="152" cy="88" rx="28" ry="18" fill="#5E9A3E"></ellipse><circle cx="142" cy="84" r="7" fill="#D9412B"></circle><circle cx="160" cy="92" r="6" fill="#D9412B"></circle><circle cx="150" cy="96" r="5.5" fill="#B9DB7E"></circle><line x1="58" y1="44" x2="196" y2="60" stroke="#BFC3C7" stroke-width="2.5" stroke-linecap="round"></line><rect x="72" y="38" width="20" height="16" rx="5" fill="#C9884A" transform="rotate(7 82 46)"></rect><rect x="98" y="41" width="20" height="16" rx="5" fill="#BF7C3E" transform="rotate(7 108 49)"></rect><rect x="124" y="44" width="20" height="16" rx="5" fill="#C9884A" transform="rotate(7 134 52)"></rect><rect x="150" y="47" width="20" height="16" rx="5" fill="#BF7C3E" transform="rotate(7 160 55)"></rect></svg>
-</div>
-</div>
-<div class="wa-in" style="width: 88%">
-<span>📸 <strong>Fotoğrafta şunları gördüm:</strong></span>
-<span>• Tavuk şiş (1 şiş)</span>
-<span>• Bulgur pilavı (1 porsiyon)</span>
-<span>• Çoban salata (1 porsiyon)</span>
-<strong style="margin-top: 6px">Bu hangi öğün?</strong>
-<span class="wa-meta">13:05</span>
-<span class="wa-act"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1F8F4E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7L4 12l5 5"/><path d="M4 12h10a6 6 0 0 1 6 6"/></svg>Öğün seç</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">01</span><strong class="disp" style="font-size: 22px; font-weight: 800">Fotoğrafla kayıt</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Tabağını çek; gördüklerini listeler, öğünü sen seçersin.</span></figcaption>
-</figure>
-
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>16:21</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out" style="width: 70%; padding: 4px; flex-direction: column; align-items: stretch">
-<div role="img" aria-label="Barkod fotoğrafı" style="height: 92px; border-radius: 6px; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
-<svg width="150" height="52" viewBox="0 0 150 52" aria-hidden="true"><g fill="#111B21"><rect x="4" y="2" width="3" height="48"></rect><rect x="9" y="2" width="1.5" height="48"></rect><rect x="13" y="2" width="4" height="44"></rect><rect x="20" y="2" width="1.5" height="44"></rect><rect x="24" y="2" width="3" height="44"></rect><rect x="30" y="2" width="1.5" height="44"></rect><rect x="34" y="2" width="4" height="44"></rect><rect x="41" y="2" width="2" height="44"></rect><rect x="46" y="2" width="1.5" height="44"></rect><rect x="50" y="2" width="3" height="44"></rect><rect x="56" y="2" width="1.5" height="44"></rect><rect x="60" y="2" width="4" height="44"></rect><rect x="67" y="2" width="1.5" height="48"></rect><rect x="71" y="2" width="1.5" height="48"></rect><rect x="76" y="2" width="3" height="44"></rect><rect x="82" y="2" width="1.5" height="44"></rect><rect x="86" y="2" width="4" height="44"></rect><rect x="93" y="2" width="2" height="44"></rect><rect x="98" y="2" width="1.5" height="44"></rect><rect x="102" y="2" width="3" height="44"></rect><rect x="108" y="2" width="4" height="44"></rect><rect x="115" y="2" width="1.5" height="44"></rect><rect x="119" y="2" width="3" height="44"></rect><rect x="125" y="2" width="1.5" height="44"></rect><rect x="129" y="2" width="4" height="44"></rect><rect x="136" y="2" width="1.5" height="48"></rect><rect x="140" y="2" width="3" height="48"></rect></g></svg>
-</div>
-</div>
-<div class="wa-in" style="width: 90%">
-<span>🏷️ <strong>Barkod bulundu</strong></span>
-<strong>Kakaolu protein bar</strong>
-<em style="color: #54656F">100 g: 380 Kcal · P 31 g · K 33 g · Y 12 g</em>
-<span>Paket: 45 g</span>
-<strong style="margin-top: 6px">Ne kadar yedin?</strong>
-<span class="wa-meta">16:20</span>
-</div>
-<div class="wa-out"><span>yarım paket</span><span class="wa-meta">16:21<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 90%">
-<span>🍎 <strong>Atıştırmalık kaydedildi</strong></span>
-<span>• Kakaolu protein bar (22,5 g) — 86 Kcal · 7 g protein</span>
-<span class="wa-meta">16:21</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">02</span><strong class="disp" style="font-size: 22px; font-weight: 800">Barkod ve etiket</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Barkodu ya da besin tablosunu çek; "yarım paket" yazman yeter.</span></figcaption>
-</figure>
-
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>19:13</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out"><span>akşama ne yesem?</span><span class="wa-meta">19:12<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>🍽️ <strong>Akşam yemeği için öneriler</strong></span>
-<em style="color: #54656F">Kalan: 1598 Kcal · 107 g protein</em>
-<span style="margin-top: 6px">1️⃣ <strong>2 şiş tavuk + 1 porsiyon bulgur pilavı + 1 bardak ayran</strong></span>
-<span style="color: #54656F; padding-left: 20px">≈ 820 Kcal · 82 g protein</span>
-<span style="margin-top: 5px">2️⃣ <strong>250 g tavuk göğsü + 1 porsiyon bulgur pilavı + 1 salatalık</strong></span>
-<span style="color: #54656F; padding-left: 20px">≈ 690 Kcal · 86 g protein</span>
-<span style="margin-top: 5px">3️⃣ <strong>250 g ızgara köfte + 1 kase mercimek çorbası</strong></span>
-<span style="color: #54656F; padding-left: 20px">≈ 725 Kcal · 61 g protein</span>
-<span class="wa-meta">19:12</span>
-<span class="wa-act"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1F8F4E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7L4 12l5 5"/><path d="M4 12h10a6 6 0 0 1 6 6"/></svg>Öneri seç</span>
-</div>
-<div class="wa-out"><span>1</span><span class="wa-meta">19:13<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 90%">
-<span>🍽️ <strong>Akşam yemeği kaydedildi</strong></span>
-<span>🔥 <strong>Toplam:</strong> 820 Kcal</span>
-<span class="wa-meta">19:13</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">03</span><strong class="disp" style="font-size: 22px; font-weight: 800">"Ne yesem?"</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Kalan hedefine göre üç öneri; numarasını yaz, kaydolsun.</span></figcaption>
-</figure>
-
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>18:45</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out"><span>squat 3x12 60 kg</span><span class="wa-meta">18:40<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>🏋️ <strong>Antrenman kaydedildi</strong></span>
-<span>• Squat — 3×12 · 60 kg</span>
-<span style="margin-top: 6px">🏆 <strong>Yeni rekor!</strong> Tahmini 1RM: 84 kg</span>
-<span style="margin-top: 6px">📈 <strong>Sıradaki hedef:</strong> 3×8 · 62,5 kg</span>
-<span style="color: #54656F">Tüm setlerde 12 tekrara ulaştın, ağırlık artıyor.</span>
-<span class="wa-meta">18:41</span>
-</div>
-<div class="wa-out"><span>sıradaki antrenman</span><span class="wa-meta">18:45<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>📋 <strong>Tüm Vücut B</strong></span>
-<span>• Leg press — 3×10–15</span>
-<span>• Seated row — 3×8–12</span>
-<span>• Incline dumbbell press — 3×8–12</span>
-<span>• Dumbbell RDL — 3×8–12</span>
-<span class="wa-meta">18:45</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">04</span><strong class="disp" style="font-size: 22px; font-weight: 800">Antrenman ve ilerleme</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Setlerini yaz; rekorunu ve bir sonraki hedefini söyler.</span></figcaption>
-</figure>
-
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>20:02</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Pazar</span>
-<div class="wa-out"><span>bu hafta</span><span class="wa-meta">20:02<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>📈 <strong>Haftalık Rapor</strong></span>
-<em>4 – 10 Ekim</em>
-<span style="margin-top: 7px">🍽️ <strong>Beslenme</strong> (7/7 gün kayıt)</span>
-<span>Ort. kalori: 2286 Kcal <em>(hedef 2400)</em></span>
-<span>Ort. protein: 156.4 g <em>(hedef 170)</em></span>
-<span>Hedefe ulaşılan gün: <strong>5/7</strong></span>
-<span style="margin-top: 7px">💧 <strong>Su:</strong> ort. 2650 ml</span>
-<span style="margin-top: 7px">🏋️ <strong>Antrenman:</strong> 4/7 gün</span>
-<span style="margin-top: 7px">⚖️ <strong>Kilo:</strong> 84.6 → 83.9 kg (−0.7 kg)</span>
-<span style="margin-top: 7px">🔥 <strong>Harika bir hafta!</strong></span>
-<span class="wa-meta">20:02</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">05</span><strong class="disp" style="font-size: 22px; font-weight: 800">Haftalık rapor</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Ortalamalar, hedefe ulaşılan günler ve kilo değişimi bir bakışta.</span></figcaption>
-</figure>
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>12:41</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out" style="align-items: center; min-width: 190px"><span style="display: inline-flex; align-items: center; gap: 8px; flex: 1"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#54656F"/></svg><svg width="110" height="22" viewBox="0 0 110 22" aria-hidden="true"><rect x="0" y="8.0" width="2.2" height="6" rx="1.1" fill="#1FA855"/><rect x="4" y="6.0" width="2.2" height="10" rx="1.1" fill="#1FA855"/><rect x="8" y="3.0" width="2.2" height="16" rx="1.1" fill="#1FA855"/><rect x="12" y="7.0" width="2.2" height="8" rx="1.1" fill="#1FA855"/><rect x="16" y="4.0" width="2.2" height="14" rx="1.1" fill="#1FA855"/><rect x="20" y="1.0" width="2.2" height="20" rx="1.1" fill="#1FA855"/><rect x="24" y="5.0" width="2.2" height="12" rx="1.1" fill="#1FA855"/><rect x="28" y="7.5" width="2.2" height="7" rx="1.1" fill="#8696A0"/><rect x="32" y="3.5" width="2.2" height="15" rx="1.1" fill="#8696A0"/><rect x="36" y="2.0" width="2.2" height="18" rx="1.1" fill="#8696A0"/><rect x="40" y="6.5" width="2.2" height="9" rx="1.1" fill="#8696A0"/><rect x="44" y="4.5" width="2.2" height="13" rx="1.1" fill="#8696A0"/><rect x="48" y="8.0" width="2.2" height="6" rx="1.1" fill="#8696A0"/><rect x="52" y="5.5" width="2.2" height="11" rx="1.1" fill="#8696A0"/><rect x="56" y="2.5" width="2.2" height="17" rx="1.1" fill="#8696A0"/><rect x="60" y="7.0" width="2.2" height="8" rx="1.1" fill="#8696A0"/><rect x="64" y="5.0" width="2.2" height="12" rx="1.1" fill="#8696A0"/><rect x="68" y="8.5" width="2.2" height="5" rx="1.1" fill="#8696A0"/><rect x="72" y="6.5" width="2.2" height="9" rx="1.1" fill="#8696A0"/><rect x="76" y="4.0" width="2.2" height="14" rx="1.1" fill="#8696A0"/><rect x="80" y="7.5" width="2.2" height="7" rx="1.1" fill="#8696A0"/><rect x="84" y="6.0" width="2.2" height="10" rx="1.1" fill="#8696A0"/><rect x="88" y="8.0" width="2.2" height="6" rx="1.1" fill="#8696A0"/><rect x="92" y="9.0" width="2.2" height="4" rx="1.1" fill="#8696A0"/><rect x="96" y="7.0" width="2.2" height="8" rx="1.1" fill="#8696A0"/><rect x="100" y="8.5" width="2.2" height="5" rx="1.1" fill="#8696A0"/><rect x="104" y="9.5" width="2.2" height="3" rx="1.1" fill="#8696A0"/></svg><span style="font-size: 11px; color: #667781">0:06</span></span><span class="wa-meta">12:41<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>🍗 <strong>Öğle Yemeği kaydedildi</strong></span>
-<span style="margin-top: 7px">• Lahmacun (2 adet) — 626 Kcal · 26.7 g protein</span>
-<span>• Ayran (1 bardak) — 80 Kcal · 3.9 g protein</span>
-<span style="margin-top: 7px">🔥 <strong>Toplam:</strong> 706 Kcal</span>
-<span>Protein 30.6 g · Karb 87.7 g · Yağ 25.5 g</span>
-<span style="margin-top: 7px">📊 <strong>Bugün:</strong> 706 / 2000 Kcal</span>
-<span>🎯 Kalan: <strong>1294 Kcal</strong> · <strong>99.4 g protein</strong></span>
-<span class="wa-meta">12:41</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">06</span><strong class="disp" style="font-size: 22px; font-weight: 800">Sesli mesaj</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Yazmaya üşendiğinde konuş; sesini yazıya çevirip kaydeder.</span></figcaption>
-</figure>
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>19:24</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out"><span>akşam mcdonalds'ta big mac ve orta boy patates yedim</span><span class="wa-meta">19:23<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>🍽️ <strong>Akşam Yemeği kaydedildi</strong></span>
-<span style="margin-top: 7px">• Big Mac (McDonald's) — 525 Kcal · 26.1 g protein</span>
-<span>• Orta Boy Patates Kızartması (McDonald's) — 277 Kcal · 3 g protein</span>
-<span style="margin-top: 7px">🔥 <strong>Toplam:</strong> 802 Kcal</span>
-<span>Protein 29.1 g · Karb 86.8 g · Yağ 39.7 g</span>
-<span style="margin-top: 7px">🎯 Kalan: <strong>492 Kcal</strong> · <strong>70.3 g protein</strong></span>
-<span class="wa-meta">19:24</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">07</span><strong class="disp" style="font-size: 22px; font-weight: 800">Zincir restoranlar</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">McDonald's, Burger King, Popeyes, Tavuk Dünyası, Starbucks: markaların resmi değerleriyle.</span></figcaption>
-</figure>
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>07:46</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out"><span>6 km koştum 33 dakikada</span><span class="wa-meta">07:45<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>🏃 <strong>Kardiyo kaydedildi!</strong></span>
-<span style="margin-top: 7px">🏃 <strong>Koşu</strong> — 33 dk · 6 km · 5:30/km tempo · ~474 Kcal</span>
-<span style="margin-top: 7px">🏆 <strong>En uzun koşun!</strong> 6 km <em>(önceki 5 km)</em></span>
-<span>⚡ <strong>En hızlı temponu kırdın!</strong> 5:30/km <em>(önceki 6:00/km)</em></span>
-<span style="margin-top: 7px">📅 <strong>Bu hafta kardiyo:</strong> 63 / 150 dk 🟩🟩⬜⬜⬜</span>
-<span class="wa-meta">07:46</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">08</span><strong class="disp" style="font-size: 22px; font-weight: 800">Kardiyo ve rekorlar</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Mesafe, tempo ve kalori; rekorunu kırınca haber verir, haftalık 150 dk hedefini izler.</span></figcaption>
-</figure>
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>21:10</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out"><span>haftalık plan</span><span class="wa-meta">21:09<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>🗓️ <strong>Haftalık yemek planın</strong></span>
-<span><em>hedef 2.000 kcal, 130 g protein</em></span>
-<span style="margin-top: 7px"><strong>Sal</strong> · ~2.000 kcal · 138 g protein</span>
-<span>🍳 Haşlanmış yumurta, beyaz peynir, tam buğday ekmek</span>
-<span>🍗 Tavuk suyu çorbası, ızgara köfte, çoban salata</span>
-<span>🍽️ Tavuk döner, pirinç pilavı, ayran</span>
-<span style="margin-top: 7px"><em>… Çarşamba–Pazartesi, 6 gün daha</em></span>
-<span style="margin-top: 7px">🛒 <strong>alışveriş listesi</strong> · 📄 <strong>planımı pdf gönder</strong></span>
-<span class="wa-meta">21:10</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">09</span><strong class="disp" style="font-size: 22px; font-weight: 800">Haftalık yemek planı</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Hedef kalori ve proteinine göre 7 gün; alışveriş listesi ve PDF'i de hazır. Premium.</span></figcaption>
-</figure>
-<figure style="margin: 0; flex: 0 0 280px; display: flex; flex-direction: column; gap: 16px">
-<div class="phone"><div class="wa-screen" style="border-radius: 33px; overflow: hidden; height: 560px">
-<div class="wa-head"><span class="notch" aria-hidden="true"></span><span class="wa-status" aria-hidden="true"><span>18:02</span><span class="wa-sys"><svg width="15" height="10" viewBox="0 0 17 11" aria-hidden="true"><rect x="0" y="7" width="3" height="4" rx="1" fill="#111B21"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#111B21"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#111B21"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#111B21" fill-opacity="0.3"/></svg><span>5G</span><svg width="24" height="12" viewBox="0 0 26 13" aria-hidden="true"><rect x="0.5" y="0.5" width="22" height="12" rx="3.6" fill="#111B21" fill-opacity="0.18"/><rect x="2" y="2" width="15" height="9" rx="2.4" fill="#111B21"/><path d="M24 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="#111B21" fill-opacity="0.4"/></svg></span></span><span class="wa-back" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4l-8 8 8 8"/></svg></span><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: 0 0 auto"><span class="wa-name">SporTakip</span></div>
-<div class="wa-msgs">
-<span class="wa-day">Bugün</span>
-<div class="wa-out"><span>sıradaki antrenman</span><span class="wa-meta">18:01<svg class="wa-tick" width="15" height="10" viewBox="0 0 16 11" aria-hidden="true"><path d="M11.1 1.2L5 7.8 2.4 5.2 1.3 6.3 5 10l7.2-7.7zM14.6 1.2L8.5 7.8l-.7-.7-1.1 1.2L8.5 10l7.2-7.7z" fill="#667781"/></svg></span></div>
-<div class="wa-in" style="width: 94%">
-<span>🏃 <strong>Sıradaki koşu: 1. hafta · 2. gün</strong></span>
-<span><em>Koşuya Başla (0 → 5 km) · 2/24 · yaklaşık 30 dk</em></span>
-<span style="margin-top: 7px">1. 5 dk tempolu yürüyüşle ısın</span>
-<span>2. 8 kez: 60 sn hafif koşu + 90 sn yürüyüş</span>
-<span>3. 5 dk yavaş yürüyüşle soğu</span>
-<span style="margin-top: 7px">💡 <em>Konuşabileceğin hızda koş; nefesin yetmiyorsa yavaşla.</em></span>
-<span class="wa-act"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1F8F4E" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7L4 12l5 5"></path><path d="M4 12h10a6 6 0 0 1 6 6"></path></svg>✅ Hepsini yaptım</span>
-<span class="wa-meta">18:02</span>
-</div>
-</div>
-<div class="wa-bar" aria-hidden="true"><span class="wa-plus" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></span><span class="wa-field"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12.5V8a4.5 4.5 0 0 0-4.5-4.5H8A4.5 4.5 0 0 0 3.5 8v8A4.5 4.5 0 0 0 8 20.5h4.5z"/><path d="M12.5 20.5v-3.5a4.5 4.5 0 0 1 4.5-4.5h3.5"/></svg></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111B21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M4 8h3l1.8-2.5h6.4L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg><span class="wa-mic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span></div>
-</div></div>
-<figcaption style="display: flex; flex-direction: column; gap: 6px; padding: 0 4px"><span style="font-size: 13px; font-weight: 700; color: #C8F04A">10</span><strong class="disp" style="font-size: 22px; font-weight: 800">Koşuya Başla</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Hiç koşmadıysan 8 haftada 30 dakikaya; her gün ne yapacağını o söyler.</span></figcaption>
-</figure>
-
-</div>
-<p style="max-width: 1240px; margin: 0 auto; padding: 0 24px; color: #7E8882; font-size: 14px">Ekranlardaki değerler örnektir.</p>
+<section class="m" data-saat="12:41" data-kcal="825" data-pct="36" style="--from:#B6DAF2;--to:#8AC8EE">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">12:41</p>
+      <h2>Lahmacunu da, yarım porsiyon pilavı da anlar.</h2>
+      <p class="lead muted">Türk mutfağını adıyla tanır; dilim, kase, kepçe, adet. Emin olmadığında sorar. İstersen tabağının fotoğrafını at: gördüklerini listeler, öğünü sen seçersin.</p>
+      <p class="not muted">Fotoğraftan yapılan kayıtlar tahmindir ve öyle işaretlenir.</p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, öğle yemeği">
+      <p class="b ben">öğlen 1 lahmacun ve 1 ayran<time>12:41</time></p>
+      <div class="b bot"><b>Öğle Yemeği kaydedildi</b>
+        <ul><li>Lahmacun (1 adet): 313 Kcal</li><li>Ayran (1 bardak): 80 Kcal</li></ul>
+        <b>Toplam:</b> 393 Kcal<br>Bugün: 825 / 1550 Kcal · Kalan: <b>725 Kcal</b><time>12:41</time></div>
+    </div>
+  </div>
 </section>
 
-<section id="antrenman" style="max-width: 1240px; margin: 0 auto; padding: 96px 24px">
-<div style="background: #C8F04A; color: #0C0E0D; border-radius: 40px; padding: clamp(28px, 5vw, 64px); display: flex; flex-direction: column; gap: 44px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase">Antrenman</span>
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Programını seç. Ağırlığı o artırsın.</h2>
-</div>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; max-width: 400px; color: #1F2A10">"program öner" yaz; üç soruyla sana uygun programı bulur. Setlerini yazdıkça bir sonraki antrenmanın ağırlığını ve tekrarını hesaplar, takıldığında yükü hafifletir. Koşu, bisiklet, yüzme gibi kardiyoları da kaydeder.</p>
-</div>
-<div class="auto" style="gap: 12px">
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #C8F04A; font-weight: 600">Başlangıç · haftada 3 gün · salon</span><strong class="disp" style="font-size: 22px; font-weight: 800">Başlangıç: Tüm Vücut</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">İki antrenman dönüşümlü, temel hareketler, 8–12 tekrar.</span></div>
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #C8F04A; font-weight: 600">Başlangıç · haftada 3 gün · ev</span><strong class="disp" style="font-size: 22px; font-weight: 800">Evde Dambılla Tüm Vücut</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Salona gitmeden, bir çift ayarlanabilir dambılla.</span></div>
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #C8F04A; font-weight: 600">Başlangıç–orta · haftada 3 gün</span><strong class="disp" style="font-size: 22px; font-weight: 800">GZCLP</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Güç odaklı: ağır ana hareket, hacim ve yardımcı hareket.</span></div>
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #C8F04A; font-weight: 600">Başlangıç–orta · haftada 3 gün</span><strong class="disp" style="font-size: 22px; font-weight: 800">Push-Pull-Legs</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">İtiş, çekiş ve bacak günleri; ana harekette her antrenman artış.</span></div>
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #C8F04A; font-weight: 600">Orta–ileri · haftada 4 gün</span><strong class="disp" style="font-size: 22px; font-weight: 800">Üst/Alt</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">İki üst, iki alt vücut günü; 6–8 tekrar ana hareketler.</span></div>
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #C8F04A; font-weight: 600">Orta–ileri · haftada 6 gün</span><strong class="disp" style="font-size: 22px; font-weight: 800">Push-Pull-Legs 6 gün</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Her kas grubu haftada iki kez; yoğun ve hızlı ilerletir.</span></div>
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #C8F04A; font-weight: 600">Başlangıç · haftada 3 gün · koşu · yeni</span><strong class="disp" style="font-size: 22px; font-weight: 800">Koşuya Başla (0 → 5 km)</strong><span style="color: #A3ACA6; font-size: 15px; line-height: 1.5">Hiç koşmadıysan: 8 haftada yürüyüş-koşu aralıklarından 30 dk kesintisiz koşuya.</span></div>
-</div>
-<div style="background: #0C0E0D; color: #F1F4EF; border-radius: 26px; padding: clamp(22px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 28px; align-items: center">
-<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-size: 13px; color: #C8F04A; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase">Kardiyo</span>
-<strong class="disp" style="font-size: clamp(26px, 3vw, 34px); font-weight: 800; line-height: 1">Yürü, koş, pedal çevir, yüz.</strong>
-<span style="color: #A3ACA6; font-size: 16px; line-height: 1.55">Süreyi, mesafeyi, hızı ve eğimi yaz; yakılan kaloriyi kilona göre bilimsel MET değerleriyle hesaplar. En uzun mesafe ve en hızlı tempo rekorlarını tutar, haftalık 150 dakika hedefine ne kadar kaldığını gösterir.</span>
-<span style="color: #A3ACA6; font-size: 14px; line-height: 1.6">Yürüyüş · yürüyüş bandı · koşu · bisiklet · spinning · yüzme · eliptik · kürek · ip atlama · HIIT · halı saha · tenis · pilates · yoga</span>
-</div>
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 8px; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 14.5px; line-height: 1.45">
-<div style="align-self: flex-end; background: #DCF8C6; color: #111B21; border-radius: 15px 15px 4px 15px; padding: 8px 12px; max-width: 90%">5 km koştum 28 dakikada</div>
-<div style="align-self: flex-start; background: #FFFFFF; color: #111B21; border-radius: 15px 15px 15px 4px; padding: 10px 12px; max-width: 95%; display: flex; flex-direction: column; gap: 4px">
-<span>🏃 <strong>Koşu</strong> — 5 km · 5:36/km tempo · ~439 Kcal</span>
-<span>⚡ <strong>En hızlı temponu kırdın!</strong></span>
-<span>📅 <strong>Bu hafta kardiyo:</strong> 90 / 150 dk 🟩🟩🟩⬜⬜</span>
-</div>
-</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<span style="border: 1.5px solid #0C0E0D; border-radius: 999px; padding: 10px 16px; font-weight: 600; font-size: 15px">Yeni rekor bildirimi</span>
-<span style="border: 1.5px solid #0C0E0D; border-radius: 999px; padding: 10px 16px; font-weight: 600; font-size: 15px">Takılınca otomatik hafifletme</span>
-<span style="border: 1.5px solid #0C0E0D; border-radius: 999px; padding: 10px 16px; font-weight: 600; font-size: 15px">Bilmediği hareketi internetten öğrenir</span>
-<span style="border: 1.5px solid #0C0E0D; border-radius: 999px; padding: 10px 16px; font-weight: 600; font-size: 15px">Kardiyo kalorisi hız ve eğimle</span>
-<span style="border: 1.5px solid #0C0E0D; border-radius: 999px; padding: 10px 16px; font-weight: 600; font-size: 15px">Premium: hedef ağırlıklar ve sabah hatırlatması</span>
-</div>
-</div>
+<section class="m" data-saat="15:20" data-kcal="825" data-pct="52" style="--from:#8AC8EE;--to:#B9D3DF">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">15:20</p>
+      <h2>Yemeden önce sor.</h2>
+      <p class="lead muted">“Kaç kalori?” diye sorarsan kaydetmeden söyler. “Ne yesem?” dersen kalan kalorine ve proteinine göre öneri getirir; numarasını yazınca kaydeder.</p>
+      <p class="ornekler"><a href="https://wa.me/905465537932?text=ne%20yesem%3F">ne yesem?</a><a href="https://wa.me/905465537932?text=1%20kase%20mercimek%20%C3%A7orbas%C4%B1%20ka%C3%A7%20kcal">1 kase mercimek çorbası kaç kcal</a></p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, kalori sorusu">
+      <p class="b ben">baklava kaç kalori?<time>15:20</time></p>
+      <div class="b bot"><b>Baklava</b> · 1 dilim (~47 g)<br><b>201 kcal</b> · Protein 3 g · Karb 22 g · Yağ 12 g<br>Günlük hedefinin %13'ü · bugün kalan: <b>725 kcal</b><br><i>Kaydetmedim. Yediysen ekleyebilirim.</i><time>15:20</time></div>
+    </div>
+  </div>
 </section>
 
-<section id="ozellikler" style="max-width: 1240px; margin: 0 auto; padding: 32px 24px 96px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #C8F04A">Özellikler</span>
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Bir sağlık uygulamasının işi, tek bir sohbette.</h2>
-</div>
-<div class="bento">
-<div class="s2" style="background: #151917; border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"></path><path d="M13 7l4 4"></path></svg>
-<h3 class="disp" style="margin: 0; font-size: 23px; font-weight: 800">Yazarak kaydet</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">"Öğlen tavuk pilav yedim" yazman yeterli. Miktarı, öğünü ve türü anlar; emin olmadığında sorar.</p>
-</div>
-<div class="s4" style="background: #151917; border: 1px solid #2A302D; border-radius: 26px; padding: 32px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center">
-<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 12px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="3"></rect><circle cx="12" cy="13" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg>
-<h3 class="disp" style="margin: 0; font-size: 28px; font-weight: 800">Fotoğrafla tanı</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Tabağının fotoğrafını gönder; menemenden lahmacuna Türk mutfağını adıyla tanır, miktarı tahmin eder, onayından sonra kaydeder. Fotoğraf kayıtları tahmini olarak işaretlenir.</p>
-</div>
-<div aria-hidden="true" style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
-<span style="background: #0C0E0D; border: 1px solid #2A302D; padding: 10px 14px; border-radius: 12px; display: flex; justify-content: space-between; gap: 12px"><span>Menemen</span><span style="color: #A3ACA6">1 porsiyon</span></span>
-<span style="background: #0C0E0D; border: 1px solid #2A302D; padding: 10px 14px; border-radius: 12px; display: flex; justify-content: space-between; gap: 12px"><span>Lahmacun</span><span style="color: #A3ACA6">1 adet</span></span>
-<span style="background: #0C0E0D; border: 1px solid #2A302D; padding: 10px 14px; border-radius: 12px; display: flex; justify-content: space-between; gap: 12px"><span>Çoban salata</span><span style="color: #A3ACA6">1 porsiyon</span></span>
-</div>
-</div>
-<div class="s2" style="background: #151917; border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6v12M7 6v12M11 6v12M14 6v12M18 6v12M20 6v12"></path></svg>
-<h3 class="disp" style="margin: 0; font-size: 23px; font-weight: 800">Barkod ve etiket</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">1.656 barkodlu ürün hazır. Bulamazsa paketin besin tablosunu okur ve bir dahaki sefere hatırlar.</p>
-</div>
-<div class="s2" style="background: #151917; border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"></path></svg>
-<h3 class="disp" style="margin: 0; font-size: 23px; font-weight: 800">Su, kilo, ölçü, takviye</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">"500 ml su içtim", "85 kg tartıldım", "belim 82 cm", "kreatin içtim": hepsi aynı yerde.</p>
-</div>
-<div class="s2" style="background: #151917; border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg>
-<h3 class="disp" style="margin: 0; font-size: 23px; font-weight: 800">Sesli mesaj</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Yazmaya vaktin yoksa söyle. Sesli mesajını yazıya çevirir ve aynı şekilde kaydeder.</p>
-</div>
-<div class="s3" style="background: #F1F4EF; color: #0C0E0D; border-radius: 26px; padding: 32px; display: flex; flex-direction: column; gap: 12px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16l-1.5 10h-13L4 10z"></path><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
-<h3 class="disp" style="margin: 0; font-size: 28px; font-weight: 800">Zincir restoran ve kafeler</h3>
-<p style="margin: 0; color: #2E3631; line-height: 1.55">Markaların yayımladığı resmi değerlerle. "big mac yedim", "popeyes tavuk but" ya da "starbucks grande latte" yazman yeter. Starbucks yalnızca kalori yayınladığı için orada protein ve makro görünmez.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 8px">
-<span style="border: 1px solid #C2C9C4; padding: 8px 12px; border-radius: 999px; font-size: 14px; font-weight: 600">McDonald's · 25</span>
-<span style="border: 1px solid #C2C9C4; padding: 8px 12px; border-radius: 999px; font-size: 14px; font-weight: 600">Burger King · 150</span>
-<span style="border: 1px solid #C2C9C4; padding: 8px 12px; border-radius: 999px; font-size: 14px; font-weight: 600">Popeyes · 24</span>
-<span style="border: 1px solid #C2C9C4; padding: 8px 12px; border-radius: 999px; font-size: 14px; font-weight: 600">Tavuk Dünyası · 41</span>
-<span style="border: 1px solid #C2C9C4; padding: 8px 12px; border-radius: 999px; font-size: 14px; font-weight: 600">Starbucks · 400+ içecek boyu ve yiyecek</span>
-</div>
-</div>
-<div class="s3" style="background: #151917; border: 1px solid #2A302D; border-radius: 26px; padding: 32px; display: flex; flex-direction: column; gap: 12px">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v17l-7-4-7 4V4z"></path></svg>
-<h3 class="disp" style="margin: 0; font-size: 28px; font-weight: 800">Kayıtlı öğünler ve porsiyonların</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Her sabah aynı kahvaltı mı? Bir kez "sabah kahvaltım" diye kaydet, sonra tek kelimeyle ekle. "1 kase pilav 250 gram" diye kendi porsiyonunu da öğretebilirsin.</p>
-</div>
-</div>
+<section class="m" data-saat="16:05" data-kcal="978" data-pct="58" style="--from:#B9D3DF;--to:#F1D7A6">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">16:05</p>
+      <h2>Paketli ürünse barkodu çek.</h2>
+      <p class="lead muted">Barkodu ya da paketteki besin tablosunu gönder; ürünü bulur, “ne kadar yedin?” diye sorar. Yazmaya vaktin yoksa sesli mesaj at, yazıya çevirip kaydetsin.</p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, barkod">
+      <div class="b ben"><span class="barkod"><svg viewBox="0 0 180 56" aria-hidden="true"><g fill="#111"><rect x="0" width="3" height="56"/><rect x="5" width="1.5" height="56"/><rect x="9" width="3" height="56"/><rect x="14" width="1.5" height="56"/><rect x="18" width="4.5" height="56"/><rect x="25" width="1.5" height="56"/><rect x="29" width="3" height="56"/><rect x="35" width="1.5" height="56"/><rect x="39" width="4.5" height="56"/><rect x="46" width="3" height="56"/><rect x="52" width="1.5" height="56"/><rect x="56" width="3" height="56"/><rect x="62" width="1.5" height="56"/><rect x="66" width="4.5" height="56"/><rect x="73" width="1.5" height="56"/><rect x="78" width="3" height="56"/><rect x="84" width="1.5" height="56"/><rect x="88" width="3" height="56"/><rect x="94" width="4.5" height="56"/><rect x="101" width="1.5" height="56"/><rect x="105" width="3" height="56"/><rect x="111" width="1.5" height="56"/><rect x="115" width="4.5" height="56"/><rect x="122" width="1.5" height="56"/><rect x="126" width="3" height="56"/><rect x="132" width="1.5" height="56"/><rect x="136" width="3" height="56"/><rect x="142" width="4.5" height="56"/><rect x="149" width="1.5" height="56"/><rect x="153" width="3" height="56"/><rect x="159" width="1.5" height="56"/><rect x="163" width="4.5" height="56"/><rect x="170" width="1.5" height="56"/><rect x="174" width="3" height="56"/></g></svg><span>8690504014201</span></span><time>16:04</time></div>
+      <div class="b bot"><b>Barkod bulundu</b><br>Ülker Biskrem<br><i>100 g: 511 Kcal · P 5.2 g · K 66.4 g · Y 24.4 g</i><br><b>Ne kadar yedin?</b><time>16:04</time></div>
+      <p class="b ben">30 gram<time>16:05</time></p>
+      <div class="b bot"><b>Atıştırmalık kaydedildi</b><br>Ülker Biskrem (30 gram): 153 Kcal<br>Bugün: 978 / 1550 Kcal<time>16:05</time></div>
+    </div>
+  </div>
 </section>
 
-<section style="border-top: 1px solid #1C211F; border-bottom: 1px solid #1C211F">
-<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #C8F04A">Nasıl çalışır</span>
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Üç adımda başla.</h2>
-</div>
-<ol class="auto" style="margin: 0; padding: 0; list-style: none; gap: 14px">
-<li style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 26px; border: 1px solid #2A302D">
-<span class="disp" style="font-weight: 900; font-size: 64px; line-height: 0.8; color: #C8F04A">1</span>
-<h3 class="disp" style="margin: 0; font-size: 23px; font-weight: 800">"merhaba" yaz</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Numarayı rehberine ekle ve sohbeti başlat. Kişisel verilerin için kısa bir onay istenir.</p>
-</li>
-<li style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 26px; border: 1px solid #2A302D">
-<span class="disp" style="font-weight: 900; font-size: 64px; line-height: 0.8; color: #C8F04A">2</span>
-<h3 class="disp" style="margin: 0; font-size: 23px; font-weight: 800">Birkaç soruyu cevapla</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Adın, yaşın, boyun, kilon, aktiviten ve hedefin. Kalori, protein, karbonhidrat ve yağ hedeflerin buna göre hesaplanır.</p>
-</li>
-<li style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 26px; border: 1px solid #2A302D">
-<span class="disp" style="font-weight: 900; font-size: 64px; line-height: 0.8; color: #C8F04A">3</span>
-<h3 class="disp" style="margin: 0; font-size: 23px; font-weight: 800">Yaz, çek, takip et</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Gün içinde yediklerini gönder. "bugün" yaz, günün özetini gör; "bu hafta" yaz, haftalık raporunu al.</p>
-</li>
-</ol>
-</div>
+<section class="m" data-saat="18:30" data-kcal="978" data-pct="72" style="--from:#F1D7A6;--to:#E58750;--ink:#2A1408;--muted:#4E2813;--bot:#FFF6EC;--botink:#2A1408">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">18:30</p>
+      <h2>Spor salonu defterin cebinde.</h2>
+      <p class="lead muted">Setlerini yaz, ağırlığı ve tekrarı tutsun. Dinlenme sayacını başlat, süre dolunca haber versin. Hazır programlardan birini seç; bir sonraki antrenmanın ağırlığını o hesaplasın.</p>
+      <p class="not muted">Tüm Vücut · Evde Dambılla · GZCLP · Push-Pull-Legs · Üst/Alt · Koşuya Başla</p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, antrenman">
+      <p class="b ben">bench press 60 kg 5 5 5 4<time>18:30</time></p>
+      <div class="b bot"><b>Antrenman kaydedildi</b><br>Bench press 5-5-5-4 · 60 kg<time>18:30</time></div>
+      <p class="b ben">90 sn dinlenme<time>18:31</time></p>
+      <div class="b bot"><b>Dinlenme bitti</b> (1 dk 30 sn)<br>Sıradaki sete geç.<time>18:32</time></div>
+    </div>
+  </div>
 </section>
 
-<section id="kimin" style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #C8F04A">Kimin için</span>
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Hedefin ne olursa olsun.</h2>
-</div>
-<p style="margin: 0; color: #A3ACA6; font-size: 16px; line-height: 1.6; max-width: 420px">Günlük ihtiyacın yaş, boy, kilo, cinsiyet ve aktivitenden Mifflin-St Jeor formülüyle hesaplanır, sonra hedefine göre ayarlanır.</p>
-</div>
-<div class="auto" style="gap: 14px">
-<div style="border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
-<span class="disp" style="font-weight: 900; font-size: 48px; line-height: 1; color: #C8F04A">−%20</span>
-<h3 class="disp" style="margin: 6px 0 0; font-size: 22px; font-weight: 800">Kilo vermek</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Açık, ihtiyacının en fazla %20'si; kas kaybını önlemek için protein yüksek tutulur.</p>
-</div>
-<div style="border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
-<span class="disp" style="font-weight: 900; font-size: 48px; line-height: 1; color: #C8F04A">±0</span>
-<h3 class="disp" style="margin: 6px 0 0; font-size: 22px; font-weight: 800">Kiloyu korumak</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">İhtiyacın kadar kalori; dengede kalmak ve ne yediğini görmek için.</p>
-</div>
-<div style="border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
-<span class="disp" style="font-weight: 900; font-size: 48px; line-height: 1; color: #C8F04A">+</span>
-<h3 class="disp" style="margin: 6px 0 0; font-size: 22px; font-weight: 800">Kilo almak, kas yapmak</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Kalori fazlası ve programlı antrenmanla ilerlemeni izlersin.</p>
-</div>
-<div style="border: 1px solid #2A302D; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
-<span class="disp" style="font-weight: 900; font-size: 48px; line-height: 1; color: #C8F04A">Rekomp</span>
-<h3 class="disp" style="margin: 6px 0 0; font-size: 22px; font-weight: 800">Koruyup kas kazanmak</h3>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.55">Kalori sabit; vücut ölçülerinle değişimi takip edersin.</p>
-</div>
-</div>
-<p style="margin: 0; color: #7E8882; font-size: 14px; line-height: 1.6">Hedeflerini istediğin zaman tek mesajla değiştirebilirsin. SporTakip bir sağlık danışmanlığı hizmeti değildir; özel bir durumun varsa hedeflerini bir uzmanla belirle.</p>
+<section class="m" data-saat="19:10" data-kcal="978" data-pct="79" style="--from:#E58750;--to:#D27752;--ink:#1F0E05;--muted:#341608;--bot:#FFF6EC;--botink:#2A1408">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">19:10</p>
+      <h2>Koştun mu, yürüdün mü? Yaz yeter.</h2>
+      <p class="lead muted">Süre, mesafe ve tempoyla yaktığını hesaplar, rekorlarını tutar, haftalık 150 dakikaya ne kadar kaldığını gösterir. Hiç koşmadıysan 8 haftada 5 kilometreye götüren program da var.</p>
+      <p class="ornekler"><a href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla">koşuya başla</a><a href="https://wa.me/905465537932?text=45%20dk%20bisiklet%2020%20km">45 dk bisiklet 20 km</a></p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, koşu">
+      <p class="b ben">5 km koştum 28 dakikada<time>19:10</time></p>
+      <div class="b bot"><b>Kardiyo kaydedildi</b><br>Koşu: 28 dk · 5 km · 5:36/km tempo · ~373 Kcal<br>Bu hafta kardiyo: 28 / 150 dk<time>19:10</time></div>
+    </div>
+  </div>
 </section>
 
-<section aria-labelledby="hatirlatma-baslik" style="background: #151917; border-top: 1px solid #1C211F; border-bottom: 1px solid #1C211F">
-<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 16px">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #C8F04A">Hatırlatmalar</span>
-<h2 id="hatirlatma-baslik" class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 60px); line-height: 0.95; text-transform: uppercase">Unuttuğunda o hatırlatır.</h2>
-<p style="margin: 0; color: #C9D0CB; font-size: 17px; line-height: 1.6">Temel hatırlatmalar herkese açık; kişisel koçluk hatırlatmaları Premium'da.</p>
-<p style="margin: 0; color: #7E8882; font-size: 14px; line-height: 1.6">WhatsApp kuralları gereği hatırlatmalar, son 24 saat içinde bota yazdıysan gönderilir.</p>
-</div>
-<div style="flex: 1 1 560px; display: flex; flex-wrap: wrap; gap: 14px">
-<div style="flex: 1 1 260px; background: #0C0E0D; border: 1px solid #2A302D; border-radius: 24px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
-<span style="align-self: flex-start; border: 1px solid #3A423E; color: #F1F4EF; font-weight: 700; font-size: 13px; padding: 6px 12px; border-radius: 999px">Herkese</span>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.5">
-<li style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 13px; color: #C8F04A">11:00</strong><span>Kahvaltını girmediysen kısa bir hatırlatma</span></li>
-<li style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 13px; color: #C8F04A">20:00</strong><span>Gün boyu kayıt yoksa hatırlatma, serin bitmek üzereyse uyarı, su hedefin</span></li>
-<li style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 13px; color: #C8F04A">Seri</strong><span>3, 7, 14, 30. gün gibi seri kutlamaları</span></li>
-</ul>
-</div>
-<div style="flex: 1 1 260px; background: #C8F04A; color: #0C0E0D; border-radius: 24px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
-<span style="align-self: flex-start; background: #0C0E0D; color: #C8F04A; font-weight: 700; font-size: 13px; padding: 6px 12px; border-radius: 999px">Premium</span>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.5">
-<li style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 13px">11:00 · antrenman günü</strong><span>O günün antrenmanı, her harekette hedef ağırlık ve tekrarla</span></li>
-<li style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 13px">20:00</strong><span>Günün değerlendirmesi ve yarın için tek öneri; takviye, antrenman ve tartı hatırlatmaları</span></li>
-<li style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 13px">Pazar 20:05</strong><span>Haftalık rapor, güç raporu ve gerekirse yeni kalori hedefi önerisi</span></li>
-</ul>
-</div>
-</div>
-</div>
+<section class="m" data-saat="20:10" data-kcal="1455" data-pct="86" data-koyu="1" style="--from:#D27752;--to:#3E3466;--ink:#FFF5EC;--muted:#FBEAF0;--bot:#2E2752;--botink:#FFF5EC;background:linear-gradient(180deg,#D27752 0%,#93485A 18%,#5A3D66 55%,#3E3466 100%)">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">20:10</p>
+      <h2>Akşam yemeği, kalan hakkınla birlikte.</h2>
+      <p class="lead muted">Her kayıtta günün toplamını ve kalanını görürsün. Yanlış yazdıysan “yanlış girdim, aslında 2 porsiyon” demen yeter.</p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, akşam yemeği">
+      <p class="b ben">akşam 1 porsiyon mercimek çorbası ve 1 porsiyon tavuk sote<time>20:10</time></p>
+      <div class="b bot"><b>Akşam Yemeği kaydedildi</b>
+        <ul><li>Mercimek çorbası (1 porsiyon): 163 Kcal</li><li>Tavuk sote (1 porsiyon): 315 Kcal</li></ul>
+        <b>Toplam:</b> 477 Kcal<br>Bugün: 1455 / 1550 Kcal · Kalan: <b>95 Kcal</b><time>20:10</time></div>
+    </div>
+  </div>
 </section>
 
-<section id="fiyat" style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 36px">
-<div style="display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #C8F04A">Fiyat</span>
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Ücretsiz başla, istersen yükselt.</h2>
+<section class="m" data-saat="22:40" data-kcal="1455" data-pct="98" data-koyu="1" style="--from:#3E3466;--to:#14213D;--ink:#F3F6FB;--muted:#C3CEE2;--bot:#1D2B4D;--botink:#F3F6FB">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">22:40</p>
+      <h2>Gün biterken özeti hazır.</h2>
+      <p class="lead muted">“bugün” yaz, günün tamamını gör. Pazar akşamı haftalık raporun kendiliğinden gelir. Premium'da her akşam kısa bir koç yorumu ve yarın için tek öneri.</p>
+      <p class="not muted">Bu sayfadaki değerler botun gerçek cevaplarından alınmış örneklerdir.</p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, günün özeti">
+      <p class="b ben">bugün<time>22:40</time></p>
+      <div class="b bot"><b>Bugünün Özeti</b><br>Kalori: 1455 / 1550 Kcal<br>Kahvaltı 432 · Öğle 393 · Atıştırmalık 153 · Akşam 477<br>Su: 500 / 2400 ml<br>Antrenman: yapıldı · Kardiyo: 28 dk, 5 km<time>22:40</time></div>
+    </div>
+  </div>
+</section>
 </div>
-<div role="group" aria-label="Ödeme dönemi" style="align-self: center; display: flex; gap: 4px; background: #151917; border: 1px solid #2A302D; border-radius: 999px; padding: 4px">
-<button type="button" data-period="ay" aria-pressed="true" style="border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 15px; padding: 10px 18px; min-height: 44px; border-radius: 999px; background: #C8F04A; color: #0C0E0D">Aylık</button>
-<button type="button" data-period="uc" aria-pressed="false" style="border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 15px; padding: 10px 18px; min-height: 44px; border-radius: 999px; background: transparent; color: #C9D0CB">3 aylık</button>
-<button type="button" data-period="yil" aria-pressed="false" style="border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 15px; padding: 10px 18px; min-height: 44px; border-radius: 999px; background: transparent; color: #C9D0CB">Yıllık</button>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; justify-content: center">
-<div style="flex: 1 1 340px; max-width: 520px; border: 1px solid #2A302D; border-radius: 32px; padding: 36px; display: flex; flex-direction: column; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 800">Ücretsiz</h3>
-<span class="disp" style="font-weight: 900; font-size: 64px; line-height: 1">₺0</span>
-<span style="color: #7E8882; font-size: 15px">Süre sınırı yok</span>
-</div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; color: #C9D0CB; line-height: 1.45">
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>Günde 45 mesaj, 3 fotoğraf tanıma</li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>Günde 3 internetten besin araştırma</li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>Yemek, su, kilo, antrenman ve takviye takibi</li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>Hazır antrenman programları ve rekor takibi</li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>İstediğinde günlük özet ve haftalık rapor</li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>Kahvaltı, su ve seri hatırlatmaları</li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>Bugün için örnek yemek planı</li>
-</ul>
-<a href="https://wa.me/905465537932?text=merhaba" style="margin-top: auto; text-decoration: none; text-align: center; color: #F1F4EF; border: 1px solid #3A423E; padding: 15px 20px; border-radius: 999px; font-weight: 700; min-height: 52px; box-sizing: border-box">Ücretsiz başla</a>
-</div>
-<div style="flex: 1 1 340px; max-width: 520px; border-radius: 32px; padding: 36px; display: flex; flex-direction: column; gap: 24px; background: #F1F4EF; color: #0C0E0D">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap">
-<h3 class="disp" style="margin: 0; font-size: 24px; font-weight: 800">Premium</h3>
-<span style="background: #C8F04A; color: #0C0E0D; font-weight: 700; font-size: 13px; padding: 6px 12px; border-radius: 999px">İlk 7 gün ücretsiz</span>
-</div>
-<span class="disp" style="font-weight: 900; font-size: 64px; line-height: 1"><span id="fiyat-tutar">₺249</span><span style="font-size: 20px; font-weight: 600; letter-spacing: 0"> <span id="fiyat-donem">/ ay</span></span></span>
-<span id="fiyat-not" style="color: #3E4741; font-size: 15px">3 aylık ve yıllık planda daha ucuz</span>
-</div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; color: #1E2420; line-height: 1.45">
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg><span><strong>Akıllı hedef:</strong> kilo trendine ve yediklerine bakıp kalori hedefini haftalık ayarlar</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg><span><strong>Antrenman hedefleri:</strong> her harekette bir sonraki ağırlık ve tekrar, Pazar güç raporu</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg><span><strong>Haftalık yemek planı:</strong> hedefine göre 7 gün, alışveriş listesiyle</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg><span><strong>Akşam koç yorumu</strong> ve takviye, antrenman, tartı hatırlatmaları</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg><span><strong>Aralıklı oruç:</strong> 16:8, 18:6; yeme pencerin açılınca ve kapanınca haber</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg><span><strong>PDF:</strong> yazdırılabilir yemek planı ve aylık ilerleme raporu</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0C0E0D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto"><path d="M5 12l5 5 9-10"></path></svg>Günde 300 mesaj, 25 fotoğraf, 5 araştırma</li>
-</ul>
-<a href="https://wa.me/905465537932?text=merhaba" style="margin-top: auto; text-decoration: none; text-align: center; color: #F1F4EF; background: #0C0E0D; padding: 15px 20px; border-radius: 999px; font-weight: 700; min-height: 52px; box-sizing: border-box">7 gün ücretsiz dene</a>
-</div>
-</div>
+
+<div class="gece">
+<section class="blok" id="basla" data-koyu="1">
+  <div class="wrap iki">
+    <div class="kolon">
+      <h2>Yarın sabah başlamak için bir dakika yeter.</h2>
+      <p class="lead muted">Rehberine kaydetmen bile gerekmez. “merhaba” yaz; kısa bir onaydan sonra yedi soru sorar, hedeflerini hesaplar.</p>
+      <p><a class="btn" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta “merhaba” yaz</a></p>
+    </div>
+    <div class="sohbet adimlar" aria-label="Örnek sohbet, kayıt">
+      <p class="b ben">merhaba</p>
+      <div class="b bot"><b>Merhaba, ben SporTakip!</b><br>Başlamadan tek onay: verilerini yalnızca sana hizmet vermek için işlerim. Onaylıyor musun?</div>
+      <div class="b bot">Günlük kalori ve protein hedefini hesaplamam için <b>7 kısa soru</b> soracağım: adın, cinsiyetin, yaşın, boyun, kilon, aktiviten ve hedefin.</div>
+      <div class="b bot"><b>Günlük hedeflerin</b><br>Kalori 1550 · Protein 136 g · Karb 155 g · Yağ 43 g · Su 2,4 L</div>
+    </div>
+  </div>
 </section>
 
-<section aria-labelledby="gizlilik-baslik" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 96px">
-<div style="border: 1px solid #2A302D; border-radius: 36px; padding: clamp(28px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
-<div style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 16px">
-<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
-<h2 id="gizlilik-baslik" class="disp" style="margin: 0; font-weight: 900; font-size: clamp(34px, 4vw, 52px); line-height: 0.95; text-transform: uppercase">Verilerin senin.</h2>
-<p style="margin: 0; color: #A3ACA6; line-height: 1.6; font-size: 17px">Sağlık verisi hassastır. SporTakip, KVKK kapsamında açık onayın olmadan hiçbir şey kaydetmez.</p>
-<a href="/gizlilik/" style="font-weight: 600">Aydınlatma metnini oku</a>
-</div>
-<ul style="flex: 1 1 460px; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
-<li style="background: #151917; border-radius: 20px; padding: 20px 22px; line-height: 1.5; color: #C9D0CB"><strong style="color: #F1F4EF">Satılmaz, reklam için paylaşılmaz.</strong> Veriler sadece sana bu hizmeti vermek için kullanılır.</li>
-<li style="background: #151917; border-radius: 20px; padding: 20px 22px; line-height: 1.5; color: #C9D0CB"><strong style="color: #F1F4EF">Adın ve numaran yapay zekâya gitmez.</strong> Mesajını anlamak için sadece yazdığın metin işlenir.</li>
-<li style="background: #151917; border-radius: 20px; padding: 20px 22px; line-height: 1.5; color: #C9D0CB"><strong style="color: #F1F4EF">Tek mesajla silinir.</strong> "hesabımı sil" yazıp onaylarsan tüm kayıtların kalıcı olarak silinir.</li>
-</ul>
-</div>
+<hr class="ayrac">
+
+<section class="blok" id="fiyat">
+  <div class="wrap">
+    <h2>Ücretsiz başla. İstersen Premium'a geç.</h2>
+    <div class="planlar">
+      <div class="plan">
+        <h3>Ücretsiz</h3>
+        <p class="fiyat"><b>₺0</b><span class="muted">süre sınırı yok</span></p>
+        <ul class="liste">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Günde 45 mesaj, 3 fotoğraf tanıma, 3 internetten besin araştırma</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Yemek, su, kilo, antrenman ve takviye takibi</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Barkod, hazır antrenman programları, rekor takibi</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Günlük özet, haftalık rapor, kahvaltı ve su hatırlatmaları</li>
+        </ul>
+        <a class="btn" href="https://wa.me/905465537932?text=merhaba">Ücretsiz başla</a>
+      </div>
+      <div class="plan pre">
+        <h3>Premium</h3>
+        <p class="fiyat"><b>₺249</b><span>/ ay</span></p>
+        <p class="donemler"><span>3 aylık <b>₺599</b> (ayda ₺200)</span><span>Yıllık <b>₺1.499</b> (ayda ₺125)</span></p>
+        <ul class="liste">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Günde 300 mesaj, 25 fotoğraf (ilk 5'i en gelişmiş modelle), 5 araştırma</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Haftalık yemek planı, alışveriş listesi ve PDF</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Akıllı hedef: kilo trendine göre kalori hedefini haftalık ayarlar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Akşam koç yorumu, aralıklı oruç, kişisel hatırlatmalar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Antrenmanda hedef ağırlıklar ve Pazar güç raporu</li>
+        </ul>
+        <a class="btn" href="https://wa.me/905465537932?text=merhaba" style="background:#0E2238;color:#F3F6FB">7 gün ücretsiz dene</a>
+        <p class="uyari">Kaydını bitirince Premium 7 gün ücretsiz açılır; deneme bitince otomatik ücret alınmaz, ücretsiz planla devam edersin. Ödeme sistemi çok yakında açılıyor.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="komutlar" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 104px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
-<span style="font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #C8F04A">Komutlar</span>
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 60px); line-height: 0.95; text-transform: uppercase">Ne yazacağını bilmiyorsan.</h2>
-<p style="margin: 0; color: #A3ACA6; font-size: 17px; line-height: 1.6">Ezberlemen gereken bir komut yok; kendi cümlelerinle yazabilirsin. Aşağıdakiler örnek. Birine dokunursan WhatsApp'ta hazır açılır.</p>
-</div>
-</div>
-<div class="cmd-cols">
-<div class="cmd-card" style="gap: 10px">
-<p style="margin: 0; font-size: 15px; color: #E6EBE7"><a class="say" href="https://wa.me/905465537932?text=men%C3%BC" target="_blank" rel="noopener" style="padding: 6px 12px; font-size: 14px">menü</a> yazınca açılan kısayollar:</p>
-<div style="background: #1C211F; border: 1px solid #2A302D; border-radius: 16px; overflow: hidden; font-family: 'Instrument Sans', system-ui, sans-serif">
-<div style="padding: 12px 16px; font-weight: 700; color: #F1F4EF; text-align: center; border-bottom: 1px solid #2A302D">Menüyü aç</div>
-<div><span style="display: block; padding: 10px 16px 4px; font-size: 12px; font-weight: 700; color: #C8F04A; text-transform: uppercase; letter-spacing: 0.06em">Bugün</span><a href="https://wa.me/905465537932?text=bug%C3%BCn" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">📊 Günlük özet</span><span style="font-size: 12.5px; color: #A3ACA6">Kalori, makrolar ve kalan</span></a><a href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20yedim" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">🍽️ Bugün ne yedim</span></a><a href="https://wa.me/905465537932?text=ne%20yesem" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">🥗 Ne yesem?</span><span style="font-size: 12.5px; color: #A3ACA6">Kalan hedefine göre öneri</span></a><a href="https://wa.me/905465537932?text=su%20durumum" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">💧 Su durumum</span></a><span style="display: block; padding: 10px 16px 4px; font-size: 12px; font-weight: 700; color: #C8F04A; text-transform: uppercase; letter-spacing: 0.06em">İlerleme</span><a href="https://wa.me/905465537932?text=kilo%20durumum" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">⚖️ Kilo durumum</span></a><a href="https://wa.me/905465537932?text=bu%20hafta" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">📈 Haftalık rapor</span></a><a href="https://wa.me/905465537932?text=hedeflerim" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">🎯 Hedeflerim</span></a><a href="https://wa.me/905465537932?text=bug%C3%BCnk%C3%BC%20plan%C4%B1m" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">🗓️ Yemek planım</span><span style="font-size: 12.5px; color: #A3ACA6">Bugünün öğünleri, miktarlarıyla</span></a><span style="display: block; padding: 10px 16px 4px; font-size: 12px; font-weight: 700; color: #C8F04A; text-transform: uppercase; letter-spacing: 0.06em">Diğer</span><a href="https://wa.me/905465537932?text=kay%C4%B1tl%C4%B1%20%C3%B6%C4%9F%C3%BCnlerim" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">⭐ Kayıtlı öğünlerim</span><span style="font-size: 12.5px; color: #A3ACA6">Tek kelimeyle eklenen öğünler</span></a><a href="https://wa.me/905465537932?text=komutlar" target="_blank" rel="noopener" style="display: flex; flex-direction: column; padding: 8px 16px; border-top: 1px solid #2A302D; color: #E6EBE7; text-decoration: none"><span style="font-size: 14.5px">📖 Tüm komutlar</span></a></div>
-</div>
-<span style="color: #A3ACA6; font-size: 14px">Hepsi için <a class="say" href="https://wa.me/905465537932?text=komutlar" target="_blank" rel="noopener" style="padding: 4px 10px; font-size: 13px">komutlar</a> yaz · 🎤 Sesli mesaj da olur.</span>
-</div>
-<div class="cmd-card"><h3 class="disp">🍽️ Yemek</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=2%20yumurta%20yedim" target="_blank" rel="noopener">2 yumurta yedim</a><a class="cmd" href="https://wa.me/905465537932?text=kahvalt%C4%B1da%20150%20g%20peynir%20yedim" target="_blank" rel="noopener">kahvaltıda 150 g peynir yedim</a><a class="cmd" href="https://wa.me/905465537932?text=big%20mac%20yedim" target="_blank" rel="noopener">big mac yedim</a><a class="cmd" href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20yedim" target="_blank" rel="noopener">bugün ne yedim</a><a class="cmd" href="https://wa.me/905465537932?text=yanl%C4%B1%C5%9F%20girdim%2C%20asl%C4%B1nda%203%20yumurta%20yedim" target="_blank" rel="noopener">yanlış girdim, aslında 3 yumurta yedim</a><a class="cmd" href="https://wa.me/905465537932?text=d%C3%BCnk%C3%BC%20kahvalt%C4%B1m%C4%B1%20tekrar%20ekle" target="_blank" rel="noopener">dünkü kahvaltımı tekrar ekle</a><a class="cmd" href="https://wa.me/905465537932?text=ne%20yesem%3F" target="_blank" rel="noopener">ne yesem?</a></div><p class="cmd-note">📸 Yemeğin, barkodun ya da paketteki besin tablosunun fotoğrafını da gönderebilirsin.</p></div>
-<div class="cmd-card"><h3 class="disp">⭐ Kayıtlı öğün ve porsiyon</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=son%20%C3%B6%C4%9F%C3%BCn%C3%BCm%C3%BC%20%22sabah%20kahvalt%C4%B1m%22%20olarak%20kaydet" target="_blank" rel="noopener">son öğünümü &quot;sabah kahvaltım&quot; olarak kaydet</a><a class="cmd" href="https://wa.me/905465537932?text=sabah%20kahvalt%C4%B1m%C4%B1%20yedim" target="_blank" rel="noopener">sabah kahvaltımı yedim</a><a class="cmd" href="https://wa.me/905465537932?text=kay%C4%B1tl%C4%B1%20%C3%B6%C4%9F%C3%BCnlerim" target="_blank" rel="noopener">kayıtlı öğünlerim</a><a class="cmd" href="https://wa.me/905465537932?text=1%20kase%20pilav%20250%20gram%20oluyor" target="_blank" rel="noopener">1 kase pilav 250 gram oluyor</a><a class="cmd" href="https://wa.me/905465537932?text=porsiyonlar%C4%B1m" target="_blank" rel="noopener">porsiyonlarım</a></div><p class="cmd-note">Her gün aynı şeyi yiyorsan bir kez kaydet, sonra tek cümleyle ekle.</p></div>
-<div class="cmd-card"><h3 class="disp">💧 Su ve içecek</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=500%20ml%20su%20i%C3%A7tim" target="_blank" rel="noopener">500 ml su içtim</a><a class="cmd" href="https://wa.me/905465537932?text=2%20bardak%20su%20i%C3%A7tim" target="_blank" rel="noopener">2 bardak su içtim</a><a class="cmd" href="https://wa.me/905465537932?text=su%20durumum" target="_blank" rel="noopener">su durumum</a><a class="cmd" href="https://wa.me/905465537932?text=1%20kutu%20kola%20i%C3%A7tim" target="_blank" rel="noopener">1 kutu kola içtim</a><a class="cmd" href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20i%C3%A7tim" target="_blank" rel="noopener">bugün ne içtim</a></div></div>
-<div class="cmd-card"><h3 class="disp">📊 Özet, hedef ve profil</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=bug%C3%BCn" target="_blank" rel="noopener">bugün</a><a class="cmd" href="https://wa.me/905465537932?text=bu%20hafta" target="_blank" rel="noopener">bu hafta</a><a class="cmd" href="https://wa.me/905465537932?text=hedeflerim" target="_blank" rel="noopener">hedeflerim</a><a class="cmd" href="https://wa.me/905465537932?text=kalori%20hedefimi%202800%20yap" target="_blank" rel="noopener">kalori hedefimi 2800 yap</a><a class="cmd" href="https://wa.me/905465537932?text=profilim" target="_blank" rel="noopener">profilim</a><a class="cmd" href="https://wa.me/905465537932?text=ya%C5%9F%C4%B1m%2026%20oldu" target="_blank" rel="noopener">yaşım 26 oldu</a></div></div>
-<div class="cmd-card"><h3 class="disp">⚖️ Kilo, ölçü ve takviye</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m" target="_blank" rel="noopener">85 kg tartıldım</a><a class="cmd" href="https://wa.me/905465537932?text=kilo%20durumum" target="_blank" rel="noopener">kilo durumum</a><a class="cmd" href="https://wa.me/905465537932?text=belim%2085%20cm" target="_blank" rel="noopener">belim 85 cm</a><a class="cmd" href="https://wa.me/905465537932?text=%C3%B6l%C3%A7%C3%BClerim" target="_blank" rel="noopener">ölçülerim</a><a class="cmd" href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim" target="_blank" rel="noopener">kreatin içtim</a><a class="cmd" href="https://wa.me/905465537932?text=takviyelerim" target="_blank" rel="noopener">takviyelerim</a></div></div>
-<div class="cmd-card"><h3 class="disp">🏋️ Antrenman</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=program%20%C3%B6ner" target="_blank" rel="noopener">program öner</a><a class="cmd" href="https://wa.me/905465537932?text=programlar" target="_blank" rel="noopener">programlar</a><a class="cmd" href="https://wa.me/905465537932?text=s%C4%B1radaki%20antrenman" target="_blank" rel="noopener">sıradaki antrenman</a><a class="cmd" href="https://wa.me/905465537932?text=hepsini%20yapt%C4%B1m" target="_blank" rel="noopener">hepsini yaptım</a><a class="cmd" href="https://wa.me/905465537932?text=bench%20press%2060%20kg%205%205%205%204" target="_blank" rel="noopener">bench press 60 kg 5 5 5 4</a><a class="cmd" href="https://wa.me/905465537932?text=squat%203x8%2080%20kg" target="_blank" rel="noopener">squat 3x8 80 kg</a><a class="cmd" href="https://wa.me/905465537932?text=rekorlar%C4%B1m" target="_blank" rel="noopener">rekorlarım</a><a class="cmd" href="https://wa.me/905465537932?text=antrenman%20raporum" target="_blank" rel="noopener">antrenman raporum</a></div><p class="cmd-note">Her set için tekrarı sırayla yazabilirsin: 5 5 5 4.</p></div>
-<div class="cmd-card"><h3 class="disp">🏃 Kardiyo</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=5%20km%20ko%C5%9Ftum%2028%20dakikada" target="_blank" rel="noopener">5 km koştum 28 dakikada</a><a class="cmd" href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1" target="_blank" rel="noopener">30 dk eğimli yürüyüş bandı</a><a class="cmd" href="https://wa.me/905465537932?text=45%20dk%20bisiklet%2020%20km" target="_blank" rel="noopener">45 dk bisiklet 20 km</a><a class="cmd" href="https://wa.me/905465537932?text=1500%20m%20y%C3%BCzd%C3%BCm%2035%20dakikada" target="_blank" rel="noopener">1500 m yüzdüm 35 dakikada</a><a class="cmd" href="https://wa.me/905465537932?text=1%20saat%20hal%C4%B1%20saha" target="_blank" rel="noopener">1 saat halı saha</a><a class="cmd" href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla" target="_blank" rel="noopener">koşuya başla</a><a class="cmd" href="https://wa.me/905465537932?text=haftay%C4%B1%20tekrarla" target="_blank" rel="noopener">haftayı tekrarla</a></div><p class="cmd-note">Süre, mesafe, hız ve eğim yazdıkça kalori hesabı daha doğru olur.</p></div>
-<div class="cmd-card"><h3 class="disp">✨ Premium</h3><div class="cmd-list"><a class="cmd" href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan" target="_blank" rel="noopener">haftalık plan</a><a class="cmd" href="https://wa.me/905465537932?text=al%C4%B1%C5%9Fveri%C5%9F%20listesi" target="_blank" rel="noopener">alışveriş listesi</a><a class="cmd" href="https://wa.me/905465537932?text=ak%C4%B1ll%C4%B1%20hedef" target="_blank" rel="noopener">akıllı hedef</a><a class="cmd" href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat" target="_blank" rel="noopener">16:8 oruç başlat</a><a class="cmd" href="https://wa.me/905465537932?text=orucum" target="_blank" rel="noopener">orucum</a><a class="cmd" href="https://wa.me/905465537932?text=plan%C4%B1m%C4%B1%20pdf%20g%C3%B6nder" target="_blank" rel="noopener">planımı pdf gönder</a><a class="cmd" href="https://wa.me/905465537932?text=ayl%C4%B1k%20rapor" target="_blank" rel="noopener">aylık rapor</a></div><p class="cmd-note">İlk 7 gün ücretsiz. Durumunu görmek için: planım ne</p></div>
-<div class="cmd-card"><h3 class="disp">🗑️ Silme ve hesap</h3><div class="cmd-list"><span class="cmd">hamburgeri sil</span><span class="cmd">son öğünümü sil</span><span class="cmd">son suyu sil</span><span class="cmd">bugünü sıfırla</span><span class="cmd">hesabımı sil</span></div><p class="cmd-note">Silme komutları bugünün kayıtları içindir. "hesabımı sil" tüm verilerini kalıcı olarak siler; önce onay ister.</p></div>
-</div>
+<hr class="ayrac">
+
+<section class="blok" id="gizlilik">
+  <div class="wrap">
+    <h2>Verilerin senin.</h2>
+    <div class="uclu">
+      <div><h3>Onayın olmadan kayıt yok</h3><p class="muted">Sağlık verisi hassastır. KVKK kapsamında açık onayın alınmadan hiçbir şey kaydedilmez. <a href="/gizlilik/">Aydınlatma metni</a></p></div>
+      <div><h3>Satılmaz, paylaşılmaz</h3><p class="muted">Veriler yalnızca sana bu hizmeti vermek için kullanılır. Adın ve numaran yapay zekâya gitmez; sadece yazdığın metin işlenir.</p></div>
+      <div><h3>Tek mesajla silinir</h3><p class="muted">“hesabımı sil” yazıp onaylarsan tüm kayıtların kalıcı olarak silinir.</p></div>
+    </div>
+  </div>
 </section>
 
-<section id="sss" style="max-width: 900px; margin: 0 auto; padding: 0 24px 104px; display: flex; flex-direction: column; gap: 28px">
-<h2 class="disp" style="margin: 0; text-align: center; font-weight: 900; font-size: clamp(36px, 5vw, 60px); line-height: 0.95; text-transform: uppercase">Sık sorulanlar</h2>
-<div style="display: flex; flex-direction: column; gap: 10px">
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Uygulama indirmem gerekiyor mu?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Hayır. SporTakip bir WhatsApp işletme hesabı; telefonundaki WhatsApp yeterli.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Uygulamalardan farkı ne?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Ayrı bir uygulama indirmen, hesap açman ya da her öğünde listeden yemek araman gerekmiyor. WhatsApp'a nasıl yazıyorsan öyle yazıyorsun: “öğlen 1 porsiyon kuru fasulye pilav yedim”. Türk mutfağını, zincir restoranları ve market ürünlerinin barkodunu tanır; beslenme ile antrenmanı aynı sohbette takip eder.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Zayıflama iğnesi (Ozempic, Mounjaro) kullanıyorum, işime yarar mı?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Evet. <b>iğne takibi</b> yazarak ilacını, iğne gününü ve yan etkileri kaydedebilir, iğne günü hatırlatması alabilirsin. Bu dönemde kas kaybını önlemek için protein hedefini ve kilo değişimini birlikte izleriz. İlaçla ilgili kararlar her zaman doktoruna aittir.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Hamileyim ya da şeker ilacı kullanıyorum, kullanabilir miyim?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Kullanabilirsin; kayıttan sonra bunu soruyoruz. Hamilelik, emzirme, yeme bozukluğu geçmişi ya da 18 yaş altında kalori açığı vermiyor, aralıklı orucu kapatıyoruz. SporTakip genel bilgilendirme ve takip aracıdır; tıbbi beslenme tedavisi yerine geçmez.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Kalori değerleri ne kadar doğru?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Değerler kendi veritabanımızdan, paketli ürünlerde barkod ve etiketten, zincir restoranlarda markaların yayımladığı tablolardan gelir. Fotoğraftan yapılan kayıtlar tahminidir ve öyle işaretlenir.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Hangi yemekleri tanıyor?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Ev yemeklerinden çorbalara, paketli ürünlerden zincir restoran menülerine kadar Türkiye'de yenen yemeklerin çoğunu. "Peynir" gibi genel bir şey yazarsan türünü sorar. Veritabanında olmayan bir yemeği internetten araştırıp ekler.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Antrenman programı nasıl ilerliyor?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Setlerini yazdıkça her hareketin kaydı tutulur. Tüm setleri tamamlarsan ağırlık ya da tekrar artar; üst üste takılırsan yük biraz hafifletilir. Yeni bir rekor kırdığında haber verir. Hedef ağırlıkları görmek Premium'da.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Yanlış kaydettiğimde ne olur?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">"yanlış girdim, aslında 3 yumurta yedim" ya da "hamburgeri sil" yazman yeterli. Bugünün kayıtlarını istediğin gibi düzeltebilirsin.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">7 günlük deneme bitince ne olur?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Otomatik ücret alınmaz; ücretsiz planla devam edersin. Kayıtların ve hedeflerin olduğu gibi kalır.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Premium'a nasıl geçerim?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">Sohbette "premium ol" yaz; Premium'un içeriğini ve fiyatını görürsün. Ödeme sistemi çok yakında açılıyor; açıldığında WhatsApp'tan haber vereceğiz.</p>
-</details>
-<details style="border: 1px solid #2A302D; border-radius: 20px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-size: 18px; font-weight: 700; min-height: 44px">Yemek planı nasıl hazırlanıyor?<span class="plus" aria-hidden="true" style="font-size: 28px; font-weight: 400; line-height: 1; transition: transform 0.2s; color: #C8F04A">+</span></summary>
-<p style="margin: 0 0 20px; color: #A3ACA6; line-height: 1.6">"haftalık plan" yazınca kalori ve protein hedefine göre 7 günlük plan gelir: menemen, kuru fasulye, ızgara köfte, levrek gibi ev yemekleri, gramlarıyla. Aynı yemek art arda gelmez. "alışveriş listesi" yazınca haftanın malzemeleri çıkar; "plandan kahvaltıyı ekle" yazınca öğün tek mesajla kaydedilir.</p>
-</details>
+<hr class="ayrac">
+
+<section class="blok" id="sss">
+  <div class="wrap">
+    <h2>Sık sorulanlar</h2>
+    <div class="sss">
+      <details><summary>Uygulama indirmem gerekiyor mu?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Hayır. SporTakip bir WhatsApp işletme hesabı; telefonundaki WhatsApp yeterli.</p></details>
+      <details><summary>Kalori değerleri ne kadar doğru?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Değerler kendi veritabanımızdan, paketli ürünlerde barkod ve etiketten, zincir restoranlarda markaların yayımladığı tablolardan gelir. Fotoğraftan yapılan kayıtlar tahminidir ve öyle işaretlenir.</p></details>
+      <details><summary>Hangi yemekleri tanıyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Ev yemeklerinden çorbalara, paketli ürünlerden McDonald's, Burger King, Popeyes, Tavuk Dünyası ve Starbucks menülerine kadar Türkiye'de yenen yemeklerin çoğunu. “Peynir” gibi genel bir şey yazarsan türünü sorar. Veritabanında olmayan bir yemeği internetten araştırıp ekler.</p></details>
+      <details><summary>Yanlış kaydettiğimde ne olur?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>“yanlış girdim, aslında 3 yumurta yedim” ya da “hamburgeri sil” yazman yeterli. Bugünün kayıtlarını istediğin gibi düzeltebilirsin.</p></details>
+      <details><summary>7 günlük deneme bitince ne olur?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Otomatik ücret alınmaz; ücretsiz planla devam edersin. Kayıtların ve hedeflerin olduğu gibi kalır.</p></details>
+      <details><summary>Premium'a nasıl geçerim?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Sohbette “premium ol” yaz; Premium'un içeriğini ve fiyatını görürsün. Ödeme sistemi çok yakında açılıyor; açıldığında WhatsApp'tan haber vereceğiz.</p></details>
+      <details><summary>Zayıflama iğnesi (Ozempic, Mounjaro) kullanıyorum, işime yarar mı?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Evet. “iğne takibi” yazarak ilacını, iğne gününü ve yan etkileri kaydedebilir, iğne günü hatırlatması alabilirsin. Bu dönemde kas kaybını önlemek için protein hedefini ve kilo değişimini birlikte izleriz. İlaçla ilgili kararlar her zaman doktoruna aittir.</p></details>
+      <details><summary>Hamileyim ya da şeker ilacı kullanıyorum, kullanabilir miyim?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Kullanabilirsin; kayıttan sonra bunu soruyoruz. Hamilelik, emzirme, yeme bozukluğu geçmişi ya da 18 yaş altında kalori açığı vermiyor, aralıklı orucu kapatıyoruz. SporTakip genel bilgilendirme ve takip aracıdır; tıbbi beslenme tedavisi yerine geçmez.</p></details>
+      <details><summary>Antrenman programı nasıl ilerliyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>“program öner” yaz; üç soruyla sana uygun programı bulur. Setlerini yazdıkça her hareketin kaydı tutulur. Tüm setleri tamamlarsan ağırlık ya da tekrar artar; üst üste takılırsan yük biraz hafifletilir. Yeni bir rekor kırdığında haber verir. Hedef ağırlıkları görmek Premium'da.</p></details>
+      <details><summary>Hatırlatmalar nasıl çalışıyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Kahvaltını girmediysen sabah, gün boyu kayıt yoksa akşam kısa bir hatırlatma gelir; seri kutlamaları da var. Premium'da antrenman günü programın, takviye ve tartı hatırlatmaları eklenir. WhatsApp kuralları gereği hatırlatmalar, son 24 saat içinde bota yazdıysan gönderilir.</p></details>
+      <details id="komutlar"><summary>Ne yazacağımı bilmiyorum, örnek var mı?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Ezberlemen gereken bir komut yok; kendi cümlelerinle yazabilirsin. Sohbette “menü” yazınca kısayollar açılır. Aşağıdakilerden birine dokunursan WhatsApp'ta hazır açılır.</p>
+        <div class="komut-grup">
+          <div><h3>Yemek</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=2%20yumurta%20yedim">2 yumurta yedim</a><a href="https://wa.me/905465537932?text=big%20mac%20yedim">big mac yedim</a><a href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20yedim">bugün ne yedim</a><a href="https://wa.me/905465537932?text=d%C3%BCnk%C3%BC%20kahvalt%C4%B1m%C4%B1%20tekrar%20ekle">dünkü kahvaltımı tekrar ekle</a></p></div>
+          <div><h3>Kayıtlı öğün ve porsiyon</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=son%20%C3%B6%C4%9F%C3%BCn%C3%BCm%C3%BC%20%22sabah%20kahvalt%C4%B1m%22%20olarak%20kaydet">son öğünümü “sabah kahvaltım” olarak kaydet</a><a href="https://wa.me/905465537932?text=1%20kase%20pilav%20250%20gram%20oluyor">1 kase pilav 250 gram oluyor</a></p></div>
+          <div><h3>Özet ve hedef</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=bug%C3%BCn">bugün</a><a href="https://wa.me/905465537932?text=bu%20hafta">bu hafta</a><a href="https://wa.me/905465537932?text=hedeflerim">hedeflerim</a><a href="https://wa.me/905465537932?text=kalori%20hedefimi%202800%20yap">kalori hedefimi 2800 yap</a></p></div>
+          <div><h3>Antrenman</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=program%20%C3%B6ner">program öner</a><a href="https://wa.me/905465537932?text=s%C4%B1radaki%20antrenman">sıradaki antrenman</a><a href="https://wa.me/905465537932?text=squat%203x8%2080%20kg">squat 3x8 80 kg</a><a href="https://wa.me/905465537932?text=rekorlar%C4%B1m">rekorlarım</a></p></div>
+          <div><h3>Premium</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan">haftalık plan</a><a href="https://wa.me/905465537932?text=al%C4%B1%C5%9Fveri%C5%9F%20listesi">alışveriş listesi</a><a href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat">16:8 oruç başlat</a></p></div>
+          <div><h3>Silme ve hesap</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=son%20%C3%B6%C4%9F%C3%BCn%C3%BCm%C3%BC%20sil">son öğünümü sil</a><a href="https://wa.me/905465537932?text=hesab%C4%B1m%C4%B1%20sil">hesabımı sil</a></p></div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
 </div>
+
+<section class="son" id="son" aria-labelledby="son-baslik">
+  <div class="wrap">
+    <p class="saat" aria-hidden="true">08:12</p>
+    <h2 id="son-baslik">Yarın sabahın ilk mesajı senden olsun.</h2>
+    <p>WhatsApp'tan 0546 553 79 32 numarasına “merhaba” yaz. Kaydını bitirince Premium 7 gün ücretsiz.</p>
+    <a class="btn btn-buyuk" href="https://wa.me/905465537932?text=merhaba" style="background:#14213D;color:#F3F6FB">Sohbeti başlat
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <p class="not">SporTakip genel bilgilendirme ve takip aracıdır; tıbbi tavsiye yerine geçmez.</p>
+  </div>
 </section>
 
-<section id="basla" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 64px">
-<div class="grid-bg" style="background-color: #C8F04A; color: #0C0E0D; border-radius: 40px; padding: clamp(32px, 6vw, 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px; background-image: linear-gradient(rgba(12,14,13,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(12,14,13,0.07) 1px, transparent 1px)">
-<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 16px">
-<h2 class="disp" style="margin: 0; font-weight: 900; font-size: clamp(40px, 6vw, 80px); line-height: 0.92; text-transform: uppercase">İlk öğününü bugün kaydet.</h2>
-<p style="margin: 0; font-size: 18px; color: #1F2A10">WhatsApp'tan <strong>0546 553 79 32</strong> numarasına "merhaba" yaz. Kaydını bitirince Premium 7 gün ücretsiz.</p>
-</div>
-<a href="https://wa.me/905465537932?text=merhaba" style="text-decoration: none; background: #0C0E0D; color: #F1F4EF; padding: 20px 30px; border-radius: 999px; font-weight: 700; font-size: 18px; min-height: 64px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8F04A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.3L3 20.5l1.8-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>
-Sohbeti başlat</a>
-</div>
-</section>
+</main>
 
-<footer style="max-width: 1240px; margin: 0 auto; padding: 8px 24px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 14px; color: #A3ACA6">
-<span style="display: flex; align-items: center; gap: 10px"><img src="/logo.png" alt="" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover"><strong class="disp" style="color: #F1F4EF; font-size: 17px; font-weight: 800">SporTakip</strong> · Kişisel sağlık ve performans asistanın</span>
-<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center">
-<a href="/hakkimizda/" style="color: #C9D0CB">Hakkımızda ve iletişim</a>
-<a href="/iade/" style="color: #C9D0CB">Teslimat ve iade</a>
-<a href="/gizlilik/" style="color: #C9D0CB">Gizlilik ve KVKK</a>
-<a href="mailto:sportakipdestek@gmail.com" style="color: #C9D0CB">sportakipdestek@gmail.com</a>
-<span>© 2026 SporTakip</span>
-</div>
+<footer>
+  <div class="wrap">
+    <span>SporTakip · © 2026</span>
+    <nav aria-label="Alt bağlantılar">
+      <a href="/hakkimizda/">Hakkımızda ve iletişim</a>
+      <a href="/iade/">Teslimat ve iade</a>
+      <a href="/gizlilik/">Gizlilik ve KVKK</a>
+      <a href="mailto:sportakipdestek@gmail.com">sportakipdestek@gmail.com</a>
+    </nav>
+  </div>
 </footer>
 
+<div class="altbar" id="altbar">
+  <a class="btn" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta “merhaba” yaz</a>
 </div>
-<script src="/site.js" defer></script>
+
+<script src="/site.js"></script>
 </body>
 </html>
