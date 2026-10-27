@@ -12,10 +12,14 @@
 <meta property="og:url" content="https://sportakip.tr/">
 <meta property="og:title" content="SporTakip — WhatsApp'tan kalori ve antrenman takibi">
 <meta property="og:description" content="Ne yediğini WhatsApp'a yaz; kalorisi, proteini ve kalan hakkın gelsin. Su, kilo, antrenman ve kardiyo da aynı sohbette. Uygulama indirmeden.">
-<meta property="og:image" content="https://sportakip.tr/logo-512.png">
+<meta property="og:image" content="https://sportakip.tr/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SporTakip: Ne yediğini yaz, gerisi SporTakip'te.">
 <meta property="og:site_name" content="SporTakip">
 <meta property="og:locale" content="tr_TR">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sportakip.tr/og.jpg">
 <meta name="theme-color" content="#CFE4F4">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://sportakip.tr/#org", "name": "SporTakip", "url": "https://sportakip.tr/", "logo": "https://sportakip.tr/logo-512.png", "email": "sportakipdestek@gmail.com"}, {"@type": "WebSite", "@id": "https://sportakip.tr/#site", "name": "SporTakip", "alternateName": ["SporTakip AI", "Spor Takip"], "url": "https://sportakip.tr/", "inLanguage": "tr-TR", "publisher": {"@id": "https://sportakip.tr/#org"}}, {"@type": "SoftwareApplication", "name": "SporTakip", "applicationCategory": "HealthApplication", "operatingSystem": "WhatsApp", "url": "https://sportakip.tr/", "inLanguage": "tr-TR", "description": "WhatsApp üzerinden kalori, makro, su, kilo ve antrenman takibi yapan yapay zekâ asistanı. Yemeğin fotoğrafını at veya ne yediğini yaz, gerisini SporTakip halletsin.", "offers": [{"@type": "Offer", "name": "Ücretsiz", "price": "0", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Premium aylık", "price": "249", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Premium yıllık", "price": "1499", "priceCurrency": "TRY"}], "publisher": {"@id": "https://sportakip.tr/#org"}}]}</script>
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -23,223 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap" rel="stylesheet">
-<style>
-:root{
-  --lime:#C8F04A;--lime-ink:#14210F;
-  --day-ink:#0E2238;--day-muted:#33495F;
-  --night-ink:#F3F6FB;--night-muted:#C3CEE2;
-  --max:1240px;
-  --font:'Bricolage Grotesque',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;font-family:var(--font);font-size:18px;line-height:1.5;color:var(--day-ink);background:#14213D;font-optical-sizing:auto}
-img{display:block}
-a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:1.5px}
-::selection{background:var(--lime);color:var(--lime-ink)}
-:focus-visible{outline:3px solid currentColor;outline-offset:3px;border-radius:6px}
-.skip{position:absolute;left:12px;top:-60px;background:#fff;color:#0E2238;padding:10px 14px;border-radius:8px;z-index:60}
-.skip:focus{top:12px}
-.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 28px}
-
-/* Üst bar: saat, günlük kcal, gün çizgisi */
-.top{position:fixed;inset:0 0 auto 0;z-index:50;color:var(--day-ink);background:rgba(232,242,250,.94);transition:background-color .5s ease-out,color .5s ease-out;border-bottom:1px solid rgba(14,34,56,.08)}
-.top.koyu{color:var(--night-ink);background:rgba(16,26,52,.94);border-bottom-color:rgba(243,246,251,.08)}
-.top-in{display:flex;align-items:center;gap:20px;height:68px}
-.marka{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:21px;letter-spacing:-.02em}
-.marka img{width:36px;height:36px;border-radius:50%}
-.saat-chip{display:flex;align-items:baseline;gap:10px;font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;padding:6px 12px;border-radius:999px;border:1.5px solid currentColor;opacity:.92}
-.saat-chip b{font-size:17px;font-weight:800}
-.nav{display:flex;gap:22px;margin-left:auto;font-size:16px;font-weight:600}
-.nav a{text-decoration:none;padding:10px 2px}
-.nav a:hover{text-decoration:underline}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;background:var(--lime);color:var(--lime-ink);font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 6px 16px rgba(14,34,56,.16);transition:transform .15s cubic-bezier(.16,1,.3,1),box-shadow .15s ease-out}
-.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(14,34,56,.2)}
-.btn svg{width:20px;height:20px}
-.btn-buyuk{min-height:60px;padding:16px 28px;font-size:20px}
-.gunbar{height:3px;background:rgba(14,34,56,.10)}
-.top.koyu .gunbar{background:rgba(243,246,251,.14)}
-.gunbar i{display:block;height:100%;width:6%;background:currentColor;transition:width .6s cubic-bezier(.16,1,.3,1)}
-
-/* Günün anları */
-.m{padding:clamp(96px,12vh,140px) 0 clamp(64px,10vh,120px);background:linear-gradient(180deg,var(--from) 0%,var(--to) 100%);color:var(--ink,var(--day-ink));min-height:88vh;display:flex;align-items:center}
-.m .muted{color:var(--muted,var(--day-muted))}
-.iki{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,88px);align-items:center}
-h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.03em;text-wrap:balance}
-h1{font-size:clamp(44px,6vw,86px);line-height:.95}
-h2{font-size:clamp(32px,4vw,52px);line-height:1.02}
-h3{font-size:22px;letter-spacing:-.015em}
-p{margin:0}
-.lead{font-size:clamp(18px,1.6vw,21px);line-height:1.5;max-width:36ch}
-.kolon{display:flex;flex-direction:column;gap:20px}
-.saat{font-weight:800;font-size:clamp(88px,13vw,184px);line-height:.8;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
-.not{font-size:15px}
-.ornekler{display:flex;flex-wrap:wrap;gap:8px;font-size:15px}
-.ornekler a{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:999px;border:1.5px solid currentColor;text-decoration:none;font-weight:600}
-.ornekler a:hover{background:var(--ink,var(--day-ink));color:var(--bot,#fff)}
-
-/* Sohbet balonları */
-.sohbet{display:flex;flex-direction:column;gap:12px}
-.b{margin:0;max-width:min(560px,92%);padding:14px 18px 8px;font-size:17px;line-height:1.45;border-radius:22px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
-.b time{display:block;text-align:right;font-size:12px;opacity:.75;margin-top:2px;font-variant-numeric:tabular-nums}
-.ben{align-self:flex-end;background:var(--lime);color:var(--lime-ink);border-top-right-radius:6px}
-.bot{align-self:flex-start;background:var(--bot,#fff);color:var(--botink,var(--day-ink));border-top-left-radius:6px}
-.bot ul{margin:4px 0;padding-left:18px}
-.barkod{display:flex;flex-direction:column;align-items:center;gap:4px;background:#fff;border-radius:12px;padding:10px 14px}
-.barkod svg{width:180px;height:56px}
-.barkod span{font-size:12px;letter-spacing:.2em;color:#111}
-.ses{display:flex;align-items:center;gap:10px}
-.ses svg{width:150px;height:28px}
-
-/* Gece bölümleri */
-.gece{background:#14213D;color:var(--night-ink)}
-.gece .muted{color:var(--night-muted)}
-.gece .btn{box-shadow:none}
-.blok{padding:clamp(72px,10vh,120px) 0}
-.blok + .blok{padding-top:0}
-.ayrac{border:0;border-top:1px solid rgba(243,246,251,.14);margin:0}
-
-.adimlar{display:flex;flex-direction:column;gap:12px}
-.adimlar .bot{--bot:#1D2B4D;--botink:var(--night-ink)}
-
-.planlar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:28px;margin-top:40px;align-items:start}
-.plan{padding:30px 30px 32px;border-radius:20px;background:#1B2A4C}
-.plan.pre{background:#F3F6FB;color:#0E2238}
-.plan h3{font-size:26px}
-.fiyat{display:flex;align-items:baseline;gap:8px;margin:10px 0 4px;font-variant-numeric:tabular-nums}
-.fiyat b{font-size:48px;letter-spacing:-.03em;line-height:1}
-.liste{list-style:none;margin:22px 0 26px;padding:0;display:flex;flex-direction:column;gap:10px;font-size:16.5px}
-.liste li{display:flex;gap:10px;align-items:flex-start}
-.liste svg{flex:none;width:20px;height:20px;margin-top:3px}
-.donemler{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15.5px;font-variant-numeric:tabular-nums}
-.donemler b{font-size:18px}
-.uyari{margin-top:18px;padding:12px 14px;border-radius:12px;background:#E4EAF5;font-size:15px;color:#22344F}
-
-.uclu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:36px}
-.uclu p{font-size:16.5px}
-.uclu h3{margin-bottom:8px}
-
-.sss{margin-top:32px;display:flex;flex-direction:column}
-.sss details{border-top:1px solid rgba(243,246,251,.16)}
-.sss details:last-child{border-bottom:1px solid rgba(243,246,251,.16)}
-.sss summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-size:19px;font-weight:700;min-height:44px}
-.sss summary::-webkit-details-marker{display:none}
-.sss summary svg{flex:none;width:22px;height:22px;transition:transform .25s cubic-bezier(.16,1,.3,1)}
-.sss details[open] summary svg{transform:rotate(45deg)}
-.sss details p{padding:0 0 22px;max-width:68ch;color:var(--night-muted);font-size:17px}
-.komut-grup{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:26px;padding:4px 0 26px}
-.komut-grup h3{font-size:17px;margin-bottom:8px}
-.komut-grup .ornekler a{border-color:rgba(243,246,251,.4)}
-.komut-grup .ornekler a:hover{background:var(--night-ink);color:#14213D}
-
-.son{background:linear-gradient(180deg,#14213D 0%,#5A4170 18%,#E39A6E 40%,#F6D3B4 62%,#F6D3B4 100%);color:#1B1430;padding:clamp(240px,32vh,320px) 0 clamp(80px,12vh,140px);text-align:center}
-.son .saat{font-size:clamp(72px,10vw,140px);opacity:.95}
-.son h2{margin:18px auto 14px;max-width:18ch}
-.son p{color:#2B2140;margin:0 auto 30px;max-width:44ch}
-.son .not{margin-top:16px;color:#3A2B45}
-
-footer{background:#F6D3B4;color:#2B2140;padding:28px 0 96px;font-size:15px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between}
-footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
-footer a{display:inline-block;padding:10px 0}
-
-/* Telefonda alt çubuk */
-.altbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none}
-.altbar .btn{width:100%;min-height:56px;box-shadow:0 10px 26px rgba(0,0,0,.25)}
-
-/* Hareket: varsayılan görünür; JS varsa giriş animasyonu */
-.js .m .b{opacity:0;transform:translateY(14px);transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1)}
-.js .m .b:nth-child(2){transition-delay:.18s}
-.js .m .b:nth-child(3){transition-delay:.36s}
-.js .m .b:nth-child(4){transition-delay:.54s}
-.js .m.gorundu .b{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){
-  .js .m .b{opacity:1;transform:none;transition:none}
-  .top,.gunbar i,.btn,.sss summary svg{transition:none}
-}
-
-@media (max-width:900px){
-  .nav{display:none}
-  .saat-chip{margin-left:auto;font-size:14px;padding:5px 10px}
-  .saat-chip .kc{display:none}
-  .top .btn{display:none}
-  .iki{grid-template-columns:minmax(0,1fr)}
-  .m{min-height:auto}
-  .planlar,.uclu{grid-template-columns:minmax(0,1fr)}
-  .altbar.acik{display:block}
-}
-@media (max-width:520px){
-  body{font-size:17px}
-  .wrap{padding:0 18px}
-  .top-in{height:60px;gap:12px}
-  .marka{font-size:19px}
-  .b{font-size:16px;max-width:96%}
-  .plan{padding:24px 20px 26px}
-  .btn-buyuk{width:100%;font-size:18px;padding:14px 18px}
-}
-
-/* Canlı siteden taşınan bölümler */
-.rozet{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-size:14.5px;font-weight:600;padding:6px 14px 6px 6px;border-radius:999px;background:rgba(255,255,255,.7)}
-.rozet b{background:var(--lime);color:var(--lime-ink);padding:3px 9px;border-radius:999px;font-size:12.5px;letter-spacing:.06em}
-.metin-link{font-weight:700;font-size:17px;padding:10px 0}
-.sayilar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:clamp(48px,7vh,72px) 0 0;padding-top:28px;border-top:1.5px solid rgba(14,34,56,.14)}
-.sayilar div{margin:0}
-.sayilar dt{font-weight:800;font-size:clamp(34px,4vw,52px);letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
-.sayilar dd{margin:6px 0 0;font-size:15.5px;color:var(--day-muted);max-width:22ch}
-.bant{background:#CFE4F4;color:var(--day-ink);padding:8px 0 56px}
-.bant-ust{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;font-size:16px;font-weight:600;margin-bottom:16px}
-.bant-ust a{font-weight:800}
-.etiketler{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.etiketler li{font-size:14.5px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(255,246,236,.6)}
-.programlar{list-style:none;margin:clamp(40px,6vh,64px) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.programlar li{display:flex;flex-direction:column;gap:6px;padding:20px 20px 22px;border-radius:18px;background:rgba(255,246,236,.72);font-size:15.5px;line-height:1.45}
-.programlar span{font-size:13px;font-weight:600;color:var(--muted)}
-.programlar b{font-size:19px;letter-spacing:-.015em}
-.programlar li:last-child{background:#2A1408;color:#FFF6EC}
-.programlar li:last-child span{color:#F1D7A6}
-.markalar{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.markalar li{font-size:15px;font-weight:600;padding:7px 13px;border-radius:999px;border:1.5px solid rgba(255,245,236,.5)}
-.markalar b{font-variant-numeric:tabular-nums;margin-left:4px}
-.foto{padding:8px 8px 6px;display:flex;flex-direction:column;gap:4px;width:min(260px,80%)}
-.tabak{display:block;aspect-ratio:4/3;border-radius:16px;background:radial-gradient(circle at 34% 40%,#E8B04A 0 14%,transparent 15%),radial-gradient(circle at 62% 36%,#C9763A 0 12%,transparent 13%),radial-gradient(circle at 56% 66%,#7FB24A 0 15%,#D9452F 16% 19%,transparent 20%),radial-gradient(circle at 50% 50%,#F7F3EA 0 44%,#E3DCCB 45% 47%,#5E7D63 48%)}
-.foto-ad{font-size:13px;font-weight:700;padding:0 6px}
-.foto time{padding:0 6px}
-.adim-liste{margin:6px 0 4px;padding-left:24px;display:flex;flex-direction:column;gap:14px;font-size:17px;color:var(--night-muted)}
-.adim-liste b{color:var(--night-ink)}
-.adim-liste li::marker{font-weight:800;color:var(--lime)}
-.alt-bosluk{margin-top:14px;max-width:60ch}
-.ust-bosluk{margin-top:28px;max-width:80ch}
-.dortlu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:36px}
-.dortlu p.muted{font-size:16px;margin-top:8px}
-.isaret{font-weight:800;font-size:36px;letter-spacing:-.04em;color:var(--lime);margin-bottom:6px}
-.ikili{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:32px}
-.ikili > div{padding:26px 26px 18px;border-radius:20px;background:#1B2A4C}
-.ikili > div:last-child{background:#F3F6FB;color:#0E2238}
-.zaman{list-style:none;margin:14px 0 0;padding:0}
-.zaman li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;padding:12px 0;border-top:1px solid currentColor;border-color:rgba(127,140,160,.3);font-size:16px}
-.zaman b{font-variant-numeric:tabular-nums}
-.menu-kutu{margin-top:32px;padding:24px 26px;border-radius:20px;background:#1B2A4C}
-.menu-ust{font-weight:700;margin-bottom:14px}
-.menu-ust a,.menu-kutu .not a{display:inline-flex;padding:2px 10px;border-radius:999px;background:var(--lime);color:var(--lime-ink);text-decoration:none;font-weight:800}
-.menu-gruplar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-bottom:14px}
-.menu-gruplar h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--night-muted);margin-bottom:6px}
-.menu-gruplar ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:16px;font-weight:600}
-.menu-gruplar span{display:block;font-weight:400;font-size:14px;color:var(--night-muted)}
-#komutlar .komut-grup{margin-top:34px}
-.komut-grup .not{margin-top:10px;font-size:14.5px}
-.ornekler.duz span{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:999px;border:1.5px dashed rgba(243,246,251,.4);font-weight:600}
-@media (max-width:900px){
-  .sayilar{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .dortlu,.menu-gruplar{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .ikili{grid-template-columns:minmax(0,1fr)}
-}
-@media (max-width:520px){
-  .dortlu,.menu-gruplar{grid-template-columns:minmax(0,1fr)}
-  .zaman li{grid-template-columns:84px minmax(0,1fr)}
-  .ikili > div,.menu-kutu{padding:22px 18px 14px}
-}
-</style>
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <a class="skip" href="#ana">İçeriğe geç</a>
@@ -252,7 +40,7 @@ footer a{display:inline-block;padding:10px 0}
       <a href="#gun">Bir gün</a>
       <a href="#antrenman">Antrenman</a>
       <a href="#fiyat">Fiyat</a>
-      <a href="#komutlar">Komutlar</a>
+      <a href="/komutlar/">Komutlar</a>
       <a href="#sss">SSS</a>
     </nav>
     <a class="btn" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta başla</a>
@@ -275,6 +63,7 @@ footer a{display:inline-block;padding:10px 0}
           <a class="metin-link" href="#gun">Bir günü nasıl geçiyor?</a>
         </div>
         <p class="not muted">Kaydını bitir, Premium'u 7 gün ücretsiz kullan. Otomatik ücret alınmaz.</p>
+        <div class="qr"><svg viewBox="-2 -2 33 33" role="img" aria-label="WhatsApp sohbetini açan QR kod" shape-rendering="crispEdges"><rect x="-2" y="-2" width="33" height="33" fill="#fff"/><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM9 0h1v1h-1zM13 0h1v1h-1zM14 0h1v1h-1zM17 0h1v1h-1zM20 0h1v1h-1zM22 0h1v1h-1zM23 0h1v1h-1zM24 0h1v1h-1zM25 0h1v1h-1zM26 0h1v1h-1zM27 0h1v1h-1zM28 0h1v1h-1zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h1v1h-1zM12 1h1v1h-1zM17 1h1v1h-1zM20 1h1v1h-1zM22 1h1v1h-1zM28 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM11 2h1v1h-1zM12 2h1v1h-1zM14 2h1v1h-1zM15 2h1v1h-1zM19 2h1v1h-1zM22 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM26 2h1v1h-1zM28 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM8 3h1v1h-1zM9 3h1v1h-1zM10 3h1v1h-1zM13 3h1v1h-1zM15 3h1v1h-1zM16 3h1v1h-1zM17 3h1v1h-1zM18 3h1v1h-1zM22 3h1v1h-1zM24 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM28 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM6 4h1v1h-1zM10 4h1v1h-1zM11 4h1v1h-1zM12 4h1v1h-1zM16 4h1v1h-1zM17 4h1v1h-1zM19 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM25 4h1v1h-1zM26 4h1v1h-1zM28 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM22 5h1v1h-1zM28 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM23 6h1v1h-1zM24 6h1v1h-1zM25 6h1v1h-1zM26 6h1v1h-1zM27 6h1v1h-1zM28 6h1v1h-1zM8 7h1v1h-1zM9 7h1v1h-1zM10 7h1v1h-1zM11 7h1v1h-1zM15 7h1v1h-1zM20 7h1v1h-1zM0 8h1v1h-1zM6 8h1v1h-1zM8 8h1v1h-1zM13 8h1v1h-1zM14 8h1v1h-1zM15 8h1v1h-1zM16 8h1v1h-1zM17 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM21 8h1v1h-1zM22 8h1v1h-1zM25 8h1v1h-1zM26 8h1v1h-1zM27 8h1v1h-1zM1 9h1v1h-1zM2 9h1v1h-1zM4 9h1v1h-1zM7 9h1v1h-1zM11 9h1v1h-1zM14 9h1v1h-1zM15 9h1v1h-1zM19 9h1v1h-1zM20 9h1v1h-1zM23 9h1v1h-1zM24 9h1v1h-1zM26 9h1v1h-1zM27 9h1v1h-1zM3 10h1v1h-1zM6 10h1v1h-1zM7 10h1v1h-1zM15 10h1v1h-1zM16 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM23 10h1v1h-1zM24 10h1v1h-1zM0 11h1v1h-1zM2 11h1v1h-1zM3 11h1v1h-1zM4 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM20 11h1v1h-1zM21 11h1v1h-1zM23 11h1v1h-1zM25 11h1v1h-1zM0 12h1v1h-1zM2 12h1v1h-1zM6 12h1v1h-1zM8 12h1v1h-1zM10 12h1v1h-1zM13 12h1v1h-1zM14 12h1v1h-1zM15 12h1v1h-1zM16 12h1v1h-1zM18 12h1v1h-1zM19 12h1v1h-1zM21 12h1v1h-1zM22 12h1v1h-1zM23 12h1v1h-1zM28 12h1v1h-1zM2 13h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM13 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM19 13h1v1h-1zM22 13h1v1h-1zM23 13h1v1h-1zM24 13h1v1h-1zM27 13h1v1h-1zM28 13h1v1h-1zM1 14h1v1h-1zM3 14h1v1h-1zM6 14h1v1h-1zM7 14h1v1h-1zM13 14h1v1h-1zM14 14h1v1h-1zM15 14h1v1h-1zM16 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM22 14h1v1h-1zM25 14h1v1h-1zM26 14h1v1h-1zM0 15h1v1h-1zM1 15h1v1h-1zM5 15h1v1h-1zM7 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM14 15h1v1h-1zM18 15h1v1h-1zM19 15h1v1h-1zM21 15h1v1h-1zM23 15h1v1h-1zM26 15h1v1h-1zM28 15h1v1h-1zM3 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM12 16h1v1h-1zM14 16h1v1h-1zM17 16h1v1h-1zM18 16h1v1h-1zM20 16h1v1h-1zM21 16h1v1h-1zM25 16h1v1h-1zM26 16h1v1h-1zM0 17h1v1h-1zM2 17h1v1h-1zM4 17h1v1h-1zM7 17h1v1h-1zM8 17h1v1h-1zM9 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM15 17h1v1h-1zM16 17h1v1h-1zM17 17h1v1h-1zM19 17h1v1h-1zM21 17h1v1h-1zM22 17h1v1h-1zM24 17h1v1h-1zM26 17h1v1h-1zM27 17h1v1h-1zM28 17h1v1h-1zM0 18h1v1h-1zM1 18h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM6 18h1v1h-1zM7 18h1v1h-1zM9 18h1v1h-1zM12 18h1v1h-1zM13 18h1v1h-1zM14 18h1v1h-1zM15 18h1v1h-1zM19 18h1v1h-1zM20 18h1v1h-1zM21 18h1v1h-1zM24 18h1v1h-1zM25 18h1v1h-1zM28 18h1v1h-1zM0 19h1v1h-1zM3 19h1v1h-1zM4 19h1v1h-1zM8 19h1v1h-1zM9 19h1v1h-1zM14 19h1v1h-1zM16 19h1v1h-1zM20 19h1v1h-1zM21 19h1v1h-1zM24 19h1v1h-1zM0 20h1v1h-1zM2 20h1v1h-1zM3 20h1v1h-1zM4 20h1v1h-1zM5 20h1v1h-1zM6 20h1v1h-1zM9 20h1v1h-1zM10 20h1v1h-1zM16 20h1v1h-1zM17 20h1v1h-1zM20 20h1v1h-1zM21 20h1v1h-1zM22 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM26 20h1v1h-1zM27 20h1v1h-1zM28 20h1v1h-1zM8 21h1v1h-1zM9 21h1v1h-1zM10 21h1v1h-1zM12 21h1v1h-1zM13 21h1v1h-1zM15 21h1v1h-1zM16 21h1v1h-1zM19 21h1v1h-1zM20 21h1v1h-1zM24 21h1v1h-1zM25 21h1v1h-1zM0 22h1v1h-1zM1 22h1v1h-1zM2 22h1v1h-1zM3 22h1v1h-1zM4 22h1v1h-1zM5 22h1v1h-1zM6 22h1v1h-1zM10 22h1v1h-1zM13 22h1v1h-1zM14 22h1v1h-1zM15 22h1v1h-1zM19 22h1v1h-1zM20 22h1v1h-1zM22 22h1v1h-1zM24 22h1v1h-1zM25 22h1v1h-1zM26 22h1v1h-1zM0 23h1v1h-1zM6 23h1v1h-1zM9 23h1v1h-1zM11 23h1v1h-1zM12 23h1v1h-1zM13 23h1v1h-1zM16 23h1v1h-1zM18 23h1v1h-1zM20 23h1v1h-1zM24 23h1v1h-1zM27 23h1v1h-1zM28 23h1v1h-1zM0 24h1v1h-1zM2 24h1v1h-1zM3 24h1v1h-1zM4 24h1v1h-1zM6 24h1v1h-1zM9 24h1v1h-1zM13 24h1v1h-1zM15 24h1v1h-1zM19 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM23 24h1v1h-1zM24 24h1v1h-1zM25 24h1v1h-1zM28 24h1v1h-1zM0 25h1v1h-1zM2 25h1v1h-1zM3 25h1v1h-1zM4 25h1v1h-1zM6 25h1v1h-1zM11 25h1v1h-1zM13 25h1v1h-1zM15 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM19 25h1v1h-1zM25 25h1v1h-1zM26 25h1v1h-1zM28 25h1v1h-1zM0 26h1v1h-1zM2 26h1v1h-1zM3 26h1v1h-1zM4 26h1v1h-1zM6 26h1v1h-1zM9 26h1v1h-1zM10 26h1v1h-1zM15 26h1v1h-1zM19 26h1v1h-1zM22 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM26 26h1v1h-1zM27 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM10 27h1v1h-1zM11 27h1v1h-1zM13 27h1v1h-1zM16 27h1v1h-1zM19 27h1v1h-1zM22 27h1v1h-1zM23 27h1v1h-1zM25 27h1v1h-1zM26 27h1v1h-1zM28 27h1v1h-1zM0 28h1v1h-1zM1 28h1v1h-1zM2 28h1v1h-1zM3 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM9 28h1v1h-1zM11 28h1v1h-1zM12 28h1v1h-1zM16 28h1v1h-1zM17 28h1v1h-1zM21 28h1v1h-1zM23 28h1v1h-1zM24 28h1v1h-1zM25 28h1v1h-1zM26 28h1v1h-1z" fill="#0E2238"/></svg><p><b>Telefonunla okut.</b>Kamerayı tut, WhatsApp sohbeti “merhaba” yazılı açılsın.</p></div>
       </div>
       <div class="kolon">
         <p class="saat" aria-hidden="true">08:12</p>
@@ -297,7 +86,7 @@ footer a{display:inline-block;padding:10px 0}
 
 <section class="bant" aria-labelledby="bant-baslik">
   <div class="wrap">
-    <p id="bant-baslik" class="bant-ust"><span>Bota böyle yazıyorsun. Birine dokun, WhatsApp'ta hazır açılsın; sen sadece gönder.</span><a href="#komutlar">Tüm komutlar →</a></p>
+    <p id="bant-baslik" class="bant-ust"><span>Bota böyle yazıyorsun. Birine dokun, WhatsApp'ta hazır açılsın; sen sadece gönder.</span><a href="/komutlar/">Tüm komutlar →</a></p>
     <p class="ornekler"><a href="https://wa.me/905465537932?text=2%20yumurta%20yedim">2 yumurta yedim</a><a href="https://wa.me/905465537932?text=ak%C5%9Fam%202%20dilim%20lahmacun%20ve%20ayran">akşam 2 dilim lahmacun ve ayran</a><a href="https://wa.me/905465537932?text=500%20ml%20su%20i%C3%A7tim">500 ml su içtim</a><a href="https://wa.me/905465537932?text=bench%20press%204x8%2080%20kg">bench press 4x8 80 kg</a><a href="https://wa.me/905465537932?text=ne%20yesem%3F">ne yesem?</a><a href="https://wa.me/905465537932?text=5%20km%20ko%C5%9Ftum%2028%20dakikada">5 km koştum 28 dakikada</a><a href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m">85 kg tartıldım</a><a href="https://wa.me/905465537932?text=big%20mac%20men%C3%BC%20yedim">big mac menü yedim</a><a href="https://wa.me/905465537932?text=starbucks%20grande%20latte">starbucks grande latte</a><a href="https://wa.me/905465537932?text=bu%20hafta">bu hafta</a><a href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim">kreatin içtim</a><a href="https://wa.me/905465537932?text=yanl%C4%B1%C5%9F%20girdim%2C%203%20yumurta%20yedim">yanlış girdim, 3 yumurta yedim</a><a href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat">16:8 oruç başlat</a><a href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan">haftalık plan</a><a href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1">30 dk eğimli yürüyüş bandı</a><a href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla">koşuya başla</a></p>
   </div>
 </section>
@@ -585,17 +374,8 @@ footer a{display:inline-block;padding:10px 0}
       </div>
       <p class="not muted">Hepsi için <a href="https://wa.me/905465537932?text=komutlar">komutlar</a> yaz · 🎤 Sesli mesaj da olur.</p>
     </div>
-    <div class="komut-grup">
-      <div><h3>🍽️ Yemek</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=2%20yumurta%20yedim">2 yumurta yedim</a><a href="https://wa.me/905465537932?text=kahvalt%C4%B1da%20150%20g%20peynir%20yedim">kahvaltıda 150 g peynir yedim</a><a href="https://wa.me/905465537932?text=big%20mac%20yedim">big mac yedim</a><a href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20yedim">bugün ne yedim</a><a href="https://wa.me/905465537932?text=yanl%C4%B1%C5%9F%20girdim%2C%20asl%C4%B1nda%203%20yumurta%20yedim">yanlış girdim, aslında 3 yumurta yedim</a><a href="https://wa.me/905465537932?text=d%C3%BCnk%C3%BC%20kahvalt%C4%B1m%C4%B1%20tekrar%20ekle">dünkü kahvaltımı tekrar ekle</a><a href="https://wa.me/905465537932?text=ne%20yesem%3F">ne yesem?</a></p><p class="not muted">📸 Yemeğin, barkodun ya da paketteki besin tablosunun fotoğrafını da gönderebilirsin.</p></div>
-      <div><h3>⭐ Kayıtlı öğün ve porsiyon</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=son%20%C3%B6%C4%9F%C3%BCn%C3%BCm%C3%BC%20%22sabah%20kahvalt%C4%B1m%22%20olarak%20kaydet">son öğünümü "sabah kahvaltım" olarak kaydet</a><a href="https://wa.me/905465537932?text=sabah%20kahvalt%C4%B1m%C4%B1%20yedim">sabah kahvaltımı yedim</a><a href="https://wa.me/905465537932?text=kay%C4%B1tl%C4%B1%20%C3%B6%C4%9F%C3%BCnlerim">kayıtlı öğünlerim</a><a href="https://wa.me/905465537932?text=1%20kase%20pilav%20250%20gram%20oluyor">1 kase pilav 250 gram oluyor</a><a href="https://wa.me/905465537932?text=porsiyonlar%C4%B1m">porsiyonlarım</a></p><p class="not muted">Her gün aynı şeyi yiyorsan bir kez kaydet, sonra tek cümleyle ekle.</p></div>
-      <div><h3>💧 Su ve içecek</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=500%20ml%20su%20i%C3%A7tim">500 ml su içtim</a><a href="https://wa.me/905465537932?text=2%20bardak%20su%20i%C3%A7tim">2 bardak su içtim</a><a href="https://wa.me/905465537932?text=su%20durumum">su durumum</a><a href="https://wa.me/905465537932?text=1%20kutu%20kola%20i%C3%A7tim">1 kutu kola içtim</a><a href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20i%C3%A7tim">bugün ne içtim</a></p></div>
-      <div><h3>📊 Özet, hedef ve profil</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=bug%C3%BCn">bugün</a><a href="https://wa.me/905465537932?text=bu%20hafta">bu hafta</a><a href="https://wa.me/905465537932?text=hedeflerim">hedeflerim</a><a href="https://wa.me/905465537932?text=kalori%20hedefimi%202800%20yap">kalori hedefimi 2800 yap</a><a href="https://wa.me/905465537932?text=profilim">profilim</a><a href="https://wa.me/905465537932?text=ya%C5%9F%C4%B1m%2026%20oldu">yaşım 26 oldu</a></p></div>
-      <div><h3>⚖️ Kilo, ölçü ve takviye</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m">85 kg tartıldım</a><a href="https://wa.me/905465537932?text=kilo%20durumum">kilo durumum</a><a href="https://wa.me/905465537932?text=belim%2085%20cm">belim 85 cm</a><a href="https://wa.me/905465537932?text=%C3%B6l%C3%A7%C3%BClerim">ölçülerim</a><a href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim">kreatin içtim</a><a href="https://wa.me/905465537932?text=takviyelerim">takviyelerim</a></p></div>
-      <div><h3>🏋️ Antrenman</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=program%20%C3%B6ner">program öner</a><a href="https://wa.me/905465537932?text=programlar">programlar</a><a href="https://wa.me/905465537932?text=s%C4%B1radaki%20antrenman">sıradaki antrenman</a><a href="https://wa.me/905465537932?text=hepsini%20yapt%C4%B1m">hepsini yaptım</a><a href="https://wa.me/905465537932?text=bench%20press%2060%20kg%205%205%205%204">bench press 60 kg 5 5 5 4</a><a href="https://wa.me/905465537932?text=squat%203x8%2080%20kg">squat 3x8 80 kg</a><a href="https://wa.me/905465537932?text=rekorlar%C4%B1m">rekorlarım</a><a href="https://wa.me/905465537932?text=antrenman%20raporum">antrenman raporum</a></p><p class="not muted">Her set için tekrarı sırayla yazabilirsin: 5 5 5 4.</p></div>
-      <div><h3>🏃 Kardiyo</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=5%20km%20ko%C5%9Ftum%2028%20dakikada">5 km koştum 28 dakikada</a><a href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1">30 dk eğimli yürüyüş bandı</a><a href="https://wa.me/905465537932?text=45%20dk%20bisiklet%2020%20km">45 dk bisiklet 20 km</a><a href="https://wa.me/905465537932?text=1500%20m%20y%C3%BCzd%C3%BCm%2035%20dakikada">1500 m yüzdüm 35 dakikada</a><a href="https://wa.me/905465537932?text=1%20saat%20hal%C4%B1%20saha">1 saat halı saha</a><a href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla">koşuya başla</a><a href="https://wa.me/905465537932?text=haftay%C4%B1%20tekrarla">haftayı tekrarla</a></p><p class="not muted">Süre, mesafe, hız ve eğim yazdıkça kalori hesabı daha doğru olur.</p></div>
-      <div><h3>✨ Premium</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan">haftalık plan</a><a href="https://wa.me/905465537932?text=al%C4%B1%C5%9Fveri%C5%9F%20listesi">alışveriş listesi</a><a href="https://wa.me/905465537932?text=ak%C4%B1ll%C4%B1%20hedef">akıllı hedef</a><a href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat">16:8 oruç başlat</a><a href="https://wa.me/905465537932?text=orucum">orucum</a><a href="https://wa.me/905465537932?text=plan%C4%B1m%C4%B1%20pdf%20g%C3%B6nder">planımı pdf gönder</a><a href="https://wa.me/905465537932?text=ayl%C4%B1k%20rapor">aylık rapor</a></p><p class="not muted">İlk 7 gün ücretsiz. Durumunu görmek için: planım ne</p></div>
-      <div><h3>🗑️ Silme ve hesap</h3><p class="ornekler duz"><span>hamburgeri sil</span><span>son öğünümü sil</span><span>son suyu sil</span><span>bugünü sıfırla</span><span>hesabımı sil</span></p><p class="not muted">Silme komutları bugünün kayıtları içindir. “hesabımı sil” tüm verilerini kalıcı olarak siler; önce onay ister.</p></div>
-    </div>
+    <p class="komut-devam"><a href="/komutlar/">Tüm komutlar ve örnekler →</a></p>
+</div>
   </div>
 </section>
 
@@ -629,6 +409,7 @@ footer a{display:inline-block;padding:10px 0}
     <p>WhatsApp'tan 0546 553 79 32 numarasına “merhaba” yaz. Kaydını bitirince Premium 7 gün ücretsiz.</p>
     <a class="btn btn-buyuk" href="https://wa.me/905465537932?text=merhaba" style="background:#14213D;color:#F3F6FB">Sohbeti başlat
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="qr"><svg viewBox="-2 -2 33 33" role="img" aria-label="WhatsApp sohbetini açan QR kod" shape-rendering="crispEdges"><rect x="-2" y="-2" width="33" height="33" fill="#fff"/><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM9 0h1v1h-1zM13 0h1v1h-1zM14 0h1v1h-1zM17 0h1v1h-1zM20 0h1v1h-1zM22 0h1v1h-1zM23 0h1v1h-1zM24 0h1v1h-1zM25 0h1v1h-1zM26 0h1v1h-1zM27 0h1v1h-1zM28 0h1v1h-1zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h1v1h-1zM12 1h1v1h-1zM17 1h1v1h-1zM20 1h1v1h-1zM22 1h1v1h-1zM28 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM8 2h1v1h-1zM9 2h1v1h-1zM11 2h1v1h-1zM12 2h1v1h-1zM14 2h1v1h-1zM15 2h1v1h-1zM19 2h1v1h-1zM22 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM26 2h1v1h-1zM28 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM8 3h1v1h-1zM9 3h1v1h-1zM10 3h1v1h-1zM13 3h1v1h-1zM15 3h1v1h-1zM16 3h1v1h-1zM17 3h1v1h-1zM18 3h1v1h-1zM22 3h1v1h-1zM24 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM28 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM6 4h1v1h-1zM10 4h1v1h-1zM11 4h1v1h-1zM12 4h1v1h-1zM16 4h1v1h-1zM17 4h1v1h-1zM19 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM25 4h1v1h-1zM26 4h1v1h-1zM28 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM22 5h1v1h-1zM28 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM23 6h1v1h-1zM24 6h1v1h-1zM25 6h1v1h-1zM26 6h1v1h-1zM27 6h1v1h-1zM28 6h1v1h-1zM8 7h1v1h-1zM9 7h1v1h-1zM10 7h1v1h-1zM11 7h1v1h-1zM15 7h1v1h-1zM20 7h1v1h-1zM0 8h1v1h-1zM6 8h1v1h-1zM8 8h1v1h-1zM13 8h1v1h-1zM14 8h1v1h-1zM15 8h1v1h-1zM16 8h1v1h-1zM17 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM21 8h1v1h-1zM22 8h1v1h-1zM25 8h1v1h-1zM26 8h1v1h-1zM27 8h1v1h-1zM1 9h1v1h-1zM2 9h1v1h-1zM4 9h1v1h-1zM7 9h1v1h-1zM11 9h1v1h-1zM14 9h1v1h-1zM15 9h1v1h-1zM19 9h1v1h-1zM20 9h1v1h-1zM23 9h1v1h-1zM24 9h1v1h-1zM26 9h1v1h-1zM27 9h1v1h-1zM3 10h1v1h-1zM6 10h1v1h-1zM7 10h1v1h-1zM15 10h1v1h-1zM16 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM23 10h1v1h-1zM24 10h1v1h-1zM0 11h1v1h-1zM2 11h1v1h-1zM3 11h1v1h-1zM4 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM20 11h1v1h-1zM21 11h1v1h-1zM23 11h1v1h-1zM25 11h1v1h-1zM0 12h1v1h-1zM2 12h1v1h-1zM6 12h1v1h-1zM8 12h1v1h-1zM10 12h1v1h-1zM13 12h1v1h-1zM14 12h1v1h-1zM15 12h1v1h-1zM16 12h1v1h-1zM18 12h1v1h-1zM19 12h1v1h-1zM21 12h1v1h-1zM22 12h1v1h-1zM23 12h1v1h-1zM28 12h1v1h-1zM2 13h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM13 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM19 13h1v1h-1zM22 13h1v1h-1zM23 13h1v1h-1zM24 13h1v1h-1zM27 13h1v1h-1zM28 13h1v1h-1zM1 14h1v1h-1zM3 14h1v1h-1zM6 14h1v1h-1zM7 14h1v1h-1zM13 14h1v1h-1zM14 14h1v1h-1zM15 14h1v1h-1zM16 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM22 14h1v1h-1zM25 14h1v1h-1zM26 14h1v1h-1zM0 15h1v1h-1zM1 15h1v1h-1zM5 15h1v1h-1zM7 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM14 15h1v1h-1zM18 15h1v1h-1zM19 15h1v1h-1zM21 15h1v1h-1zM23 15h1v1h-1zM26 15h1v1h-1zM28 15h1v1h-1zM3 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM12 16h1v1h-1zM14 16h1v1h-1zM17 16h1v1h-1zM18 16h1v1h-1zM20 16h1v1h-1zM21 16h1v1h-1zM25 16h1v1h-1zM26 16h1v1h-1zM0 17h1v1h-1zM2 17h1v1h-1zM4 17h1v1h-1zM7 17h1v1h-1zM8 17h1v1h-1zM9 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM15 17h1v1h-1zM16 17h1v1h-1zM17 17h1v1h-1zM19 17h1v1h-1zM21 17h1v1h-1zM22 17h1v1h-1zM24 17h1v1h-1zM26 17h1v1h-1zM27 17h1v1h-1zM28 17h1v1h-1zM0 18h1v1h-1zM1 18h1v1h-1zM2 18h1v1h-1zM5 18h1v1h-1zM6 18h1v1h-1zM7 18h1v1h-1zM9 18h1v1h-1zM12 18h1v1h-1zM13 18h1v1h-1zM14 18h1v1h-1zM15 18h1v1h-1zM19 18h1v1h-1zM20 18h1v1h-1zM21 18h1v1h-1zM24 18h1v1h-1zM25 18h1v1h-1zM28 18h1v1h-1zM0 19h1v1h-1zM3 19h1v1h-1zM4 19h1v1h-1zM8 19h1v1h-1zM9 19h1v1h-1zM14 19h1v1h-1zM16 19h1v1h-1zM20 19h1v1h-1zM21 19h1v1h-1zM24 19h1v1h-1zM0 20h1v1h-1zM2 20h1v1h-1zM3 20h1v1h-1zM4 20h1v1h-1zM5 20h1v1h-1zM6 20h1v1h-1zM9 20h1v1h-1zM10 20h1v1h-1zM16 20h1v1h-1zM17 20h1v1h-1zM20 20h1v1h-1zM21 20h1v1h-1zM22 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM26 20h1v1h-1zM27 20h1v1h-1zM28 20h1v1h-1zM8 21h1v1h-1zM9 21h1v1h-1zM10 21h1v1h-1zM12 21h1v1h-1zM13 21h1v1h-1zM15 21h1v1h-1zM16 21h1v1h-1zM19 21h1v1h-1zM20 21h1v1h-1zM24 21h1v1h-1zM25 21h1v1h-1zM0 22h1v1h-1zM1 22h1v1h-1zM2 22h1v1h-1zM3 22h1v1h-1zM4 22h1v1h-1zM5 22h1v1h-1zM6 22h1v1h-1zM10 22h1v1h-1zM13 22h1v1h-1zM14 22h1v1h-1zM15 22h1v1h-1zM19 22h1v1h-1zM20 22h1v1h-1zM22 22h1v1h-1zM24 22h1v1h-1zM25 22h1v1h-1zM26 22h1v1h-1zM0 23h1v1h-1zM6 23h1v1h-1zM9 23h1v1h-1zM11 23h1v1h-1zM12 23h1v1h-1zM13 23h1v1h-1zM16 23h1v1h-1zM18 23h1v1h-1zM20 23h1v1h-1zM24 23h1v1h-1zM27 23h1v1h-1zM28 23h1v1h-1zM0 24h1v1h-1zM2 24h1v1h-1zM3 24h1v1h-1zM4 24h1v1h-1zM6 24h1v1h-1zM9 24h1v1h-1zM13 24h1v1h-1zM15 24h1v1h-1zM19 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM23 24h1v1h-1zM24 24h1v1h-1zM25 24h1v1h-1zM28 24h1v1h-1zM0 25h1v1h-1zM2 25h1v1h-1zM3 25h1v1h-1zM4 25h1v1h-1zM6 25h1v1h-1zM11 25h1v1h-1zM13 25h1v1h-1zM15 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM19 25h1v1h-1zM25 25h1v1h-1zM26 25h1v1h-1zM28 25h1v1h-1zM0 26h1v1h-1zM2 26h1v1h-1zM3 26h1v1h-1zM4 26h1v1h-1zM6 26h1v1h-1zM9 26h1v1h-1zM10 26h1v1h-1zM15 26h1v1h-1zM19 26h1v1h-1zM22 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM26 26h1v1h-1zM27 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM10 27h1v1h-1zM11 27h1v1h-1zM13 27h1v1h-1zM16 27h1v1h-1zM19 27h1v1h-1zM22 27h1v1h-1zM23 27h1v1h-1zM25 27h1v1h-1zM26 27h1v1h-1zM28 27h1v1h-1zM0 28h1v1h-1zM1 28h1v1h-1zM2 28h1v1h-1zM3 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM9 28h1v1h-1zM11 28h1v1h-1zM12 28h1v1h-1zM16 28h1v1h-1zM17 28h1v1h-1zM21 28h1v1h-1zM23 28h1v1h-1zM24 28h1v1h-1zM25 28h1v1h-1zM26 28h1v1h-1z" fill="#0E2238"/></svg><p><b>Telefonunla okut.</b>Kamerayı tut, WhatsApp sohbeti “merhaba” yazılı açılsın.</p></div>
     <p class="not">SporTakip genel bilgilendirme ve takip aracıdır; tıbbi tavsiye yerine geçmez.</p>
   </div>
 </section>
