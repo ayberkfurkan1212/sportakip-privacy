@@ -178,6 +178,67 @@ footer a{display:inline-block;padding:10px 0}
   .plan{padding:24px 20px 26px}
   .btn-buyuk{width:100%;font-size:18px;padding:14px 18px}
 }
+
+/* Canlı siteden taşınan bölümler */
+.rozet{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-size:14.5px;font-weight:600;padding:6px 14px 6px 6px;border-radius:999px;background:rgba(255,255,255,.7)}
+.rozet b{background:var(--lime);color:var(--lime-ink);padding:3px 9px;border-radius:999px;font-size:12.5px;letter-spacing:.06em}
+.metin-link{font-weight:700;font-size:17px;padding:10px 0}
+.sayilar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:clamp(48px,7vh,72px) 0 0;padding-top:28px;border-top:1.5px solid rgba(14,34,56,.14)}
+.sayilar div{margin:0}
+.sayilar dt{font-weight:800;font-size:clamp(34px,4vw,52px);letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.sayilar dd{margin:6px 0 0;font-size:15.5px;color:var(--day-muted);max-width:22ch}
+.bant{background:#CFE4F4;color:var(--day-ink);padding:8px 0 56px}
+.bant-ust{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;font-size:16px;font-weight:600;margin-bottom:16px}
+.bant-ust a{font-weight:800}
+.etiketler{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.etiketler li{font-size:14.5px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(255,246,236,.6)}
+.programlar{list-style:none;margin:clamp(40px,6vh,64px) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.programlar li{display:flex;flex-direction:column;gap:6px;padding:20px 20px 22px;border-radius:18px;background:rgba(255,246,236,.72);font-size:15.5px;line-height:1.45}
+.programlar span{font-size:13px;font-weight:600;color:var(--muted)}
+.programlar b{font-size:19px;letter-spacing:-.015em}
+.programlar li:last-child{background:#2A1408;color:#FFF6EC}
+.programlar li:last-child span{color:#F1D7A6}
+.markalar{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.markalar li{font-size:15px;font-weight:600;padding:7px 13px;border-radius:999px;border:1.5px solid rgba(255,245,236,.5)}
+.markalar b{font-variant-numeric:tabular-nums;margin-left:4px}
+.foto{padding:8px 8px 6px;display:flex;flex-direction:column;gap:4px;width:min(260px,80%)}
+.tabak{display:block;aspect-ratio:4/3;border-radius:16px;background:radial-gradient(circle at 34% 40%,#E8B04A 0 14%,transparent 15%),radial-gradient(circle at 62% 36%,#C9763A 0 12%,transparent 13%),radial-gradient(circle at 56% 66%,#7FB24A 0 15%,#D9452F 16% 19%,transparent 20%),radial-gradient(circle at 50% 50%,#F7F3EA 0 44%,#E3DCCB 45% 47%,#5E7D63 48%)}
+.foto-ad{font-size:13px;font-weight:700;padding:0 6px}
+.foto time{padding:0 6px}
+.adim-liste{margin:6px 0 4px;padding-left:24px;display:flex;flex-direction:column;gap:14px;font-size:17px;color:var(--night-muted)}
+.adim-liste b{color:var(--night-ink)}
+.adim-liste li::marker{font-weight:800;color:var(--lime)}
+.alt-bosluk{margin-top:14px;max-width:60ch}
+.ust-bosluk{margin-top:28px;max-width:80ch}
+.dortlu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:36px}
+.dortlu p.muted{font-size:16px;margin-top:8px}
+.isaret{font-weight:800;font-size:36px;letter-spacing:-.04em;color:var(--lime);margin-bottom:6px}
+.ikili{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:32px}
+.ikili > div{padding:26px 26px 18px;border-radius:20px;background:#1B2A4C}
+.ikili > div:last-child{background:#F3F6FB;color:#0E2238}
+.zaman{list-style:none;margin:14px 0 0;padding:0}
+.zaman li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;padding:12px 0;border-top:1px solid currentColor;border-color:rgba(127,140,160,.3);font-size:16px}
+.zaman b{font-variant-numeric:tabular-nums}
+.menu-kutu{margin-top:32px;padding:24px 26px;border-radius:20px;background:#1B2A4C}
+.menu-ust{font-weight:700;margin-bottom:14px}
+.menu-ust a,.menu-kutu .not a{display:inline-flex;padding:2px 10px;border-radius:999px;background:var(--lime);color:var(--lime-ink);text-decoration:none;font-weight:800}
+.menu-gruplar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-bottom:14px}
+.menu-gruplar h3{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--night-muted);margin-bottom:6px}
+.menu-gruplar ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:16px;font-weight:600}
+.menu-gruplar span{display:block;font-weight:400;font-size:14px;color:var(--night-muted)}
+#komutlar .komut-grup{margin-top:34px}
+.komut-grup .not{margin-top:10px;font-size:14.5px}
+.ornekler.duz span{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:999px;border:1.5px dashed rgba(243,246,251,.4);font-weight:600}
+@media (max-width:900px){
+  .sayilar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dortlu,.menu-gruplar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ikili{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){
+  .dortlu,.menu-gruplar{grid-template-columns:minmax(0,1fr)}
+  .zaman li{grid-template-columns:84px minmax(0,1fr)}
+  .ikili > div,.menu-kutu{padding:22px 18px 14px}
+}
 </style>
 </head>
 <body>
@@ -186,11 +247,12 @@ footer a{display:inline-block;padding:10px 0}
 <header class="top" id="top">
   <div class="wrap top-in">
     <a class="marka" href="#ust"><img src="/logo.png" alt="" width="36" height="36">SporTakip</a>
-    <p class="saat-chip" aria-live="off"><b id="saat-chip">08:12</b><span class="kc">Bugün <span id="kcal">432</span> / 1550 kcal</span></p>
+    <p class="saat-chip" aria-live="off"><b id="saat-chip">08:12</b><span class="kc">Bugün <span id="kcal">432</span> / 2000 kcal</span></p>
     <nav class="nav" aria-label="Bölümler">
       <a href="#gun">Bir gün</a>
-      <a href="#basla">Nasıl başlarım</a>
+      <a href="#antrenman">Antrenman</a>
       <a href="#fiyat">Fiyat</a>
+      <a href="#komutlar">Komutlar</a>
       <a href="#sss">SSS</a>
     </nav>
     <a class="btn" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta başla</a>
@@ -201,30 +263,47 @@ footer a{display:inline-block;padding:10px 0}
 <main id="ana">
 
 <section class="m" id="ust" data-saat="08:12" data-kcal="432" data-pct="6" style="--from:#E8F2FA;--to:#CFE4F4">
-  <div class="wrap iki">
-    <div class="kolon">
-      <h1>Ne yediğini yaz.<br>Gerisi SporTakip'te.</h1>
-      <p class="lead muted">Gün boyu ne yersen WhatsApp'a kendi cümlenle yaz; kalorin, proteinin ve kalan hakkın her mesajda gelsin. Uygulama indirmek yok, form doldurmak yok.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
-        <a class="btn btn-buyuk" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta “merhaba” yaz
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <div class="wrap">
+    <div class="iki">
+      <div class="kolon">
+        <p class="rozet"><b>YENİ</b> Hazır antrenman programları ve otomatik ilerleme</p>
+        <h1>Ne yediğini yaz.<br>Gerisi SporTakip'te.</h1>
+        <p class="lead muted">Kalori, protein, su, kilo ve antrenman takibi, her gün kullandığın WhatsApp sohbetinin içinde. Uygulama indirmek yok, form doldurmak yok.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center">
+          <a class="btn btn-buyuk" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta “merhaba” yaz
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="metin-link" href="#gun">Bir günü nasıl geçiyor?</a>
+        </div>
+        <p class="not muted">Kaydını bitir, Premium'u 7 gün ücretsiz kullan. Otomatik ücret alınmaz.</p>
       </div>
-      <p class="not muted">Kaydını bitir, Premium 7 gün ücretsiz. Deneme bitince otomatik ücret alınmaz.</p>
-    </div>
-    <div class="kolon">
-      <p class="saat" aria-hidden="true">08:12</p>
-      <div class="sohbet" aria-label="Örnek sohbet, sabah">
-        <p class="b ben">kahvaltıda 2 haşlanmış yumurta, 1 simit ve 1 çay<time>08:12</time></p>
-        <div class="b bot"><b>Kahvaltı kaydedildi</b>
-          <ul><li>Haşlanmış yumurta (2 adet): 155 Kcal</li><li>Simit (1 adet): 275 Kcal</li><li>Çay (1 bardak): 2 Kcal</li></ul>
-          <b>Toplam:</b> 432 Kcal · Protein 21.8 g<br>Kalan: <b>1118 Kcal</b><time>08:12</time></div>
+      <div class="kolon">
+        <p class="saat" aria-hidden="true">08:12</p>
+        <div class="sohbet" aria-label="Örnek sohbet, sabah">
+          <p class="b ben">kahvaltıda 2 haşlanmış yumurta, 1 simit ve 1 çay<time>08:12</time></p>
+          <div class="b bot"><b>Kahvaltı kaydedildi</b>
+            <ul><li>Haşlanmış yumurta (2 adet): 155 Kcal</li><li>Simit (1 adet): 275 Kcal</li><li>Çay (1 bardak): 2 Kcal</li></ul>
+            <b>Toplam:</b> 432 Kcal · Protein 21.8 g<br>Kalan: <b>1568 Kcal</b><time>08:12</time></div>
+        </div>
       </div>
     </div>
+    <dl class="sayilar">
+      <div><dt>2.700+</dt><dd>yemek ve paketli ürün</dd></div>
+      <div><dt>5</dt><dd>zincir restoran ve kafe, resmi değerlerle</dd></div>
+      <div><dt>7</dt><dd>hazır antrenman ve koşu programı</dd></div>
+      <div><dt>0</dt><dd>indirilecek uygulama</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="bant" aria-labelledby="bant-baslik">
+  <div class="wrap">
+    <p id="bant-baslik" class="bant-ust"><span>Bota böyle yazıyorsun. Birine dokun, WhatsApp'ta hazır açılsın; sen sadece gönder.</span><a href="#komutlar">Tüm komutlar →</a></p>
+    <p class="ornekler"><a href="https://wa.me/905465537932?text=2%20yumurta%20yedim">2 yumurta yedim</a><a href="https://wa.me/905465537932?text=ak%C5%9Fam%202%20dilim%20lahmacun%20ve%20ayran">akşam 2 dilim lahmacun ve ayran</a><a href="https://wa.me/905465537932?text=500%20ml%20su%20i%C3%A7tim">500 ml su içtim</a><a href="https://wa.me/905465537932?text=bench%20press%204x8%2080%20kg">bench press 4x8 80 kg</a><a href="https://wa.me/905465537932?text=ne%20yesem%3F">ne yesem?</a><a href="https://wa.me/905465537932?text=5%20km%20ko%C5%9Ftum%2028%20dakikada">5 km koştum 28 dakikada</a><a href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m">85 kg tartıldım</a><a href="https://wa.me/905465537932?text=big%20mac%20men%C3%BC%20yedim">big mac menü yedim</a><a href="https://wa.me/905465537932?text=starbucks%20grande%20latte">starbucks grande latte</a><a href="https://wa.me/905465537932?text=bu%20hafta">bu hafta</a><a href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim">kreatin içtim</a><a href="https://wa.me/905465537932?text=yanl%C4%B1%C5%9F%20girdim%2C%203%20yumurta%20yedim">yanlış girdim, 3 yumurta yedim</a><a href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat">16:8 oruç başlat</a><a href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan">haftalık plan</a><a href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1">30 dk eğimli yürüyüş bandı</a><a href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla">koşuya başla</a></p>
   </div>
 </section>
 
 <div id="gun">
-<section class="m" data-saat="10:15" data-kcal="432" data-pct="20" style="--from:#CFE4F4;--to:#B6DAF2">
+<section class="m" data-saat="10:15" data-kcal="432" data-pct="18" style="--from:#CFE4F4;--to:#B6DAF2">
   <div class="wrap iki">
     <div class="kolon">
       <p class="saat" aria-hidden="true">10:15</p>
@@ -239,24 +318,26 @@ footer a{display:inline-block;padding:10px 0}
   </div>
 </section>
 
-<section class="m" data-saat="12:41" data-kcal="825" data-pct="36" style="--from:#B6DAF2;--to:#8AC8EE">
+<section class="m" data-saat="12:41" data-kcal="887" data-pct="32" style="--from:#B6DAF2;--to:#8AC8EE">
   <div class="wrap iki">
     <div class="kolon">
       <p class="saat" aria-hidden="true">12:41</p>
-      <h2>Lahmacunu da, yarım porsiyon pilavı da anlar.</h2>
-      <p class="lead muted">Türk mutfağını adıyla tanır; dilim, kase, kepçe, adet. Emin olmadığında sorar. İstersen tabağının fotoğrafını at: gördüklerini listeler, öğünü sen seçersin.</p>
+      <h2>Tabağının fotoğrafını at, gerisini o çıkarsın.</h2>
+      <p class="lead muted">Menemenden lahmacuna Türk mutfağını adıyla tanır; dilim, kase, kepçe, adet. Gördüklerini listeler, öğünü sen seçersin. Yazmak istersen “öğlen tavuk pilav yedim” demen yeter; emin olmadığında sorar.</p>
       <p class="not muted">Fotoğraftan yapılan kayıtlar tahmindir ve öyle işaretlenir.</p>
     </div>
-    <div class="sohbet" aria-label="Örnek sohbet, öğle yemeği">
-      <p class="b ben">öğlen 1 lahmacun ve 1 ayran<time>12:41</time></p>
-      <div class="b bot"><b>Öğle Yemeği kaydedildi</b>
-        <ul><li>Lahmacun (1 adet): 313 Kcal</li><li>Ayran (1 bardak): 80 Kcal</li></ul>
-        <b>Toplam:</b> 393 Kcal<br>Bugün: 825 / 1550 Kcal · Kalan: <b>725 Kcal</b><time>12:41</time></div>
+    <div class="sohbet" aria-label="Örnek sohbet, yemek fotoğrafı">
+      <div class="b ben foto"><span class="tabak" aria-hidden="true"></span><span class="foto-ad">Fotoğraf</span><time>12:40</time></div>
+      <div class="b bot"><b>Fotoğrafta şunları gördüm:</b>
+        <ul><li>Tavuk şiş (1 şiş)</li><li>Bulgur pilavı (1 porsiyon)</li><li>Çoban salata (1 porsiyon)</li></ul>
+        Bu hangi öğün?<time>12:40</time></div>
+      <p class="b ben">öğle<time>12:41</time></p>
+      <div class="b bot"><b>Öğle Yemeği kaydedildi</b> <i>(tahmini)</i><br><b>Toplam:</b> 455 Kcal · Protein 38 g<br>Bugün: 887 / 2000 Kcal · Kalan: <b>1113 Kcal</b><time>12:41</time></div>
     </div>
   </div>
 </section>
 
-<section class="m" data-saat="15:20" data-kcal="825" data-pct="52" style="--from:#8AC8EE;--to:#B9D3DF">
+<section class="m" data-saat="15:20" data-kcal="887" data-pct="46" style="--from:#8AC8EE;--to:#B9D3DF">
   <div class="wrap iki">
     <div class="kolon">
       <p class="saat" aria-hidden="true">15:20</p>
@@ -264,88 +345,121 @@ footer a{display:inline-block;padding:10px 0}
       <p class="lead muted">“Kaç kalori?” diye sorarsan kaydetmeden söyler. “Ne yesem?” dersen kalan kalorine ve proteinine göre öneri getirir; numarasını yazınca kaydeder.</p>
       <p class="ornekler"><a href="https://wa.me/905465537932?text=ne%20yesem%3F">ne yesem?</a><a href="https://wa.me/905465537932?text=1%20kase%20mercimek%20%C3%A7orbas%C4%B1%20ka%C3%A7%20kcal">1 kase mercimek çorbası kaç kcal</a></p>
     </div>
-    <div class="sohbet" aria-label="Örnek sohbet, kalori sorusu">
+    <div class="sohbet" aria-label="Örnek sohbet, kalori sorusu ve öneri">
       <p class="b ben">baklava kaç kalori?<time>15:20</time></p>
-      <div class="b bot"><b>Baklava</b> · 1 dilim (~47 g)<br><b>201 kcal</b> · Protein 3 g · Karb 22 g · Yağ 12 g<br>Günlük hedefinin %13'ü · bugün kalan: <b>725 kcal</b><br><i>Kaydetmedim. Yediysen ekleyebilirim.</i><time>15:20</time></div>
+      <div class="b bot"><b>Baklava</b> · 1 dilim (~47 g)<br><b>201 kcal</b> · Protein 3 g · Karb 22 g · Yağ 12 g<br><i>Kaydetmedim. Yediysen ekleyebilirim.</i><time>15:20</time></div>
+      <p class="b ben">ne yesem?<time>15:21</time></p>
+      <div class="b bot"><b>Ara öğün için öneriler</b><br>Kalan: 1113 Kcal · 112 g protein<br>1️⃣ 1 kase yoğurt + 1 avuç ceviz · ≈ 260 Kcal<br>2️⃣ 2 dilim beyaz peynir + 1 elma · ≈ 230 Kcal<br><i>Numarasını yaz, kaydedeyim.</i><time>15:21</time></div>
     </div>
   </div>
 </section>
 
-<section class="m" data-saat="16:05" data-kcal="978" data-pct="58" style="--from:#B9D3DF;--to:#F1D7A6">
+<section class="m" data-saat="16:05" data-kcal="1040" data-pct="56" style="--from:#B9D3DF;--to:#F1D7A6">
   <div class="wrap iki">
     <div class="kolon">
       <p class="saat" aria-hidden="true">16:05</p>
       <h2>Paketli ürünse barkodu çek.</h2>
-      <p class="lead muted">Barkodu ya da paketteki besin tablosunu gönder; ürünü bulur, “ne kadar yedin?” diye sorar. Yazmaya vaktin yoksa sesli mesaj at, yazıya çevirip kaydetsin.</p>
+      <p class="lead muted">1.656 barkodlu ürün hazır. Bulamazsa paketteki besin tablosunu okur ve bir dahaki sefere hatırlar. “Yarım paket” yazman yeter.</p>
+      <p class="not muted">Yazmaya vaktin yoksa sesli mesaj at; sesini yazıya çevirip aynı şekilde kaydeder.</p>
     </div>
     <div class="sohbet" aria-label="Örnek sohbet, barkod">
       <div class="b ben"><span class="barkod"><svg viewBox="0 0 180 56" aria-hidden="true"><g fill="#111"><rect x="0" width="3" height="56"/><rect x="5" width="1.5" height="56"/><rect x="9" width="3" height="56"/><rect x="14" width="1.5" height="56"/><rect x="18" width="4.5" height="56"/><rect x="25" width="1.5" height="56"/><rect x="29" width="3" height="56"/><rect x="35" width="1.5" height="56"/><rect x="39" width="4.5" height="56"/><rect x="46" width="3" height="56"/><rect x="52" width="1.5" height="56"/><rect x="56" width="3" height="56"/><rect x="62" width="1.5" height="56"/><rect x="66" width="4.5" height="56"/><rect x="73" width="1.5" height="56"/><rect x="78" width="3" height="56"/><rect x="84" width="1.5" height="56"/><rect x="88" width="3" height="56"/><rect x="94" width="4.5" height="56"/><rect x="101" width="1.5" height="56"/><rect x="105" width="3" height="56"/><rect x="111" width="1.5" height="56"/><rect x="115" width="4.5" height="56"/><rect x="122" width="1.5" height="56"/><rect x="126" width="3" height="56"/><rect x="132" width="1.5" height="56"/><rect x="136" width="3" height="56"/><rect x="142" width="4.5" height="56"/><rect x="149" width="1.5" height="56"/><rect x="153" width="3" height="56"/><rect x="159" width="1.5" height="56"/><rect x="163" width="4.5" height="56"/><rect x="170" width="1.5" height="56"/><rect x="174" width="3" height="56"/></g></svg><span>8690504014201</span></span><time>16:04</time></div>
       <div class="b bot"><b>Barkod bulundu</b><br>Ülker Biskrem<br><i>100 g: 511 Kcal · P 5.2 g · K 66.4 g · Y 24.4 g</i><br><b>Ne kadar yedin?</b><time>16:04</time></div>
       <p class="b ben">30 gram<time>16:05</time></p>
-      <div class="b bot"><b>Atıştırmalık kaydedildi</b><br>Ülker Biskrem (30 gram): 153 Kcal<br>Bugün: 978 / 1550 Kcal<time>16:05</time></div>
+      <div class="b bot"><b>Atıştırmalık kaydedildi</b><br>Ülker Biskrem (30 gram): 153 Kcal<br>Bugün: 1040 / 2000 Kcal<time>16:05</time></div>
     </div>
   </div>
 </section>
 
-<section class="m" data-saat="18:30" data-kcal="978" data-pct="72" style="--from:#F1D7A6;--to:#E58750;--ink:#2A1408;--muted:#4E2813;--bot:#FFF6EC;--botink:#2A1408">
-  <div class="wrap iki">
-    <div class="kolon">
-      <p class="saat" aria-hidden="true">18:30</p>
-      <h2>Spor salonu defterin cebinde.</h2>
-      <p class="lead muted">Setlerini yaz, ağırlığı ve tekrarı tutsun. Dinlenme sayacını başlat, süre dolunca haber versin. Hazır programlardan birini seç; bir sonraki antrenmanın ağırlığını o hesaplasın.</p>
-      <p class="not muted">Tüm Vücut · Evde Dambılla · GZCLP · Push-Pull-Legs · Üst/Alt · Koşuya Başla</p>
+<section class="m" id="antrenman" data-saat="18:30" data-kcal="1040" data-pct="68" style="--from:#F1D7A6;--to:#E58750;--ink:#2A1408;--muted:#4E2813;--bot:#FFF6EC;--botink:#2A1408">
+  <div class="wrap">
+    <div class="iki">
+      <div class="kolon">
+        <p class="saat" aria-hidden="true">18:30</p>
+        <h2>Programını seç. Ağırlığı o artırsın.</h2>
+        <p class="lead muted">“program öner” yaz; üç soruyla sana uygun programı bulur. Setlerini yazdıkça bir sonraki antrenmanın ağırlığını ve tekrarını hesaplar, takıldığında yükü hafifletir. Dinlenme sayacını başlat, süre dolunca haber versin.</p>
+        <ul class="etiketler"><li>Yeni rekor bildirimi</li><li>Takılınca otomatik hafifletme</li><li>Bilmediği hareketi internetten öğrenir</li><li>Premium: hedef ağırlıklar ve sabah hatırlatması</li></ul>
+      </div>
+      <div class="sohbet" aria-label="Örnek sohbet, antrenman">
+        <p class="b ben">squat 3x12 60 kg<time>18:30</time></p>
+        <div class="b bot"><b>Antrenman kaydedildi</b><br>Squat: 3×12 · 60 kg<br>🏆 <b>Yeni rekor!</b> Tahmini 1RM: 84 kg<br>📈 Sıradaki hedef: 3×8 · 62,5 kg<br><i>Tüm setlerde 12 tekrara ulaştın, ağırlık artıyor.</i><time>18:31</time></div>
+        <p class="b ben">90 sn dinlenme<time>18:31</time></p>
+        <div class="b bot"><b>Dinlenme bitti</b> (1 dk 30 sn)<br>Sıradaki sete geç.<time>18:33</time></div>
+      </div>
     </div>
-    <div class="sohbet" aria-label="Örnek sohbet, antrenman">
-      <p class="b ben">bench press 60 kg 5 5 5 4<time>18:30</time></p>
-      <div class="b bot"><b>Antrenman kaydedildi</b><br>Bench press 5-5-5-4 · 60 kg<time>18:30</time></div>
-      <p class="b ben">90 sn dinlenme<time>18:31</time></p>
-      <div class="b bot"><b>Dinlenme bitti</b> (1 dk 30 sn)<br>Sıradaki sete geç.<time>18:32</time></div>
-    </div>
+    <ul class="programlar" aria-label="Hazır programlar">
+      <li><span>Başlangıç · haftada 3 gün · salon</span><b>Tüm Vücut</b>İki antrenman dönüşümlü, temel hareketler, 8–12 tekrar.</li>
+      <li><span>Başlangıç · haftada 3 gün · ev</span><b>Evde Dambılla Tüm Vücut</b>Salona gitmeden, bir çift ayarlanabilir dambılla.</li>
+      <li><span>Başlangıç–orta · haftada 3 gün</span><b>GZCLP</b>Güç odaklı: ağır ana hareket, hacim ve yardımcı hareket.</li>
+      <li><span>Başlangıç–orta · haftada 3 gün</span><b>Push-Pull-Legs</b>İtiş, çekiş ve bacak günleri; ana harekette her antrenman artış.</li>
+      <li><span>Orta–ileri · haftada 4 gün</span><b>Üst/Alt</b>İki üst, iki alt vücut günü; 6–8 tekrar ana hareketler.</li>
+      <li><span>Orta–ileri · haftada 6 gün</span><b>Push-Pull-Legs 6 gün</b>Her kas grubu haftada iki kez; yoğun ve hızlı ilerletir.</li>
+      <li><span>Başlangıç · haftada 3 gün · koşu</span><b>Koşuya Başla (0 → 5 km)</b>Hiç koşmadıysan: 8 haftada yürüyüş-koşu aralıklarından 30 dk kesintisiz koşuya.</li>
+    </ul>
   </div>
 </section>
 
-<section class="m" data-saat="19:10" data-kcal="978" data-pct="79" style="--from:#E58750;--to:#D27752;--ink:#1F0E05;--muted:#341608;--bot:#FFF6EC;--botink:#2A1408">
+<section class="m" data-saat="19:10" data-kcal="1040" data-pct="76" style="--from:#E58750;--to:#D27752;--ink:#1F0E05;--muted:#341608;--bot:#FFF6EC;--botink:#2A1408">
   <div class="wrap iki">
     <div class="kolon">
       <p class="saat" aria-hidden="true">19:10</p>
-      <h2>Koştun mu, yürüdün mü? Yaz yeter.</h2>
-      <p class="lead muted">Süre, mesafe ve tempoyla yaktığını hesaplar, rekorlarını tutar, haftalık 150 dakikaya ne kadar kaldığını gösterir. Hiç koşmadıysan 8 haftada 5 kilometreye götüren program da var.</p>
-      <p class="ornekler"><a href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla">koşuya başla</a><a href="https://wa.me/905465537932?text=45%20dk%20bisiklet%2020%20km">45 dk bisiklet 20 km</a></p>
+      <h2>Yürü, koş, pedal çevir, yüz.</h2>
+      <p class="lead muted">Süreyi, mesafeyi, hızı ve eğimi yaz; yakılan kaloriyi kilona göre bilimsel MET değerleriyle hesaplar. En uzun mesafe ve en hızlı tempo rekorlarını tutar, haftalık 150 dakika hedefine ne kadar kaldığını gösterir. Hiç koşmadıysan 8 haftada 30 dakikaya götüren program her gün ne yapacağını söyler.</p>
+      <p class="not muted">Yürüyüş · yürüyüş bandı · koşu · bisiklet · spinning · yüzme · eliptik · kürek · ip atlama · HIIT · halı saha · tenis · pilates · yoga</p>
+      <p class="ornekler"><a href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla">koşuya başla</a><a href="https://wa.me/905465537932?text=45%20dk%20bisiklet%2020%20km">45 dk bisiklet 20 km</a><a href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1">30 dk eğimli yürüyüş bandı</a></p>
     </div>
     <div class="sohbet" aria-label="Örnek sohbet, koşu">
       <p class="b ben">5 km koştum 28 dakikada<time>19:10</time></p>
-      <div class="b bot"><b>Kardiyo kaydedildi</b><br>Koşu: 28 dk · 5 km · 5:36/km tempo · ~373 Kcal<br>Bu hafta kardiyo: 28 / 150 dk<time>19:10</time></div>
+      <div class="b bot"><b>Kardiyo kaydedildi</b><br>Koşu: 28 dk · 5 km · 5:36/km tempo · ~439 Kcal<br>⚡ <b>En hızlı temponu kırdın!</b><br>Bu hafta kardiyo: 90 / 150 dk 🟩🟩🟩⬜⬜<time>19:10</time></div>
     </div>
   </div>
 </section>
 
-<section class="m" data-saat="20:10" data-kcal="1455" data-pct="86" data-koyu="1" style="--from:#D27752;--to:#3E3466;--ink:#FFF5EC;--muted:#FBEAF0;--bot:#2E2752;--botink:#FFF5EC;background:linear-gradient(180deg,#D27752 0%,#93485A 18%,#5A3D66 55%,#3E3466 100%)">
+<section class="m" data-saat="20:10" data-kcal="1842" data-pct="84" data-koyu="1" style="--from:#D27752;--to:#3E3466;--ink:#FFF5EC;--muted:#FBEAF0;--bot:#2E2752;--botink:#FFF5EC;background:linear-gradient(180deg,#D27752 0%,#93485A 18%,#5A3D66 55%,#3E3466 100%)">
   <div class="wrap iki">
     <div class="kolon">
       <p class="saat" aria-hidden="true">20:10</p>
-      <h2>Akşam yemeği, kalan hakkınla birlikte.</h2>
-      <p class="lead muted">Her kayıtta günün toplamını ve kalanını görürsün. Yanlış yazdıysan “yanlış girdim, aslında 2 porsiyon” demen yeter.</p>
+      <h2>Dışarıda yesen de sayılır.</h2>
+      <p class="lead muted">Zincir restoran ve kafeleri markaların yayımladığı resmi değerlerle tanır. Her kayıtta günün toplamını ve kalanını görürsün; yanlış yazdıysan “yanlış girdim, aslında 2 porsiyon” demen yeter.</p>
+      <ul class="markalar"><li>McDonald's <b>25</b></li><li>Burger King <b>150</b></li><li>Popeyes <b>24</b></li><li>Tavuk Dünyası <b>41</b></li><li>Starbucks <b>400+</b> içecek boyu ve yiyecek</li></ul>
+      <p class="not muted">Starbucks yalnızca kalori yayınladığı için orada protein ve makro görünmez.</p>
     </div>
     <div class="sohbet" aria-label="Örnek sohbet, akşam yemeği">
-      <p class="b ben">akşam 1 porsiyon mercimek çorbası ve 1 porsiyon tavuk sote<time>20:10</time></p>
+      <p class="b ben">akşam mcdonalds'ta big mac ve orta boy patates yedim<time>20:09</time></p>
       <div class="b bot"><b>Akşam Yemeği kaydedildi</b>
-        <ul><li>Mercimek çorbası (1 porsiyon): 163 Kcal</li><li>Tavuk sote (1 porsiyon): 315 Kcal</li></ul>
-        <b>Toplam:</b> 477 Kcal<br>Bugün: 1455 / 1550 Kcal · Kalan: <b>95 Kcal</b><time>20:10</time></div>
+        <ul><li>Big Mac (McDonald's): 525 Kcal · 26.1 g protein</li><li>Orta Boy Patates Kızartması (McDonald's): 277 Kcal · 3 g protein</li></ul>
+        <b>Toplam:</b> 802 Kcal · Protein 29.1 g · Karb 86.8 g · Yağ 39.7 g<br>Bugün: 1842 / 2000 Kcal · Kalan: <b>158 Kcal</b><time>20:10</time></div>
     </div>
   </div>
 </section>
 
-<section class="m" data-saat="22:40" data-kcal="1455" data-pct="98" data-koyu="1" style="--from:#3E3466;--to:#14213D;--ink:#F3F6FB;--muted:#C3CEE2;--bot:#1D2B4D;--botink:#F3F6FB">
+<section class="m" data-saat="21:10" data-kcal="1842" data-pct="91" data-koyu="1" style="--from:#3E3466;--to:#2A2E59;--ink:#F6F2FB;--muted:#DCD3EA;--bot:#332C5E;--botink:#F6F2FB">
+  <div class="wrap iki">
+    <div class="kolon">
+      <p class="saat" aria-hidden="true">21:10</p>
+      <h2>Yarının menüsü şimdiden hazır.</h2>
+      <p class="lead muted">“haftalık plan” yaz; kalori ve protein hedefine göre 7 günlük plan gelsin: menemen, kuru fasulye, ızgara köfte, levrek gibi ev yemekleri, gramlarıyla. “alışveriş listesi” yazınca haftanın malzemeleri çıkar, PDF'i de hazır. Her sabah aynı kahvaltıyı yiyorsan bir kez “sabah kahvaltım” diye kaydet, sonra tek kelimeyle ekle.</p>
+      <p class="not muted">Haftalık plan, alışveriş listesi ve PDF Premium'da. Ücretsiz planda bugün için örnek yemek planı var.</p>
+    </div>
+    <div class="sohbet" aria-label="Örnek sohbet, haftalık yemek planı">
+      <p class="b ben">haftalık plan<time>21:09</time></p>
+      <div class="b bot"><b>Haftalık yemek planın</b><br><i>hedef 2.000 kcal, 130 g protein</i><br><b>Salı</b> · ~2.000 kcal · 138 g protein<br>Kahvaltı: haşlanmış yumurta, beyaz peynir, tam buğday ekmek<br>Öğle: tavuk suyu çorbası, ızgara köfte, çoban salata<br>Akşam: tavuk döner, pirinç pilavı, ayran<br>… Çarşamba–Pazartesi, 6 gün daha<br><i>alışveriş listesi · planımı pdf gönder</i><time>21:10</time></div>
+    </div>
+  </div>
+</section>
+
+<section class="m" data-saat="22:40" data-kcal="1842" data-pct="98" data-koyu="1" style="--from:#2A2E59;--to:#14213D;--ink:#F3F6FB;--muted:#C3CEE2;--bot:#1D2B4D;--botink:#F3F6FB">
   <div class="wrap iki">
     <div class="kolon">
       <p class="saat" aria-hidden="true">22:40</p>
       <h2>Gün biterken özeti hazır.</h2>
-      <p class="lead muted">“bugün” yaz, günün tamamını gör. Pazar akşamı haftalık raporun kendiliğinden gelir. Premium'da her akşam kısa bir koç yorumu ve yarın için tek öneri.</p>
-      <p class="not muted">Bu sayfadaki değerler botun gerçek cevaplarından alınmış örneklerdir.</p>
+      <p class="lead muted">“bugün” yaz, günün tamamını gör. Pazar akşamı haftalık raporun kendiliğinden gelir: ortalamalar, hedefe ulaşılan günler ve kilo değişimi bir bakışta. Premium'da her akşam kısa bir koç yorumu ve yarın için tek öneri.</p>
+      <p class="not muted">Bu sayfadaki sohbetler örnektir; değerler botun cevaplarına göre hazırlanmıştır.</p>
     </div>
-    <div class="sohbet" aria-label="Örnek sohbet, günün özeti">
+    <div class="sohbet" aria-label="Örnek sohbet, günün ve haftanın özeti">
       <p class="b ben">bugün<time>22:40</time></p>
-      <div class="b bot"><b>Bugünün Özeti</b><br>Kalori: 1455 / 1550 Kcal<br>Kahvaltı 432 · Öğle 393 · Atıştırmalık 153 · Akşam 477<br>Su: 500 / 2400 ml<br>Antrenman: yapıldı · Kardiyo: 28 dk, 5 km<time>22:40</time></div>
+      <div class="b bot"><b>Bugünün Özeti</b><br>Kalori: 1842 / 2000 Kcal<br>Kahvaltı 432 · Öğle 455 · Atıştırmalık 153 · Akşam 802<br>Su: 2000 / 2400 ml<br>Antrenman: yapıldı · Kardiyo: 28 dk, 5 km<time>22:40</time></div>
+      <div class="b bot"><b>Pazar · Haftalık Rapor</b><br>Beslenme 7/7 gün kayıt · ort. 1938 Kcal<br>Hedefe ulaşılan gün: 5/7 · Antrenman: 4/7 gün<br>Kilo: 84.6 → 83.9 kg (−0.7 kg)<time>Pazar 20:05</time></div>
     </div>
   </div>
 </section>
@@ -355,16 +469,52 @@ footer a{display:inline-block;padding:10px 0}
 <section class="blok" id="basla" data-koyu="1">
   <div class="wrap iki">
     <div class="kolon">
-      <h2>Yarın sabah başlamak için bir dakika yeter.</h2>
-      <p class="lead muted">Rehberine kaydetmen bile gerekmez. “merhaba” yaz; kısa bir onaydan sonra yedi soru sorar, hedeflerini hesaplar.</p>
+      <h2>Üç adımda başla.</h2>
+      <ol class="adim-liste">
+        <li><b>“merhaba” yaz.</b> Numarayı rehberine ekle ve sohbeti başlat. Kişisel verilerin için kısa bir onay istenir.</li>
+        <li><b>Birkaç soruyu cevapla.</b> Adın, yaşın, boyun, kilon, aktiviten ve hedefin. Kalori, protein, karbonhidrat ve yağ hedeflerin buna göre hesaplanır.</li>
+        <li><b>Yaz, çek, takip et.</b> Gün içinde yediklerini gönder. “bugün” yaz, günün özetini gör; “bu hafta” yaz, haftalık raporunu al.</li>
+      </ol>
       <p><a class="btn" href="https://wa.me/905465537932?text=merhaba">WhatsApp'ta “merhaba” yaz</a></p>
     </div>
     <div class="sohbet adimlar" aria-label="Örnek sohbet, kayıt">
       <p class="b ben">merhaba</p>
       <div class="b bot"><b>Merhaba, ben SporTakip!</b><br>Başlamadan tek onay: verilerini yalnızca sana hizmet vermek için işlerim. Onaylıyor musun?</div>
-      <div class="b bot">Günlük kalori ve protein hedefini hesaplamam için <b>7 kısa soru</b> soracağım: adın, cinsiyetin, yaşın, boyun, kilon, aktiviten ve hedefin.</div>
-      <div class="b bot"><b>Günlük hedeflerin</b><br>Kalori 1550 · Protein 136 g · Karb 155 g · Yağ 43 g · Su 2,4 L</div>
+      <div class="b bot">Günlük kalori ve protein hedefini hesaplamam için birkaç kısa soru soracağım: adın, cinsiyetin, yaşın, boyun, kilon, aktiviten ve hedefin.</div>
+      <div class="b bot"><b>Günlük hedeflerin</b><br>Kalori 2000 · Protein 150 g · Karb 205 g · Yağ 65 g · Su 2,4 L</div>
     </div>
+  </div>
+</section>
+
+<hr class="ayrac">
+
+<section class="blok" id="kimin">
+  <div class="wrap">
+    <h2>Hedefin ne olursa olsun.</h2>
+    <p class="lead muted alt-bosluk">Günlük ihtiyacın yaş, boy, kilo, cinsiyet ve aktivitenden Mifflin-St Jeor formülüyle hesaplanır, sonra hedefine göre ayarlanır.</p>
+    <div class="dortlu">
+      <div><p class="isaret">−%20</p><h3>Kilo vermek</h3><p class="muted">Açık, ihtiyacının en fazla %20'si; kas kaybını önlemek için protein yüksek tutulur.</p></div>
+      <div><p class="isaret">±0</p><h3>Kiloyu korumak</h3><p class="muted">İhtiyacın kadar kalori; dengede kalmak ve ne yediğini görmek için.</p></div>
+      <div><p class="isaret">+</p><h3>Kilo almak, kas yapmak</h3><p class="muted">Kalori fazlası ve programlı antrenmanla ilerlemeni izlersin.</p></div>
+      <div><p class="isaret">Rekomp</p><h3>Koruyup kas kazanmak</h3><p class="muted">Kalori sabit; vücut ölçülerinle değişimi takip edersin.</p></div>
+    </div>
+    <p class="not muted ust-bosluk">Hedeflerini istediğin zaman tek mesajla değiştirebilirsin. SporTakip bir sağlık danışmanlığı hizmeti değildir; özel bir durumun varsa hedeflerini bir uzmanla belirle.</p>
+  </div>
+</section>
+
+<hr class="ayrac">
+
+<section class="blok" id="hatirlatma" aria-labelledby="hatirlatma-baslik">
+  <div class="wrap">
+    <h2 id="hatirlatma-baslik">Unuttuğunda o hatırlatır.</h2>
+    <p class="lead muted alt-bosluk">Temel hatırlatmalar herkese açık; kişisel koçluk hatırlatmaları Premium'da.</p>
+    <div class="ikili">
+      <div><h3>Herkese</h3>
+        <ul class="zaman"><li><b>11:00</b>Kahvaltını girmediysen kısa bir hatırlatma</li><li><b>20:00</b>Gün boyu kayıt yoksa hatırlatma, serin bitmek üzereyse uyarı, su hedefin</li><li><b>Seri</b>3, 7, 14, 30. gün gibi seri kutlamaları</li></ul></div>
+      <div><h3>Premium</h3>
+        <ul class="zaman"><li><b>11:00</b>Antrenman günü: o günün antrenmanı, her harekette hedef ağırlık ve tekrarla</li><li><b>20:00</b>Günün değerlendirmesi ve yarın için tek öneri; takviye, antrenman ve tartı hatırlatmaları</li><li><b>Pazar 20:05</b>Haftalık rapor, güç raporu ve gerekirse yeni kalori hedefi önerisi</li></ul></div>
+    </div>
+    <p class="not muted ust-bosluk">WhatsApp kuralları gereği hatırlatmalar, son 24 saat içinde bota yazdıysan gönderilir.</p>
   </div>
 </section>
 
@@ -380,8 +530,10 @@ footer a{display:inline-block;padding:10px 0}
         <ul class="liste">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Günde 45 mesaj, 3 fotoğraf tanıma, 3 internetten besin araştırma</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Yemek, su, kilo, antrenman ve takviye takibi</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Barkod, hazır antrenman programları, rekor takibi</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Günlük özet, haftalık rapor, kahvaltı ve su hatırlatmaları</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Barkod, hazır antrenman programları ve rekor takibi</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>İstediğinde günlük özet ve haftalık rapor</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Kahvaltı, su ve seri hatırlatmaları</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Bugün için örnek yemek planı</li>
         </ul>
         <a class="btn" href="https://wa.me/905465537932?text=merhaba">Ücretsiz başla</a>
       </div>
@@ -390,11 +542,13 @@ footer a{display:inline-block;padding:10px 0}
         <p class="fiyat"><b>₺249</b><span>/ ay</span></p>
         <p class="donemler"><span>3 aylık <b>₺599</b> (ayda ₺200)</span><span>Yıllık <b>₺1.499</b> (ayda ₺125)</span></p>
         <ul class="liste">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Akıllı hedef: kilo trendine ve yediklerine bakıp kalori hedefini haftalık ayarlar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Antrenman hedefleri: her harekette bir sonraki ağırlık ve tekrar, Pazar güç raporu</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Haftalık yemek planı: hedefine göre 7 gün, alışveriş listesiyle</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Akşam koç yorumu ve takviye, antrenman, tartı hatırlatmaları</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Aralıklı oruç: 16:8, 18:6; yeme pencerin açılınca ve kapanınca haber</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>PDF: yazdırılabilir yemek planı ve aylık ilerleme raporu</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Günde 300 mesaj, 25 fotoğraf (ilk 5'i en gelişmiş modelle), 5 araştırma</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Haftalık yemek planı, alışveriş listesi ve PDF</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Akıllı hedef: kilo trendine göre kalori hedefini haftalık ayarlar</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Akşam koç yorumu, aralıklı oruç, kişisel hatırlatmalar</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Antrenmanda hedef ağırlıklar ve Pazar güç raporu</li>
         </ul>
         <a class="btn" href="https://wa.me/905465537932?text=merhaba" style="background:#0E2238;color:#F3F6FB">7 gün ücretsiz dene</a>
         <p class="uyari">Kaydını bitirince Premium 7 gün ücretsiz açılır; deneme bitince otomatik ücret alınmaz, ücretsiz planla devam edersin. Ödeme sistemi çok yakında açılıyor.</p>
@@ -409,9 +563,38 @@ footer a{display:inline-block;padding:10px 0}
   <div class="wrap">
     <h2>Verilerin senin.</h2>
     <div class="uclu">
-      <div><h3>Onayın olmadan kayıt yok</h3><p class="muted">Sağlık verisi hassastır. KVKK kapsamında açık onayın alınmadan hiçbir şey kaydedilmez. <a href="/gizlilik/">Aydınlatma metni</a></p></div>
-      <div><h3>Satılmaz, paylaşılmaz</h3><p class="muted">Veriler yalnızca sana bu hizmeti vermek için kullanılır. Adın ve numaran yapay zekâya gitmez; sadece yazdığın metin işlenir.</p></div>
+      <div><h3>Onayın olmadan kayıt yok</h3><p class="muted">Sağlık verisi hassastır. KVKK kapsamında açık onayın alınmadan hiçbir şey kaydedilmez. <a href="/gizlilik/">Aydınlatma metnini oku</a></p></div>
+      <div><h3>Satılmaz, paylaşılmaz</h3><p class="muted">Reklam için paylaşılmaz; veriler yalnızca sana bu hizmeti vermek için kullanılır. Adın ve numaran yapay zekâya gitmez; mesajını anlamak için sadece yazdığın metin işlenir.</p></div>
       <div><h3>Tek mesajla silinir</h3><p class="muted">“hesabımı sil” yazıp onaylarsan tüm kayıtların kalıcı olarak silinir.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="ayrac">
+
+<section class="blok" id="komutlar">
+  <div class="wrap">
+    <h2>Ne yazacağını bilmiyorsan.</h2>
+    <p class="lead muted alt-bosluk">Ezberlemen gereken bir komut yok; kendi cümlelerinle yazabilirsin. Aşağıdakiler örnek. Birine dokunursan WhatsApp'ta hazır açılır.</p>
+    <div class="menu-kutu">
+      <p class="menu-ust"><a href="https://wa.me/905465537932?text=men%C3%BC">menü</a> yazınca açılan kısayollar</p>
+      <div class="menu-gruplar">
+        <div><h3>Bugün</h3><ul><li>📊 Günlük özet <span>Kalori, makrolar ve kalan</span></li><li>🍽️ Bugün ne yedim</li><li>🥗 Ne yesem? <span>Kalan hedefine göre öneri</span></li><li>💧 Su durumum</li></ul></div>
+        <div><h3>İlerleme</h3><ul><li>⚖️ Kilo durumum</li><li>📈 Haftalık rapor</li><li>🎯 Hedeflerim</li><li>🗓️ Yemek planım <span>Bugünün öğünleri, miktarlarıyla</span></li></ul></div>
+        <div><h3>Diğer</h3><ul><li>⭐ Kayıtlı öğünlerim <span>Tek kelimeyle eklenen öğünler</span></li><li>📖 Tüm komutlar</li></ul></div>
+      </div>
+      <p class="not muted">Hepsi için <a href="https://wa.me/905465537932?text=komutlar">komutlar</a> yaz · 🎤 Sesli mesaj da olur.</p>
+    </div>
+    <div class="komut-grup">
+      <div><h3>🍽️ Yemek</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=2%20yumurta%20yedim">2 yumurta yedim</a><a href="https://wa.me/905465537932?text=kahvalt%C4%B1da%20150%20g%20peynir%20yedim">kahvaltıda 150 g peynir yedim</a><a href="https://wa.me/905465537932?text=big%20mac%20yedim">big mac yedim</a><a href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20yedim">bugün ne yedim</a><a href="https://wa.me/905465537932?text=yanl%C4%B1%C5%9F%20girdim%2C%20asl%C4%B1nda%203%20yumurta%20yedim">yanlış girdim, aslında 3 yumurta yedim</a><a href="https://wa.me/905465537932?text=d%C3%BCnk%C3%BC%20kahvalt%C4%B1m%C4%B1%20tekrar%20ekle">dünkü kahvaltımı tekrar ekle</a><a href="https://wa.me/905465537932?text=ne%20yesem%3F">ne yesem?</a></p><p class="not muted">📸 Yemeğin, barkodun ya da paketteki besin tablosunun fotoğrafını da gönderebilirsin.</p></div>
+      <div><h3>⭐ Kayıtlı öğün ve porsiyon</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=son%20%C3%B6%C4%9F%C3%BCn%C3%BCm%C3%BC%20%22sabah%20kahvalt%C4%B1m%22%20olarak%20kaydet">son öğünümü "sabah kahvaltım" olarak kaydet</a><a href="https://wa.me/905465537932?text=sabah%20kahvalt%C4%B1m%C4%B1%20yedim">sabah kahvaltımı yedim</a><a href="https://wa.me/905465537932?text=kay%C4%B1tl%C4%B1%20%C3%B6%C4%9F%C3%BCnlerim">kayıtlı öğünlerim</a><a href="https://wa.me/905465537932?text=1%20kase%20pilav%20250%20gram%20oluyor">1 kase pilav 250 gram oluyor</a><a href="https://wa.me/905465537932?text=porsiyonlar%C4%B1m">porsiyonlarım</a></p><p class="not muted">Her gün aynı şeyi yiyorsan bir kez kaydet, sonra tek cümleyle ekle.</p></div>
+      <div><h3>💧 Su ve içecek</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=500%20ml%20su%20i%C3%A7tim">500 ml su içtim</a><a href="https://wa.me/905465537932?text=2%20bardak%20su%20i%C3%A7tim">2 bardak su içtim</a><a href="https://wa.me/905465537932?text=su%20durumum">su durumum</a><a href="https://wa.me/905465537932?text=1%20kutu%20kola%20i%C3%A7tim">1 kutu kola içtim</a><a href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20i%C3%A7tim">bugün ne içtim</a></p></div>
+      <div><h3>📊 Özet, hedef ve profil</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=bug%C3%BCn">bugün</a><a href="https://wa.me/905465537932?text=bu%20hafta">bu hafta</a><a href="https://wa.me/905465537932?text=hedeflerim">hedeflerim</a><a href="https://wa.me/905465537932?text=kalori%20hedefimi%202800%20yap">kalori hedefimi 2800 yap</a><a href="https://wa.me/905465537932?text=profilim">profilim</a><a href="https://wa.me/905465537932?text=ya%C5%9F%C4%B1m%2026%20oldu">yaşım 26 oldu</a></p></div>
+      <div><h3>⚖️ Kilo, ölçü ve takviye</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=85%20kg%20tart%C4%B1ld%C4%B1m">85 kg tartıldım</a><a href="https://wa.me/905465537932?text=kilo%20durumum">kilo durumum</a><a href="https://wa.me/905465537932?text=belim%2085%20cm">belim 85 cm</a><a href="https://wa.me/905465537932?text=%C3%B6l%C3%A7%C3%BClerim">ölçülerim</a><a href="https://wa.me/905465537932?text=kreatin%20i%C3%A7tim">kreatin içtim</a><a href="https://wa.me/905465537932?text=takviyelerim">takviyelerim</a></p></div>
+      <div><h3>🏋️ Antrenman</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=program%20%C3%B6ner">program öner</a><a href="https://wa.me/905465537932?text=programlar">programlar</a><a href="https://wa.me/905465537932?text=s%C4%B1radaki%20antrenman">sıradaki antrenman</a><a href="https://wa.me/905465537932?text=hepsini%20yapt%C4%B1m">hepsini yaptım</a><a href="https://wa.me/905465537932?text=bench%20press%2060%20kg%205%205%205%204">bench press 60 kg 5 5 5 4</a><a href="https://wa.me/905465537932?text=squat%203x8%2080%20kg">squat 3x8 80 kg</a><a href="https://wa.me/905465537932?text=rekorlar%C4%B1m">rekorlarım</a><a href="https://wa.me/905465537932?text=antrenman%20raporum">antrenman raporum</a></p><p class="not muted">Her set için tekrarı sırayla yazabilirsin: 5 5 5 4.</p></div>
+      <div><h3>🏃 Kardiyo</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=5%20km%20ko%C5%9Ftum%2028%20dakikada">5 km koştum 28 dakikada</a><a href="https://wa.me/905465537932?text=30%20dk%20e%C4%9Fimli%20y%C3%BCr%C3%BCy%C3%BC%C5%9F%20band%C4%B1">30 dk eğimli yürüyüş bandı</a><a href="https://wa.me/905465537932?text=45%20dk%20bisiklet%2020%20km">45 dk bisiklet 20 km</a><a href="https://wa.me/905465537932?text=1500%20m%20y%C3%BCzd%C3%BCm%2035%20dakikada">1500 m yüzdüm 35 dakikada</a><a href="https://wa.me/905465537932?text=1%20saat%20hal%C4%B1%20saha">1 saat halı saha</a><a href="https://wa.me/905465537932?text=ko%C5%9Fuya%20ba%C5%9Fla">koşuya başla</a><a href="https://wa.me/905465537932?text=haftay%C4%B1%20tekrarla">haftayı tekrarla</a></p><p class="not muted">Süre, mesafe, hız ve eğim yazdıkça kalori hesabı daha doğru olur.</p></div>
+      <div><h3>✨ Premium</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan">haftalık plan</a><a href="https://wa.me/905465537932?text=al%C4%B1%C5%9Fveri%C5%9F%20listesi">alışveriş listesi</a><a href="https://wa.me/905465537932?text=ak%C4%B1ll%C4%B1%20hedef">akıllı hedef</a><a href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat">16:8 oruç başlat</a><a href="https://wa.me/905465537932?text=orucum">orucum</a><a href="https://wa.me/905465537932?text=plan%C4%B1m%C4%B1%20pdf%20g%C3%B6nder">planımı pdf gönder</a><a href="https://wa.me/905465537932?text=ayl%C4%B1k%20rapor">aylık rapor</a></p><p class="not muted">İlk 7 gün ücretsiz. Durumunu görmek için: planım ne</p></div>
+      <div><h3>🗑️ Silme ve hesap</h3><p class="ornekler duz"><span>hamburgeri sil</span><span>son öğünümü sil</span><span>son suyu sil</span><span>bugünü sıfırla</span><span>hesabımı sil</span></p><p class="not muted">Silme komutları bugünün kayıtları içindir. “hesabımı sil” tüm verilerini kalıcı olarak siler; önce onay ister.</p></div>
     </div>
   </div>
 </section>
@@ -423,26 +606,17 @@ footer a{display:inline-block;padding:10px 0}
     <h2>Sık sorulanlar</h2>
     <div class="sss">
       <details><summary>Uygulama indirmem gerekiyor mu?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Hayır. SporTakip bir WhatsApp işletme hesabı; telefonundaki WhatsApp yeterli.</p></details>
-      <details><summary>Kalori değerleri ne kadar doğru?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Değerler kendi veritabanımızdan, paketli ürünlerde barkod ve etiketten, zincir restoranlarda markaların yayımladığı tablolardan gelir. Fotoğraftan yapılan kayıtlar tahminidir ve öyle işaretlenir.</p></details>
-      <details><summary>Hangi yemekleri tanıyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Ev yemeklerinden çorbalara, paketli ürünlerden McDonald's, Burger King, Popeyes, Tavuk Dünyası ve Starbucks menülerine kadar Türkiye'de yenen yemeklerin çoğunu. “Peynir” gibi genel bir şey yazarsan türünü sorar. Veritabanında olmayan bir yemeği internetten araştırıp ekler.</p></details>
-      <details><summary>Yanlış kaydettiğimde ne olur?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>“yanlış girdim, aslında 3 yumurta yedim” ya da “hamburgeri sil” yazman yeterli. Bugünün kayıtlarını istediğin gibi düzeltebilirsin.</p></details>
-      <details><summary>7 günlük deneme bitince ne olur?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Otomatik ücret alınmaz; ücretsiz planla devam edersin. Kayıtların ve hedeflerin olduğu gibi kalır.</p></details>
-      <details><summary>Premium'a nasıl geçerim?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Sohbette “premium ol” yaz; Premium'un içeriğini ve fiyatını görürsün. Ödeme sistemi çok yakında açılıyor; açıldığında WhatsApp'tan haber vereceğiz.</p></details>
+      <details><summary>Uygulamalardan farkı ne?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Ayrı bir uygulama indirmen, hesap açman ya da her öğünde listeden yemek araman gerekmiyor. WhatsApp'a nasıl yazıyorsan öyle yazıyorsun: “öğlen 1 porsiyon kuru fasulye pilav yedim”. Türk mutfağını, zincir restoranları ve market ürünlerinin barkodunu tanır; beslenme ile antrenmanı aynı sohbette takip eder.</p></details>
       <details><summary>Zayıflama iğnesi (Ozempic, Mounjaro) kullanıyorum, işime yarar mı?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Evet. “iğne takibi” yazarak ilacını, iğne gününü ve yan etkileri kaydedebilir, iğne günü hatırlatması alabilirsin. Bu dönemde kas kaybını önlemek için protein hedefini ve kilo değişimini birlikte izleriz. İlaçla ilgili kararlar her zaman doktoruna aittir.</p></details>
       <details><summary>Hamileyim ya da şeker ilacı kullanıyorum, kullanabilir miyim?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Kullanabilirsin; kayıttan sonra bunu soruyoruz. Hamilelik, emzirme, yeme bozukluğu geçmişi ya da 18 yaş altında kalori açığı vermiyor, aralıklı orucu kapatıyoruz. SporTakip genel bilgilendirme ve takip aracıdır; tıbbi beslenme tedavisi yerine geçmez.</p></details>
+      <details><summary>Kalori değerleri ne kadar doğru?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Değerler kendi veritabanımızdan, paketli ürünlerde barkod ve etiketten, zincir restoranlarda markaların yayımladığı tablolardan gelir. Fotoğraftan yapılan kayıtlar tahminidir ve öyle işaretlenir.</p></details>
+      <details><summary>Hangi yemekleri tanıyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Ev yemeklerinden çorbalara, paketli ürünlerden McDonald's, Burger King, Popeyes, Tavuk Dünyası ve Starbucks menülerine kadar Türkiye'de yenen yemeklerin çoğunu. “Peynir” gibi genel bir şey yazarsan türünü sorar. Veritabanında olmayan bir yemeği internetten araştırıp ekler.</p></details>
       <details><summary>Antrenman programı nasıl ilerliyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>“program öner” yaz; üç soruyla sana uygun programı bulur. Setlerini yazdıkça her hareketin kaydı tutulur. Tüm setleri tamamlarsan ağırlık ya da tekrar artar; üst üste takılırsan yük biraz hafifletilir. Yeni bir rekor kırdığında haber verir. Hedef ağırlıkları görmek Premium'da.</p></details>
+      <details><summary>Yanlış kaydettiğimde ne olur?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>“yanlış girdim, aslında 3 yumurta yedim” ya da “hamburgeri sil” yazman yeterli. Bugünün kayıtlarını istediğin gibi düzeltebilirsin.</p></details>
       <details><summary>Hatırlatmalar nasıl çalışıyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Kahvaltını girmediysen sabah, gün boyu kayıt yoksa akşam kısa bir hatırlatma gelir; seri kutlamaları da var. Premium'da antrenman günü programın, takviye ve tartı hatırlatmaları eklenir. WhatsApp kuralları gereği hatırlatmalar, son 24 saat içinde bota yazdıysan gönderilir.</p></details>
-      <details id="komutlar"><summary>Ne yazacağımı bilmiyorum, örnek var mı?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <p>Ezberlemen gereken bir komut yok; kendi cümlelerinle yazabilirsin. Sohbette “menü” yazınca kısayollar açılır. Aşağıdakilerden birine dokunursan WhatsApp'ta hazır açılır.</p>
-        <div class="komut-grup">
-          <div><h3>Yemek</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=2%20yumurta%20yedim">2 yumurta yedim</a><a href="https://wa.me/905465537932?text=big%20mac%20yedim">big mac yedim</a><a href="https://wa.me/905465537932?text=bug%C3%BCn%20ne%20yedim">bugün ne yedim</a><a href="https://wa.me/905465537932?text=d%C3%BCnk%C3%BC%20kahvalt%C4%B1m%C4%B1%20tekrar%20ekle">dünkü kahvaltımı tekrar ekle</a></p></div>
-          <div><h3>Kayıtlı öğün ve porsiyon</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=son%20%C3%B6%C4%9F%C3%BCn%C3%BCm%C3%BC%20%22sabah%20kahvalt%C4%B1m%22%20olarak%20kaydet">son öğünümü “sabah kahvaltım” olarak kaydet</a><a href="https://wa.me/905465537932?text=1%20kase%20pilav%20250%20gram%20oluyor">1 kase pilav 250 gram oluyor</a></p></div>
-          <div><h3>Özet ve hedef</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=bug%C3%BCn">bugün</a><a href="https://wa.me/905465537932?text=bu%20hafta">bu hafta</a><a href="https://wa.me/905465537932?text=hedeflerim">hedeflerim</a><a href="https://wa.me/905465537932?text=kalori%20hedefimi%202800%20yap">kalori hedefimi 2800 yap</a></p></div>
-          <div><h3>Antrenman</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=program%20%C3%B6ner">program öner</a><a href="https://wa.me/905465537932?text=s%C4%B1radaki%20antrenman">sıradaki antrenman</a><a href="https://wa.me/905465537932?text=squat%203x8%2080%20kg">squat 3x8 80 kg</a><a href="https://wa.me/905465537932?text=rekorlar%C4%B1m">rekorlarım</a></p></div>
-          <div><h3>Premium</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=haftal%C4%B1k%20plan">haftalık plan</a><a href="https://wa.me/905465537932?text=al%C4%B1%C5%9Fveri%C5%9F%20listesi">alışveriş listesi</a><a href="https://wa.me/905465537932?text=16%3A8%20oru%C3%A7%20ba%C5%9Flat">16:8 oruç başlat</a></p></div>
-          <div><h3>Silme ve hesap</h3><p class="ornekler"><a href="https://wa.me/905465537932?text=son%20%C3%B6%C4%9F%C3%BCn%C3%BCm%C3%BC%20sil">son öğünümü sil</a><a href="https://wa.me/905465537932?text=hesab%C4%B1m%C4%B1%20sil">hesabımı sil</a></p></div>
-        </div>
-      </details>
+      <details><summary>7 günlük deneme bitince ne olur?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Otomatik ücret alınmaz; ücretsiz planla devam edersin. Kayıtların ve hedeflerin olduğu gibi kalır.</p></details>
+      <details><summary>Premium'a nasıl geçerim?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>Sohbette “premium ol” yaz; Premium'un içeriğini ve fiyatını görürsün. Ödeme sistemi çok yakında açılıyor; açıldığında WhatsApp'tan haber vereceğiz.</p></details>
+      <details><summary>Yemek planı nasıl hazırlanıyor?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><p>“haftalık plan” yazınca kalori ve protein hedefine göre 7 günlük plan gelir: menemen, kuru fasulye, ızgara köfte, levrek gibi ev yemekleri, gramlarıyla. Aynı yemek art arda gelmez. “alışveriş listesi” yazınca haftanın malzemeleri çıkar; “plandan kahvaltıyı ekle” yazınca öğün tek mesajla kaydedilir.</p></details>
     </div>
   </div>
 </section>
@@ -451,7 +625,7 @@ footer a{display:inline-block;padding:10px 0}
 <section class="son" id="son" aria-labelledby="son-baslik">
   <div class="wrap">
     <p class="saat" aria-hidden="true">08:12</p>
-    <h2 id="son-baslik">Yarın sabahın ilk mesajı senden olsun.</h2>
+    <h2 id="son-baslik">İlk öğününü bugün kaydet.</h2>
     <p>WhatsApp'tan 0546 553 79 32 numarasına “merhaba” yaz. Kaydını bitirince Premium 7 gün ücretsiz.</p>
     <a class="btn btn-buyuk" href="https://wa.me/905465537932?text=merhaba" style="background:#14213D;color:#F3F6FB">Sohbeti başlat
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -463,7 +637,7 @@ footer a{display:inline-block;padding:10px 0}
 
 <footer>
   <div class="wrap">
-    <span>SporTakip · © 2026</span>
+    <span>SporTakip · Kişisel sağlık ve performans asistanın · © 2026</span>
     <nav aria-label="Alt bağlantılar">
       <a href="/hakkimizda/">Hakkımızda ve iletişim</a>
       <a href="/iade/">Teslimat ve iade</a>
