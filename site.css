@@ -262,3 +262,5 @@ footer a{display:inline-block;padding:10px 0}
   .m.spor .programlar span{font-size:11px}
   .m.spor .programlar img,.pist-mini{aspect-ratio:4/3}
 }
+.kosu-grafik{display:block;width:100%;height:auto;aspect-ratio:16/11}
+@media (max-width:600px){.kosu-grafik{aspect-ratio:auto}}
