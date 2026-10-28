@@ -267,14 +267,14 @@ footer a{display:inline-block;padding:10px 0}
 
 /* Saat fotoğrafları: sohbet tarafında soluk, yazı tarafında gökyüzü rengi */
 .m.fotolu{position:relative;isolation:isolate;overflow:hidden}
-.m.fotolu:not(.spor):not(.pist)::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--img) center/cover no-repeat;opacity:.42;-webkit-mask-image:linear-gradient(90deg,transparent 32%,#000 78%);mask-image:linear-gradient(90deg,transparent 32%,#000 78%)}
+.m.fotolu:not(.spor):not(.pist)::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--img) center/cover no-repeat;opacity:.42;--yatay:linear-gradient(90deg,transparent 32%,#000 78%);--dikey:linear-gradient(180deg,transparent 0%,#000 22%,#000 78%,transparent 100%);-webkit-mask-image:var(--yatay),var(--dikey);mask-image:var(--yatay),var(--dikey);-webkit-mask-composite:source-in;mask-composite:intersect}
 .m.fotolu[data-koyu]:not(.spor):not(.pist)::before{opacity:.32}
 .m.spor.fotolu::before{background:linear-gradient(90deg,rgba(11,14,18,.94) 0%,rgba(11,14,18,.7) 45%,rgba(11,14,18,.3) 100%),var(--img) center/cover no-repeat}
 .m.pist.fotolu{background:#3A160C}
 .m.pist.fotolu::before{left:0;right:0;top:0;bottom:0;height:auto;transform:none;-webkit-mask-image:none;mask-image:none;background:linear-gradient(90deg,rgba(58,22,12,.88) 0%,rgba(90,36,20,.6) 45%,rgba(90,36,20,.15) 100%),linear-gradient(180deg,#0B0E12 0%,rgba(11,14,18,0) 22%,rgba(210,119,82,0) 78%,#D27752 100%),var(--img) center/cover no-repeat}
 .m.pist.fotolu::after{display:none}
 @media (max-width:900px){
-  .m.fotolu:not(.spor):not(.pist)::before{-webkit-mask-image:linear-gradient(180deg,transparent 45%,#000 90%);mask-image:linear-gradient(180deg,transparent 45%,#000 90%);opacity:.28}
+  .m.fotolu:not(.spor):not(.pist)::before{--yatay:linear-gradient(180deg,transparent 45%,#000 80%);--dikey:linear-gradient(180deg,#000 85%,transparent 100%);opacity:.28}
   .m.spor.fotolu::before{background:linear-gradient(180deg,rgba(11,14,18,.92),rgba(11,14,18,.78)),var(--img) center/cover no-repeat}
   .m.pist.fotolu::before{background:linear-gradient(180deg,#0B0E12 0%,rgba(58,22,12,.82) 18%,rgba(90,36,20,.72) 70%,#D27752 100%),var(--img) center/cover no-repeat}
 }
