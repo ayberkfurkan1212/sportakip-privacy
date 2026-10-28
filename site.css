@@ -177,7 +177,7 @@ footer a{display:inline-block;padding:10px 0}
 .markalar li{font-size:15px;font-weight:600;padding:7px 13px;border-radius:999px;border:1.5px solid rgba(255,245,236,.5)}
 .markalar b{font-variant-numeric:tabular-nums;margin-left:4px}
 .foto{padding:8px 8px 6px;display:flex;flex-direction:column;gap:4px;width:min(260px,80%)}
-.tabak{display:block;aspect-ratio:4/3;border-radius:16px;background:radial-gradient(circle at 34% 40%,#E8B04A 0 14%,transparent 15%),radial-gradient(circle at 62% 36%,#C9763A 0 12%,transparent 13%),radial-gradient(circle at 56% 66%,#7FB24A 0 15%,#D9452F 16% 19%,transparent 20%),radial-gradient(circle at 50% 50%,#F7F3EA 0 44%,#E3DCCB 45% 47%,#5E7D63 48%)}
+.tabak{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:4/3;border-radius:16px;background:radial-gradient(circle at 34% 40%,#E8B04A 0 14%,transparent 15%),radial-gradient(circle at 62% 36%,#C9763A 0 12%,transparent 13%),radial-gradient(circle at 56% 66%,#7FB24A 0 15%,#D9452F 16% 19%,transparent 20%),radial-gradient(circle at 50% 50%,#F7F3EA 0 44%,#E3DCCB 45% 47%,#5E7D63 48%)}
 .foto-ad{font-size:13px;font-weight:700;padding:0 6px}
 .foto time{padding:0 6px}
 .adim-liste{margin:6px 0 4px;padding-left:24px;display:flex;flex-direction:column;gap:14px;font-size:17px;color:var(--night-muted)}
