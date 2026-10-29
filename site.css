@@ -274,7 +274,8 @@ footer a{display:inline-block;padding:10px 0}
 .m.pist.fotolu::before{left:0;right:0;top:0;bottom:0;height:auto;transform:none;-webkit-mask-image:none;mask-image:none;background:linear-gradient(180deg,#0B0E12 0%,rgba(11,14,18,0) 24%,rgba(210,119,82,0) 76%,#D27752 100%),linear-gradient(90deg,rgba(58,22,12,.88) 0%,rgba(90,36,20,.6) 45%,rgba(90,36,20,.15) 100%),var(--img) center/cover no-repeat}
 .m.pist.fotolu::after{display:none}
 @media (max-width:900px){
-  .m.fotolu:not(.spor):not(.pist)::before{inset:0;width:auto;aspect-ratio:auto;background:var(--img) center/cover no-repeat;--yatay:linear-gradient(180deg,transparent 45%,#000 80%);--dikey:linear-gradient(180deg,#000 85%,transparent 100%);opacity:.28}
+  .m.fotolu:not(.spor):not(.pist)::before{inset:0;width:auto;aspect-ratio:auto;background:var(--img) var(--pos,center) center/cover no-repeat;--yatay:linear-gradient(180deg,transparent 38%,#000 72%);--dikey:linear-gradient(180deg,#000 88%,transparent 100%);opacity:.36}
+  .m.fotolu[data-koyu]:not(.spor):not(.pist)::before{opacity:.3}
   .m.spor.fotolu::before{background:linear-gradient(180deg,rgba(11,14,18,.92),rgba(11,14,18,.78) 85%,#0B0E12),var(--img) center/cover no-repeat}
   .m.pist.fotolu::before{background:linear-gradient(180deg,#0B0E12 0%,rgba(58,22,12,.82) 18%,rgba(90,36,20,.72) 70%,#D27752 100%),var(--img) center/cover no-repeat}
 }
