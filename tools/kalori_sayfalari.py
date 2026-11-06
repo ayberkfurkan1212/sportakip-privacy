@@ -3,7 +3,7 @@
 Çalıştırma: python3 tools/kalori_sayfalari.py  (depo kökünden)"""
 import json, pathlib, html
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-GUNCEL = "6 Kasım 2026"
+GUNCEL = "7 Kasım 2026"
 
 # slug, ad, 100 g değerleri (kcal, P, K, Y), porsiyonlar [(etiket, gram)], ana porsiyon indeksi, notlar, örnek mesaj
 Y = [
@@ -65,6 +65,93 @@ Y = [
   ["Tost ekmeğine sürülen tereyağı her yemek kaşığında yaklaşık 100 kcal ekler.",
    "Karışık tostta sucuk eklendiği için kalori artar."],
   "1 kaşarlı tost ve 1 ayran"),
+ ("et-doner", "Et döner", (246.7, 21, 3.3, 16.7), [("1 porsiyon", 156.7)], 0,
+  ["Bu değerler yalnızca döner etidir; pilav, ekmek ya da lavaş ayrıca hesaplanır.",
+   "Et döner protein açısından zengindir ama yağ oranı tavuk dönerden yüksektir.",
+   "Pilav üstü dönerde 1 porsiyon pirinç pilavı yaklaşık 275 kcal ekler."],
+  "1 porsiyon et döner"),
+ ("tavuk-doner", "Tavuk döner", (185, 20.3, 4.3, 9.7), [("1 porsiyon", 156.7)], 0,
+  ["Tavuk döner aynı porsiyonda et dönerden yaklaşık 100 kcal daha hafiftir.",
+   "Değerler yalnızca döner etidir; ekmek, lavaş, patates ve soslar ayrıca hesaplanır."],
+  "1 porsiyon tavuk döner"),
+ ("doner-durum", "Döner dürüm", (230, 14, 24, 9), [("1 adet", 250)], 0,
+  ["Değer lavaş, döner ve içindeki sebzeyle birlikte ortalama bir dürüm içindir.",
+   "Dürümün boyu ve içine konan patates ya da sos kaloriyi belirgin şekilde değiştirir.",
+   "Yanında ayran içmek yaklaşık 75 kcal ekler."],
+  "1 döner dürüm ve 1 ayran"),
+ ("adana-durum", "Adana dürüm", (255, 18, 23, 11), [("1 adet", 250)], 0,
+  ["Adana kebabın kıyması yağlı olduğu için dürümde yağ oranı yüksektir.",
+   "Bir dürüm yaklaşık 45 g protein içerir."],
+  "1 adana dürüm"),
+ ("kiymali-pide", "Kıymalı pide", (240, 10.7, 30, 8.7), [("1 adet", 266.7), ("1 dilim", 44.5)], 0,
+  ["Bir kıymalı pide genellikle 6 dilime kesilir; her dilim yaklaşık 107 kcal'dir.",
+   "Üzerine yumurta ya da tereyağı eklemek kaloriyi artırır."],
+  "1 kıymalı pide"),
+ ("peynirli-pide", "Peynirli pide", (260, 11.7, 30, 10.7), [("1 adet", 266.7), ("1 dilim", 44.5)], 0,
+  ["Kaşarlı ya da beyaz peynirli pidede kalori peynirin miktarına göre değişir.",
+   "Sucuklu pide aynı boyda biraz daha kalorilidir."],
+  "1 peynirli pide"),
+ ("gozleme", "Peynirli gözleme", (251.7, 8.7, 30.3, 10.7), [("1 adet", 176.7), ("1 dilim", 44)], 0,
+  ["Gözlemenin üzerine sürülen tereyağı her yemek kaşığında yaklaşık 100 kcal ekler.",
+   "Ispanaklı gözleme peynirliden genellikle biraz daha hafiftir; sucuklu kaşarlı daha kalorilidir."],
+  "1 peynirli gözleme ve 1 çay"),
+ ("kuru-fasulye", "Etli kuru fasulye", (138.3, 9, 15, 5.3), [("1 kase", 220), ("1 porsiyon", 250), ("1 kepçe", 130)], 0,
+  ["Kuru fasulye bitkisel protein ve lif kaynağıdır; et protein miktarını artırır.",
+   "Klasik ikili pilavla yenir; 1 porsiyon pirinç pilavı yaklaşık 275 kcal ekler.",
+   "Yanında turşu kaloriyi neredeyse hiç artırmaz."],
+  "1 kase kuru fasulye ve 1 porsiyon pilav"),
+ ("nohut-yemegi", "Nohut yemeği", (145, 7.5, 21, 4), [("1 kase", 220), ("1 porsiyon", 250)], 0,
+  ["Nohut bitkisel protein ve lif açısından zengindir, uzun süre tok tutar.",
+   "Etli ya da kavurmalı yapıldığında yağ ve kalori artar."],
+  "1 kase nohut yemeği"),
+ ("pirinc-pilavi", "Pirinç pilavı", (165, 3, 29.7, 4), [("1 porsiyon", 166.7), ("1 kase", 200), ("1 yemek kaşığı", 25)], 0,
+  ["Değer tereyağlı klasik pirinç pilavı içindir; yağ miktarı kaloriyi değiştirir.",
+   "Şehriyeli pilav benzer kalorilidir.",
+   "Aynı miktar bulgur pilavı biraz daha az kalorili ve daha liflidir."],
+  "1 porsiyon pirinç pilavı"),
+ ("bulgur-pilavi", "Bulgur pilavı", (140, 3.8, 25, 3), [("1 porsiyon", 175), ("1 kase", 200), ("1 yemek kaşığı", 25)], 0,
+  ["Bulgur, pirince göre daha fazla lif içerir.",
+   "Domatesli ve biberli bulgur pilavında kalori farkı küçüktür; asıl farkı yağ yaratır."],
+  "1 porsiyon bulgur pilavı"),
+ ("izgara-kofte", "Izgara köfte", (225, 21, 4.3, 13.7), [("1 adet", 40), ("1 porsiyon", 110), ("4 adet", 160)], 1,
+  ["Köftenin kalorisini en çok kıymanın yağ oranı belirler.",
+   "Yanında piyaz, pilav ya da ekmek ayrıca hesaplanır.",
+   "Tekirdağ ve İnegöl köftesi gibi yağlı türler daha kalorilidir."],
+  "1 porsiyon ızgara köfte ve salata"),
+ ("mercimek-koftesi", "Mercimek köftesi", (173.3, 5.7, 27.3, 4.5), [("1 adet", 35), ("1 porsiyon", 200), ("5 adet", 175)], 0,
+  ["Etsiz olduğu için ızgara köfteye göre daha az protein ve yağ içerir.",
+   "Marul ve limonla yemek kaloriyi neredeyse hiç artırmaz."],
+  "5 adet mercimek köftesi"),
+ ("cig-kofte", "Çiğ köfte", (165, 5, 26.3, 4.2), [("1 adet", 80), ("2 adet", 160)], 0,
+  ["Değer bulgurla yapılan etsiz (vegan) çiğ köfte içindir.",
+   "Dürüm olarak yenirse lavaş ve soslar ayrıca hesaplanır."],
+  "2 adet çiğ köfte"),
+ ("pogaca", "Peynirli poğaça", (326.7, 8, 35, 17.3), [("1 adet", 80), ("2 adet", 160)], 0,
+  ["Poğaçanın yağ oranı yüksektir; boyuta göre 60–100 g arasında değişir.",
+   "Açma benzer kalorilidir; simit daha az yağlıdır."],
+  "1 peynirli poğaça ve 1 çay"),
+ ("tavuk-gogsu", "Tavuk göğsü", (165, 31, 0, 3.6), [("1 porsiyon", 150), ("1 dilim", 30)], 0,
+  ["Değer pişmiş (ızgara ya da haşlanmış) tavuk göğsü içindir.",
+   "Yüksek proteinli ve düşük yağlı olduğu için sporcuların sık tercihidir.",
+   "Çiğ tavuk göğsü pişince su kaybeder; aynı gram çiğ et daha az kalorilidir."],
+  "150 gram ızgara tavuk göğsü"),
+ ("patates-kizartmasi", "Patates kızartması", (312.3, 3.6, 40.7, 15), [("1 porsiyon", 150), ("Küçük porsiyon", 80)], 0,
+  ["Kalorinin önemli kısmı kızartma yağından gelir.",
+   "Fırında ya da air fryer'da yapılan patates daha az yağlıdır.",
+   "Ketçap ve mayonez ayrıca kalori ekler."],
+  "1 porsiyon patates kızartması"),
+ ("beyaz-peynir", "Beyaz peynir", (250, 16, 2.5, 19), [("1 dilim", 30), ("1 küp", 15)], 0,
+  ["Bir dilim beyaz peynir yaklaşık 5 g protein içerir.",
+   "Tuz oranı yüksek olabilir; yarım yağlı türlerde kalori daha düşüktür."],
+  "kahvaltıda 2 dilim beyaz peynir"),
+ ("ekmek", "Ekmek", (265, 9, 49, 3.2), [("1 dilim", 30), ("1 kalın dilim", 50), ("Yarım ekmek", 125)], 0,
+  ["Değer beyaz francala ekmek içindir; tam buğday ekmeğinde lif daha fazladır.",
+   "Somun ekmeğin boyutu fırına göre değişir; yarım ekmek yaklaşık 125 g kabul edilir."],
+  "2 dilim ekmek"),
+ ("muz", "Muz", (89, 1.1, 22.8, 0.3), [("1 adet", 120), ("Yarım", 60)], 0,
+  ["Muz antrenman öncesi hızlı enerji için sık tercih edilir.",
+   "Olgunlaştıkça şekeri artar ama kalorisi neredeyse aynı kalır."],
+  "1 muz"),
  ("baklava", "Baklava", (430, 5.7, 46.7, 25), [("1 dilim", 46.7), ("2 dilim", 93.4), ("4 dilim", 186.8)], 0,
   ["Baklavanın kalorisi şerbet, tereyağı ve fıstık ya da cevizden gelir.",
    "Kare dilimlerin boyutu dükkana göre değiştiği için kalori de değişir.",
@@ -160,7 +247,7 @@ for slug, ad, m, pors, ana, notlar, ornek in Y:
   url = f"https://sportakip.tr/kalori/{slug}/"
   pl, pg = pors[ana]
   k, p, c, f = deger(m, pg)
-  kucuk = ad[0].lower() + ad[1:]
+  kucuk = {"I": "ı", "İ": "i"}.get(ad[0], ad[0].lower()) + ad[1:]
   cevap = f"{pl} {kucuk} (yaklaşık {sayi(pg,0)} g) ortalama {sayi(k,0)} kcal'dir. {sayi(p)} g protein, {sayi(c)} g karbonhidrat ve {sayi(f)} g yağ içerir."
   title = f"{ad} kaç kalori? {pl} {kucuk} besin değerleri | SporTakip"
   desc = f"{pl} {kucuk} yaklaşık {sayi(k,0)} kcal. Porsiyona göre kalori, protein, karbonhidrat ve yağ tablosu; 100 gramında {sayi(m[0],0)} kcal."
@@ -201,7 +288,7 @@ rows = "".join(f"<tr><td><a href='/kalori/{s}/'>{a}</a></td><td>{html.escape(por
                for s, a, m, pors, ana, *_ in Y)
 body = f"""<h1>Türk yemekleri kalori rehberi</h1>
 <p class="meta">Son güncelleme: {GUNCEL}</p>
-<p>Simit, lahmacun, mercimek çorbası, menemen, baklava… Sık yenen yiyeceklerin porsiyon başına kalori ve makro değerleri. Bir yiyeceğe dokun, ayrıntılı tabloyu gör.</p>
+<p>Simit, lahmacun, döner, pide, kuru fasulye, menemen, baklava… Sık yenen yiyeceklerin porsiyon başına kalori ve makro değerleri. Bir yiyeceğe dokun, ayrıntılı tabloyu gör.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Yiyecek</th><th>Porsiyon</th><th class="n">Kalori</th><th class="n">100 g'da</th></tr></thead>
 <tbody>{rows}</tbody></table></div>
