@@ -1,3 +1,5 @@
+// Çerçeve içinde açılmayı engelle (clickjacking, SEC-025). GitHub Pages başlık ayarlatmadığı için JS ile.
+if (window.top !== window.self) { try { window.top.location = window.self.location.href; } catch (e) { document.documentElement.style.display = "none"; } }
 // SporTakip web paneli: WhatsApp'tan gelen tek kullanımlık bağlantıyla (24 saat) son 30 günü gösterir.
 (function () {
   "use strict";
