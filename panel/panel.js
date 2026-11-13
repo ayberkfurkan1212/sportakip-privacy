@@ -181,6 +181,7 @@ if (window.top !== window.self) { try { window.top.location = window.self.locati
     .then(function (r) { return r.json().then(function (j) { return { s: r.status, j: j }; }); })
     .then(function (x) {
       if (x.s === 401) { try { sessionStorage.removeItem("st_panel"); } catch (e) {} message("Bağlantının süresi doldu", "Yeni bağlantı için WhatsApp'ta <code>panelim</code> yaz."); return; }
+      if (x.s === 403 && x.j && x.j.error === "premium_required") { message("Panel Premium özelliği", "Son 30 günün grafikleri Premium üyelikte. WhatsApp'ta <code>premium ol</code> yazarak bilgi alabilirsin."); return; }
       if (!x.j.ok) { message("Bir sorun oldu", "Biraz sonra tekrar dener misin?"); return; }
       render(x.j);
     })
