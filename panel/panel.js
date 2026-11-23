@@ -178,11 +178,11 @@ if (window.top !== window.self) { try { window.top.location = window.self.locati
         var best = Math.max.apply(null, pts.map(function (p) { return p.v; }));
         var last = x.series[x.series.length - 1];
         var txt = "Son: " + fmt1(last.e1rm) + " kg (" + fmt1(last.kg) + " kg × " + last.reps + (last.approx ? ", yaklaşık" : "") + ") · en iyi: " + fmt1(best) + " kg";
-        if (x.change !== null && x.series.length > 1) txt += " · 12 haftada " + (x.change > 0 ? "+" : "") + "%" + fmt1(x.change);
+        if (x.change !== null && x.series.length > 1) txt += " · son 12 haftadaki ilk kaydına göre " + (x.change > 0 ? "+%" + fmt1(x.change) : x.change < 0 ? "−%" + fmt1(-x.change) : "değişmedi");
         body.appendChild(el("p", { "class": "legend", text: txt }));
       };
       st.forEach(function (x, i) {
-        var b = el("button", { type: "button", "class": "chip", role: "tab", text: x.name + " · " + fmt1(x.last) });
+        var b = el("button", { type: "button", "class": "chip", role: "tab", text: x.name + " · " + fmt1(x.series[x.series.length - 1].e1rm) });
         b.addEventListener("click", function () { show(i); });
         chips.appendChild(b);
       });
