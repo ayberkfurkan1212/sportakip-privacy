@@ -24,6 +24,7 @@ if (window.top !== window.self) { try { window.top.location = window.self.locati
     return e;
   }
   function fmt(n) { return Math.round(n).toLocaleString("tr-TR"); }
+  function fmt1(n) { return (Math.round(n * 10) / 10).toLocaleString("tr-TR"); }
   function dShort(s) { var p = s.split("-"); return p[2] + "." + p[1]; }
 
   function message(title, body) {
@@ -159,6 +160,36 @@ if (window.top !== window.self) { try { window.top.location = window.self.locati
     if (d.steps.length) sc.appendChild(barChart(d.steps.map(function (x) { return { d: x.date, v: x.steps }; }), d.goals.steps, "#5EC8F2", "#C8F04A"));
     else sc.appendChild(el("p", { "class": "empty", text: "Adım kaydı yok. WhatsApp'ta \"8500 adım\" yaz ya da iPhone için \"apple sağlık bağla\"." }));
     g.appendChild(sc);
+
+    // Güç: tahmini 1RM gelişimi (haftalık en iyi set, Epley, 1–12 tekrar)
+    var gc = el("div", { "class": "card c12" }, [el("h2", { text: "Güç · tahmini 1RM (son 12 hafta)" })]);
+    var st = (d.strength || []).filter(function (x) { return x.series && x.series.length; });
+    if (st.length) {
+      var chips = el("div", { "class": "chips", role: "tablist" });
+      var body = el("div");
+      var show = function (i) {
+        [].forEach.call(chips.children, function (c, j) { c.setAttribute("aria-selected", j === i ? "true" : "false"); });
+        body.innerHTML = "";
+        var x = st[i];
+        var pts = x.series.map(function (p) { return { d: p.date, v: p.e1rm }; });
+        var lc = lineChart(pts, "#C8F04A", "kg");
+        if (lc) body.appendChild(lc);
+        else body.appendChild(el("p", { "class": "empty", text: "Grafik için en az iki farklı haftada kayıt gerekiyor." }));
+        var best = Math.max.apply(null, pts.map(function (p) { return p.v; }));
+        var last = x.series[x.series.length - 1];
+        var txt = "Son: " + fmt1(last.e1rm) + " kg (" + fmt1(last.kg) + " kg × " + last.reps + (last.approx ? ", yaklaşık" : "") + ") · en iyi: " + fmt1(best) + " kg";
+        if (x.change !== null && x.series.length > 1) txt += " · 12 haftada " + (x.change > 0 ? "+" : "") + "%" + fmt1(x.change);
+        body.appendChild(el("p", { "class": "legend", text: txt }));
+      };
+      st.forEach(function (x, i) {
+        var b = el("button", { type: "button", "class": "chip", role: "tab", text: x.name + " · " + fmt1(x.last) });
+        b.addEventListener("click", function () { show(i); });
+        chips.appendChild(b);
+      });
+      gc.appendChild(chips); gc.appendChild(body); show(0);
+      gc.appendChild(el("p", { "class": "legend", text: "Tahmini 1RM: Epley formülü, haftanın en iyi seti; yalnız 1–12 tekrarlı setler. Değerler yaklaşıktır." }));
+    } else gc.appendChild(el("p", { "class": "empty", text: "Ağırlıklı antrenman kaydı yok. WhatsApp'ta: \"bench press 60 kg 5 5 5\"" }));
+    g.appendChild(gc);
 
     // Bugünün öğünleri
     var mc = el("div", { "class": "card c12" }, [el("h2", { text: "Bugün ne yedim" })]);
